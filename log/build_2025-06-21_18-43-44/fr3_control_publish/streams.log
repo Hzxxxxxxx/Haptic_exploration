@@ -1,0 +1,25 @@
+[0.032s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake /home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish -DCMAKE_INSTALL_PREFIX=/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish
+[0.303s] -- The C compiler identification is GNU 11.4.0
+[0.544s] -- The CXX compiler identification is GNU 11.4.0
+[0.578s] -- Detecting C compiler ABI info
+[0.798s] -- Detecting C compiler ABI info - done
+[0.822s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.827s] -- Detecting C compile features
+[0.828s] -- Detecting C compile features - done
+[0.843s] -- Detecting CXX compiler ABI info
+[1.135s] -- Detecting CXX compiler ABI info - done
+[1.159s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.159s] -- Detecting CXX compile features
+[1.161s] -- Detecting CXX compile features - done
+[1.212s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.321s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.709s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[2.709s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[2.709s]   before
+[2.709s] Call Stack (most recent call first):
+[2.709s]   CMakeLists.txt:16 (ament_target_dependencies)
+[2.709s] 
+[2.710s] [0m
+[2.710s] -- Configuring incomplete, errors occurred!
+[2.710s] See also "/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/CMakeOutput.log".
+[2.720s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake /home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish -DCMAKE_INSTALL_PREFIX=/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish

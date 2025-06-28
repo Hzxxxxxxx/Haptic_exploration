@@ -1,0 +1,12 @@
+[0.046s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake /home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish -DCMAKE_INSTALL_PREFIX=/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish
+[0.079s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.457s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.457s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[0.457s]   before
+[0.458s] Call Stack (most recent call first):
+[0.458s]   CMakeLists.txt:42 (ament_target_dependencies)
+[0.458s] 
+[0.458s] [0m
+[0.458s] -- Configuring incomplete, errors occurred!
+[0.459s] See also "/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/CMakeOutput.log".
+[0.464s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake /home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish -DCMAKE_INSTALL_PREFIX=/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish

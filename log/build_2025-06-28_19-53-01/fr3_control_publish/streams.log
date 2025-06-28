@@ -1,0 +1,50 @@
+[0.042s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.233s] [35m[1mConsolidate compiler generated dependencies of target force_position_controller[0m
+[0.253s] [ 25%] Built target simple_control_node
+[0.268s] [ 50%] Built target fr3_monitor
+[0.277s] [ 62%] [32mBuilding CXX object CMakeFiles/jacobian_publisher.dir/src/fr3_jacobian_publisher.cpp.o[0m
+[0.320s] [ 75%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[9.252s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:160:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[9.253s]   160 |   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr [01;31m[Ksu_[m[K
+[9.253s]       |                                                                 [01;31m[K^~~[m[K
+[9.253s]       |                                                                    [32m[K;[m[K
+[9.253s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:160:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[9.254s]   160 |   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr su_
+[9.254s]       |                                                                    [01;31m[K^[m[K
+[9.254s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:11:53:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[9.254s]    11 | class ForcePositionController : public rclcpp::Node [01;36m[K{[m[K
+[9.255s]       |                                                     [01;36m[K^[m[K
+[9.274s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K In constructor ‘[01m[KForcePositionController::ForcePositionController()[m[K’:
+[9.275s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_des_[m[K’ was not declared in this scope; did you mean ‘[01m[Kf_des_[m[K’?
+[9.275s]    38 |     [01;31m[Kx_des_[m[K.setZero();
+[9.275s]       |     [01;31m[K^~~~~~[m[K
+[9.275s]       |     [32m[Kf_des_[m[K
+[9.294s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_js_[m[K’ was not declared in this scope
+[9.294s]    49 |     [01;31m[Ksub_js_[m[K = create_subscription<sensor_msgs::msg::JointState>(
+[9.294s]       |     [01;31m[K^~~~~~~[m[K
+[9.344s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_jacobian_[m[K’ was not declared in this scope; did you mean ‘[01m[Kon_jacobian[m[K’?
+[9.344s]    53 |     [01;31m[Ksub_jacobian_[m[K = create_subscription<std_msgs::msg::Float64MultiArray>(
+[9.344s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[9.345s]       |     [32m[Kon_jacobian[m[K
+[9.480s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_traj_[m[K’ was not declared in this scope
+[9.480s]    57 |     [01;31m[Kpub_traj_[m[K = create_publisher<trajectory_msgs::msg::JointTrajectory>(
+[9.480s]       |     [01;31m[K^~~~~~~~~[m[K
+[9.499s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[9.499s]    61 |     [01;31m[Ktimer_[m[K = create_wall_timer(
+[9.499s]       |     [01;31m[K^~~~~~[m[K
+[9.499s]       |     [32m[Ktimer_t[m[K
+[10.206s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K In member function ‘[01m[Kvoid ForcePositionController::control_loop()[m[K’:
+[10.206s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:145:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_traj_[m[K’ was not declared in this scope
+[10.207s]   145 |     [01;31m[Kpub_traj_[m[K->publish(traj);
+[10.207s]       |     [01;31m[K^~~~~~~~~[m[K
+[10.207s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K At global scope:
+[10.207s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:160:68:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[10.208s]   160 |   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr su_
+[10.208s]       |                                                                    [01;31m[K^[m[K
+[22.723s] gmake[2]: *** [CMakeFiles/force_position_controller.dir/build.make:76：CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o] 错误 1
+[22.725s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/force_position_controller.dir/all] 错误 2
+[22.725s] gmake[1]: *** 正在等待未完成的任务....
+[24.975s] [ 87%] [32m[1mLinking CXX executable jacobian_publisher[0m
+[26.243s] [ 87%] Built target jacobian_publisher
+[26.245s] gmake: *** [Makefile:146：all] 错误 2
+[26.256s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

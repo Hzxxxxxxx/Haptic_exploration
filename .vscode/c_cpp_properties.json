@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false,
+        "path": ["${workspaceFolder}/**",
+                "/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib"
+            ]
+      },
+      "includePath": [
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/include/**",
+        "/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/include/**",
+        "/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/**",
+        "/usr/include/**",
+        "/home/mscrobotics2425laptop16/mujoco/mujoco-install/include"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

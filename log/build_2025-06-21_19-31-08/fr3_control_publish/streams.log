@@ -1,0 +1,11 @@
+[0.076s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.297s] [ 25%] [32mBuilding CXX object CMakeFiles/fr3_monitor.dir/src/fr3_monitor_node.cpp.o[0m
+[0.318s] [ 75%] Built target simple_control_node
+[0.916s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_monitor_node.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kcontrol_msgs/msg/joint_trajectory_controller_state.hpp: 没有那个文件或目录
+[0.916s]     9 | #include [01;31m[K<control_msgs/msg/joint_trajectory_controller_state.hpp>[m[K
+[0.916s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.916s] compilation terminated.
+[0.926s] gmake[2]: *** [CMakeFiles/fr3_monitor.dir/build.make:76：CMakeFiles/fr3_monitor.dir/src/fr3_monitor_node.cpp.o] 错误 1
+[0.926s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/fr3_monitor.dir/all] 错误 2
+[0.928s] gmake: *** [Makefile:146：all] 错误 2
+[0.942s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

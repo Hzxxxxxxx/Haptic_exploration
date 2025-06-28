@@ -1,0 +1,39 @@
+[0.062s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.224s] [35m[1mConsolidate compiler generated dependencies of target simple_control_node[0m
+[0.280s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.o[0m
+[6.903s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.906s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_publish_node.cpp:1[m[K:
+[6.906s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_publish_node.cpp:[m[K In member function ‘[01m[Kvoid SimpleControlNode::timer_callback()[m[K’:
+[6.906s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_publish_node.cpp:42:33:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::_positions_type[m[K’ {aka ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’} to ‘[01m[Kconst char*[m[K’
+[6.906s]    42 |     RCLCPP_INFO(get_logger(), [01;31m[Kp.positions[m[K);
+[6.906s]       |                               [01;31m[K~~^~~~~~~~~[m[K
+[6.907s]       |                                 [01;31m[K|[m[K
+[6.907s]       |                                 [01;31m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::_positions_type {aka std::vector<double, std::allocator<double> >}[m[K
+[6.907s] In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+[6.907s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+[6.907s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+[6.908s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+[6.908s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+[6.908s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+[6.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+[6.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.909s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_publish_node.cpp:1[m[K:
+[6.909s] [01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+[6.909s]   479 |   [01;36m[Kconst char * format[m[K,
+[6.910s]       |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[8.845s] gmake[2]: *** [CMakeFiles/simple_control_node.dir/build.make:76：CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.o] 错误 1
+[8.845s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/simple_control_node.dir/all] 错误 2
+[8.846s] gmake: *** [Makefile:146：all] 错误 2
+[8.852s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

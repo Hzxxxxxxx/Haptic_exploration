@@ -1,0 +1,17 @@
+[0.053s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.230s] [35m[1mConsolidate compiler generated dependencies of target force_position_controller[0m
+[0.265s] [ 25%] Built target simple_control_node
+[0.282s] [ 62%] [32mBuilding CXX object CMakeFiles/jacobian_publisher.dir/src/fr3_jacobian_publisher.cpp.o[0m
+[0.282s] [ 62%] Built target fr3_monitor
+[0.299s] [ 75%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[0.892s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_jacobian_publisher.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Ktrajectory_msgs/msg/joint_trajectory.hpp: 没有那个文件或目录
+[0.893s]     4 | #include [01;31m[K<trajectory_msgs/msg/joint_trajectory.hpp>[m[K
+[0.893s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.893s] compilation terminated.
+[0.901s] gmake[2]: *** [CMakeFiles/jacobian_publisher.dir/build.make:76：CMakeFiles/jacobian_publisher.dir/src/fr3_jacobian_publisher.cpp.o] 错误 1
+[0.903s] gmake[1]: *** [CMakeFiles/Makefile2:195：CMakeFiles/jacobian_publisher.dir/all] 错误 2
+[0.903s] gmake[1]: *** 正在等待未完成的任务....
+[51.455s] [ 87%] [32m[1mLinking CXX executable force_position_controller[0m
+[54.136s] [ 87%] Built target force_position_controller
+[54.139s] gmake: *** [Makefile:146：all] 错误 2
+[54.146s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

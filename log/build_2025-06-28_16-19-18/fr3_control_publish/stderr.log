@@ -1,0 +1,15 @@
+gmake[2]: *** 没有规则可制作目标“/home/mscrobotics2425laptop16/mujoco/mujoco-install/bin/libmujoco210.so”，由“jacobian_publisher” 需求。 停止。
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_jacobian_publisher.cpp:[m[K In constructor ‘[01m[KJacobianPublisher::JacobianPublisher()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_jacobian_publisher.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmj_activate[m[K’ was not declared in this scope
+   21 |     [01;31m[Kmj_activate[m[K(nullptr);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_jacobian_publisher.cpp:[m[K In destructor ‘[01m[Kvirtual JacobianPublisher::~JacobianPublisher()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/fr3_jacobian_publisher.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmj_deactivate[m[K’ was not declared in this scope; did you mean ‘[01m[Kmj_setState[m[K’?
+   65 |     [01;31m[Kmj_deactivate[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kmj_setState[m[K
+gmake[2]: *** [CMakeFiles/jacobian_publisher.dir/build.make:76：CMakeFiles/jacobian_publisher.dir/src/fr3_jacobian_publisher.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:193：CMakeFiles/jacobian_publisher.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:146：all] 错误 2

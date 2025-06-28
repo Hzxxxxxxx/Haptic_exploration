@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4eec9943923f09a607f1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "fr3_control_publish",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "force_position_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-force_position_controller-1b5aae2247cbdcf505f5.json",
+					"name" : "force_position_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr3_control_publish_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr3_control_publish_uninstall-1e6743082d5cd9e95c5b.json",
+					"name" : "fr3_control_publish_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr3_monitor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr3_monitor-1e8d77cbc5be1f90bdc3.json",
+					"name" : "fr3_monitor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jacobian_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jacobian_publisher-7fac80daf8c8d7c4b602.json",
+					"name" : "jacobian_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_control_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_control_node-d51e922621eb79f4aeab.json",
+					"name" : "simple_control_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f024923bf9921645f3ea.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish",
+		"source" : "/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target force_position_controller[0m
+[ 25%] Built target simple_control_node
+[ 50%] Built target fr3_monitor
+[ 62%] [32mBuilding CXX object CMakeFiles/jacobian_publisher.dir/src/fr3_jacobian_publisher.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable jacobian_publisher[0m
+[ 87%] Built target jacobian_publisher

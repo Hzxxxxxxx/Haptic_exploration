@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/fr3_monitor.dir/build.make:76: CMakeFiles/fr3_monitor.dir/src/fr3_monitor_node.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/fr3_monitor.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

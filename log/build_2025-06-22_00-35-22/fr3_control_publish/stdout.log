@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target fr3_monitor[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/fr3_monitor.dir/src/fr3_monitor_node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable simple_control_node[0m
+[ 75%] Built target simple_control_node

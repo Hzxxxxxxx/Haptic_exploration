@@ -1,0 +1,48 @@
+[35m[1mConsolidate compiler generated dependencies of target force_position_controller[0m
+[ 25%] Built target simple_control_node
+[ 50%] Built target fr3_monitor
+[ 62%] [32mBuilding CXX object CMakeFiles/jacobian_publisher.dir/src/fr3_jacobian_publisher.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:160:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  160 |   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr [01;31m[Ksu_[m[K
+      |                                                                 [01;31m[K^~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:160:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  160 |   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr su_
+      |                                                                    [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:11:53:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   11 | class ForcePositionController : public rclcpp::Node [01;36m[K{[m[K
+      |                                                     [01;36m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K In constructor ‘[01m[KForcePositionController::ForcePositionController()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_des_[m[K’ was not declared in this scope; did you mean ‘[01m[Kf_des_[m[K’?
+   38 |     [01;31m[Kx_des_[m[K.setZero();
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kf_des_[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_js_[m[K’ was not declared in this scope
+   49 |     [01;31m[Ksub_js_[m[K = create_subscription<sensor_msgs::msg::JointState>(
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_jacobian_[m[K’ was not declared in this scope; did you mean ‘[01m[Kon_jacobian[m[K’?
+   53 |     [01;31m[Ksub_jacobian_[m[K = create_subscription<std_msgs::msg::Float64MultiArray>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kon_jacobian[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_traj_[m[K’ was not declared in this scope
+   57 |     [01;31m[Kpub_traj_[m[K = create_publisher<trajectory_msgs::msg::JointTrajectory>(
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   61 |     [01;31m[Ktimer_[m[K = create_wall_timer(
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K In member function ‘[01m[Kvoid ForcePositionController::control_loop()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:145:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_traj_[m[K’ was not declared in this scope
+  145 |     [01;31m[Kpub_traj_[m[K->publish(traj);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K At global scope:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:160:68:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  160 |   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr su_
+      |                                                                    [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/force_position_controller.dir/build.make:76：CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/force_position_controller.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 87%] [32m[1mLinking CXX executable jacobian_publisher[0m
+[ 87%] Built target jacobian_publisher
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:6 (message):
+  Please set MUJOCO_PATH to your MuJoCo install dir, e.g.  export
+  MUJOCO_PATH=/home/your_user/mujoco/mujoco-install
+
+[0m
+gmake: *** [Makefile:349：cmake_check_build_system] 错误 1
