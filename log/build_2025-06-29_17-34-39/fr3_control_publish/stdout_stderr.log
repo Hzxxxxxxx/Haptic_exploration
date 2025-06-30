@@ -1,0 +1,12 @@
+[ 20%] Built target simple_control_node
+[ 40%] Built target fr3_monitor
+[ 60%] Built target jacobian_publisher
+[ 70%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[ 90%] Built target mujoco_force_publisher
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kcontrol_msgs/msg/dynamic_joint_state.hpp: 没有那个文件或目录
+    2 | #include [01;31m[K<control_msgs/msg/dynamic_joint_state.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/force_position_controller.dir/build.make:76：CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/force_position_controller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,14 @@
+[0.060s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.253s] [ 20%] Built target simple_control_node
+[0.254s] [ 40%] Built target fr3_monitor
+[0.267s] [ 60%] Built target jacobian_publisher
+[0.282s] [ 70%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[0.286s] [ 90%] Built target mujoco_force_publisher
+[0.789s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kcontrol_msgs/msg/dynamic_joint_state.hpp: 没有那个文件或目录
+[0.790s]     2 | #include [01;31m[K<control_msgs/msg/dynamic_joint_state.hpp>[m[K
+[0.790s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.790s] compilation terminated.
+[0.796s] gmake[2]: *** [CMakeFiles/force_position_controller.dir/build.make:76：CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o] 错误 1
+[0.799s] gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/force_position_controller.dir/all] 错误 2
+[0.799s] gmake: *** [Makefile:146：all] 错误 2
+[0.815s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

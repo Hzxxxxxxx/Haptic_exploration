@@ -10,13 +10,13 @@ from launch_ros.actions import Node
 def generate_launch_description():
     pkg_share = get_package_share_directory('mujoco_ros2_control_demos')
 
-    # ---------- 1. 机器人 URDF ----------
+    # 1) URDF
     urdf_path = os.path.join(pkg_share, 'urdf', 'fr3_nohand.urdf')
     doc = xacro.parse(open(urdf_path))
     xacro.process_doc(doc)
     robot_description = {'robot_description': doc.toxml()}
 
-    # ---------- 2. MuJoCo-ros2_control ----------
+    # 2) MuJoCo + ros2_control
     controller_yaml = os.path.join(pkg_share, 'config', 'fr3_controllers.yaml')
     scene_xml       = os.path.join(pkg_share, 'mujoco_models', 'scene.xml')
 
@@ -29,7 +29,7 @@ def generate_launch_description():
                     {'mujoco_model_path': scene_xml}]
     )
 
-    # ---------- 3. Robot State Publisher ----------
+    # 3) Robot State Publisher
     rsp_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -37,7 +37,7 @@ def generate_launch_description():
         parameters=[robot_description]
     )
 
-    # ---------- 4. 依次激活控制器 ----------
+    # 4) 顺序激活 controllers
     load_jsb = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
              'joint_state_broadcaster'],

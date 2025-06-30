@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_force_publisher[0m
+[ 30%] Built target simple_control_node
+[ 40%] Built target fr3_monitor
+[ 50%] [32mBuilding CXX object CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o[0m
+[ 80%] Built target jacobian_publisher
+[ 90%] Built target mujoco_force_publisher

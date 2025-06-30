@@ -1,0 +1,13 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_force_publisher.cpp:[m[K In member function ‘[01m[Kvoid MujocoForcePublisher::timer_callback()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_force_publisher.cpp:67:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Time[m[K’ has no member named ‘[01m[Kto_msg[m[K’
+   67 |     msg.header.stamp = this->get_clock()->now().[01;31m[Kto_msg[m[K();
+      |                                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_force_publisher.cpp:71:33:[m[K [01;31m[Kerror: [m[K‘[01m[KmjData[m[K’ {aka ‘[01m[Kstruct mjData_[m[K’} has no member named ‘[01m[Ksensor[m[K’
+   71 |       double const * f = data_->[01;31m[Ksensor[m[K[force_id_].data;
+      |                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_force_publisher.cpp:77:33:[m[K [01;31m[Kerror: [m[K‘[01m[KmjData[m[K’ {aka ‘[01m[Kstruct mjData_[m[K’} has no member named ‘[01m[Ksensor[m[K’
+   77 |       double const * t = data_->[01;31m[Ksensor[m[K[torque_id_].data;
+      |                                 [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_force_publisher.dir/build.make:76：CMakeFiles/mujoco_force_publisher.dir/src/mujoco_force_publisher.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:249：CMakeFiles/mujoco_force_publisher.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

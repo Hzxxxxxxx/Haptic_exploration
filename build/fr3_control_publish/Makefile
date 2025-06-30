@@ -249,6 +249,19 @@ force_position_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_position_controller.dir/build.make CMakeFiles/force_position_controller.dir/build
 .PHONY : force_position_controller/fast
 
+#=============================================================================
+# Target rules for targets named mujoco_force_publisher
+
+# Build rule for target.
+mujoco_force_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mujoco_force_publisher
+.PHONY : mujoco_force_publisher
+
+# fast build rule for target.
+mujoco_force_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_force_publisher.dir/build.make CMakeFiles/mujoco_force_publisher.dir/build
+.PHONY : mujoco_force_publisher/fast
+
 src/force_position_controller.o: src/force_position_controller.cpp.o
 .PHONY : src/force_position_controller.o
 
@@ -345,6 +358,30 @@ src/fr3_publish_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.s
 .PHONY : src/fr3_publish_node.cpp.s
 
+src/mujoco_force_publisher.o: src/mujoco_force_publisher.cpp.o
+.PHONY : src/mujoco_force_publisher.o
+
+# target to build an object file
+src/mujoco_force_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_force_publisher.dir/build.make CMakeFiles/mujoco_force_publisher.dir/src/mujoco_force_publisher.cpp.o
+.PHONY : src/mujoco_force_publisher.cpp.o
+
+src/mujoco_force_publisher.i: src/mujoco_force_publisher.cpp.i
+.PHONY : src/mujoco_force_publisher.i
+
+# target to preprocess a source file
+src/mujoco_force_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_force_publisher.dir/build.make CMakeFiles/mujoco_force_publisher.dir/src/mujoco_force_publisher.cpp.i
+.PHONY : src/mujoco_force_publisher.cpp.i
+
+src/mujoco_force_publisher.s: src/mujoco_force_publisher.cpp.s
+.PHONY : src/mujoco_force_publisher.s
+
+# target to generate assembly for a file
+src/mujoco_force_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_force_publisher.dir/build.make CMakeFiles/mujoco_force_publisher.dir/src/mujoco_force_publisher.cpp.s
+.PHONY : src/mujoco_force_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -363,6 +400,7 @@ help:
 	@echo "... force_position_controller"
 	@echo "... fr3_monitor"
 	@echo "... jacobian_publisher"
+	@echo "... mujoco_force_publisher"
 	@echo "... simple_control_node"
 	@echo "... src/force_position_controller.o"
 	@echo "... src/force_position_controller.i"
@@ -376,6 +414,9 @@ help:
 	@echo "... src/fr3_publish_node.o"
 	@echo "... src/fr3_publish_node.i"
 	@echo "... src/fr3_publish_node.s"
+	@echo "... src/mujoco_force_publisher.o"
+	@echo "... src/mujoco_force_publisher.i"
+	@echo "... src/mujoco_force_publisher.s"
 .PHONY : help
 
 

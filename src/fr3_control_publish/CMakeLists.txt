@@ -38,6 +38,8 @@ find_package(control_msgs REQUIRED)         # fr3_monitor
 find_package(diagnostic_msgs REQUIRED)      # fr3_monitor
 find_package(sensor_msgs REQUIRED)          # jacobian_publisher
 find_package(std_msgs REQUIRED)             # jacobian_publisher
+find_package(geometry_msgs REQUIRED)        # mujoco_force_publisher
+find_package(control_msgs REQUIRED) 
 
 # 添加 Eigen 库
 find_package(Eigen3 REQUIRED)
@@ -68,7 +70,7 @@ ament_target_dependencies(jacobian_publisher
   sensor_msgs
   std_msgs
 )
-# 链接 MuJoCo 库
+# jacobian 逻辑里如果有用到 MuJoCo API，则需要链接；否则可省略
 target_link_libraries(jacobian_publisher
   ${MUJOCO_LIB}
 )
@@ -80,8 +82,18 @@ ament_target_dependencies(force_position_controller
   sensor_msgs
   std_msgs
   trajectory_msgs
+  control_msgs 
 )
-# Eigen 是头文件库，无需链接
+
+# mujoco_force_publisher: 直接从 MuJoCo MjData 读取力/力矩并发布
+add_executable(mujoco_force_publisher src/mujoco_force_publisher.cpp)
+ament_target_dependencies(mujoco_force_publisher
+  rclcpp
+  geometry_msgs
+)
+target_link_libraries(mujoco_force_publisher
+  ${MUJOCO_LIB}
+)
 
 ###############################################################################
 # 4. 安装
@@ -92,6 +104,7 @@ install(
     fr3_monitor
     jacobian_publisher
     force_position_controller
+    mujoco_force_publisher
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -832,4 +832,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/fr3_monitor.dir/DependInfo.cmake"
   "CMakeFiles/jacobian_publisher.dir/DependInfo.cmake"
   "CMakeFiles/force_position_controller.dir/DependInfo.cmake"
+  "CMakeFiles/mujoco_force_publisher.dir/DependInfo.cmake"
   )
