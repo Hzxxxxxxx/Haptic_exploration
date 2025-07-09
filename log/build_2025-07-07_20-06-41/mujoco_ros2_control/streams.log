@@ -1,0 +1,45 @@
+[0.065s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake /home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control -DCMAKE_INSTALL_PREFIX=/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control
+[0.275s] -- The C compiler identification is GNU 11.4.0
+[0.472s] -- The CXX compiler identification is GNU 11.4.0
+[0.502s] -- Detecting C compiler ABI info
+[0.776s] -- Detecting C compiler ABI info - done
+[0.805s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.805s] -- Detecting C compile features
+[0.811s] -- Detecting C compile features - done
+[0.822s] -- Detecting CXX compiler ABI info
+[1.152s] -- Detecting CXX compiler ABI info - done
+[1.175s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.176s] -- Detecting CXX compile features
+[1.177s] -- Detecting CXX compile features - done
+[1.198s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.410s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.838s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[3.087s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.124s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.179s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.322s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.518s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.544s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.855s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.966s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.124s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.187s] -- Looking for pthread.h
+[4.433s] -- Looking for pthread.h - found
+[4.436s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.706s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.710s] -- Found Threads: TRUE  
+[4.968s] -- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[5.626s] -- Found controller_manager: 2.48.0 (/opt/ros/humble/share/controller_manager/cmake)
+[5.844s] -- Found joint_limits: 2.48.0 (/opt/ros/humble/share/joint_limits/cmake)
+[5.876s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[6.018s] -- Found control_toolbox: 3.6.0 (/opt/ros/humble/share/control_toolbox/cmake)
+[6.268s] [31mCMake Error at CMakeLists.txt:52 (message):
+[6.268s]   Failed to find mujoco with find_package.
+[6.268s] 
+[6.268s]     Either build and install mujoco from source or set the MUJOCO_DIR environment variable to tell CMake where to find the binary install. 
+[6.269s] 
+[6.274s] [0m
+[6.277s] -- Configuring incomplete, errors occurred!
+[6.277s] See also "/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control/CMakeFiles/CMakeOutput.log".
+[6.342s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake /home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control -DCMAKE_INSTALL_PREFIX=/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control

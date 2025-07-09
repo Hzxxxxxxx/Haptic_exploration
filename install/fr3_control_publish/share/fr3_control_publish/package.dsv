@@ -1,0 +1,11 @@
+source;share/fr3_control_publish/hook/cmake_prefix_path.ps1
+source;share/fr3_control_publish/hook/cmake_prefix_path.dsv
+source;share/fr3_control_publish/hook/cmake_prefix_path.sh
+source;share/fr3_control_publish/hook/ld_library_path_lib.ps1
+source;share/fr3_control_publish/hook/ld_library_path_lib.dsv
+source;share/fr3_control_publish/hook/ld_library_path_lib.sh
+source;share/fr3_control_publish/local_setup.bash
+source;share/fr3_control_publish/local_setup.dsv
+source;share/fr3_control_publish/local_setup.ps1
+source;share/fr3_control_publish/local_setup.sh
+source;share/fr3_control_publish/local_setup.zsh

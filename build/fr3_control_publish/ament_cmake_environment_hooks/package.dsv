@@ -1,0 +1,4 @@
+source;share/fr3_control_publish/local_setup.bash
+source;share/fr3_control_publish/local_setup.dsv
+source;share/fr3_control_publish/local_setup.sh
+source;share/fr3_control_publish/local_setup.zsh

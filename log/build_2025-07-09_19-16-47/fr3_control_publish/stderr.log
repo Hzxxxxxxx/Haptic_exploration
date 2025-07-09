@@ -1,0 +1,30 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:[m[K In constructor ‘[01m[KForcePositionController::ForcePositionController()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:57:59:[m[K [01;31m[Kerror: [m[K‘[01m[KWrenchStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+   57 |     sub_wrench_ = create_subscription<geometry_msgs::msg::[01;31m[KWrenchStamped[m[K>(
+      |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:57:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KForcePositionController::create_subscription<<expression error> >(const char [18], rclcpp::SensorDataQoS, std::_Bind_helper<false, void (ForcePositionController::*)(std::shared_ptr<fr3_control_publish::msg::TouchTipWrench_<std::allocator<void> > >), ForcePositionController*, const std::_Placeholder<1>&>::type)[m[K’
+   57 |     sub_wrench_ = [01;31m[Kcreate_subscription<geometry_msgs::msg::WrenchStamped>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   58 | [01;31m[K      "/touch_tip/wrench", rclcpp::SensorDataQoS(),[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                      
+   59 | [01;31m[K      std::bind(&ForcePositionController::on_wrench, this, _1))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K          
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/force_position_controller.cpp:57:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   57 |     sub_wrench_ = [01;31m[Kcreate_subscription<geometry_msgs::msg::WrenchStamped>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   58 | [01;31m[K      "/touch_tip/wrench", rclcpp::SensorDataQoS(),[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                      
+   59 | [01;31m[K      std::bind(&ForcePositionController::on_wrench, this, _1))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K          
+gmake[2]: *** [CMakeFiles/force_position_controller.dir/build.make:76：CMakeFiles/force_position_controller.dir/src/force_position_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:680：CMakeFiles/force_position_controller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

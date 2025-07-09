@@ -1,0 +1,44 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:22[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kvoid process_contacts(rclcpp::Node::SharedPtr, mjModel*, mjData*)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:82:22:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   82 |                 con->[01;31m[Kforce[m[K[0], con->force[1], con->force[2]);
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:82:37:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   82 |                 con->force[0], con->[01;31m[Kforce[m[K[1], con->force[2]);
+      |                                     [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:82:52:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   82 |                 con->force[0], con->force[1], con->[01;31m[Kforce[m[K[2]);
+      |                                                    [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:86:22:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   86 |                 con->[01;31m[Kforce[m[K[3], con->force[4], con->force[5]);
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:86:37:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   86 |                 con->force[3], con->[01;31m[Kforce[m[K[4], con->force[5]);
+      |                                     [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:86:52:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   86 |                 con->force[3], con->force[4], con->[01;31m[Kforce[m[K[5]);
+      |                                                    [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:96:45:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+   96 |             mju_rotVecMat(force_world, con->[01;31m[Kforce[m[K, con->frame); // 从接触帧旋转到世界帧
+      |                                             [01;31m[K^~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:96:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmju_rotVecMat[m[K’ was not declared in this scope; did you mean ‘[01m[Kmju_rotVecQuat[m[K’?
+   96 |             [01;31m[Kmju_rotVecMat[m[K(force_world, con->force, con->frame); // 从接触帧旋转到世界帧
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Kmju_rotVecQuat[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:105:46:[m[K [01;31m[Kerror: [m[K‘[01m[KmjContact[m[K’ {aka ‘[01m[Kstruct mjContact_[m[K’} has no member named ‘[01m[Kforce[m[K’
+  105 |             mju_rotVecMat(torque_world, con->[01;31m[Kforce[m[K + 3, con->frame); // 对扭矩部分应用旋转
+      |                                              [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

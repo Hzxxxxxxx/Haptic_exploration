@@ -1,0 +1,6 @@
+{
+  "package_name": "fr3_control_publish",
+  "non_idl_tuples": [
+    "/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish:msg/TouchTipWrench.msg"
+  ]
+}

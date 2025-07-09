@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from fr3_control_publish/msg/TouchTipWrench.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module fr3_control_publish {
+  module msg {
+    @verbatim (language="comment", text=
+      "msg/TouchTipWrench.msg")
+    struct TouchTipWrench {
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "建议仍然写 \"touch_tip\"")
+      string frame_id;
+
+      @verbatim (language="comment", text=
+        "N")
+      geometry_msgs::msg::Vector3 force;
+
+      @verbatim (language="comment", text=
+        "N·m")
+      geometry_msgs::msg::Vector3 torque;
+    };
+  };
+};
