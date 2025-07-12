@@ -458,6 +458,19 @@ tangential_velocity_controller/fast:
 .PHONY : tangential_velocity_controller/fast
 
 #=============================================================================
+# Target rules for targets named hybridforcetangentialcontroller
+
+# Build rule for target.
+hybridforcetangentialcontroller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hybridforcetangentialcontroller
+.PHONY : hybridforcetangentialcontroller
+
+# fast build rule for target.
+hybridforcetangentialcontroller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/build
+.PHONY : hybridforcetangentialcontroller/fast
+
+#=============================================================================
 # Target rules for targets named fr3_control_publish__py
 
 # Build rule for target.
@@ -734,6 +747,30 @@ rosidl_typesupport_introspection_cpp/fr3_control_publish/msg/detail/touch_tip_wr
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.cpp.s
 
+src/HybridForceTangentialController.o: src/HybridForceTangentialController.cpp.o
+.PHONY : src/HybridForceTangentialController.o
+
+# target to build an object file
+src/HybridForceTangentialController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o
+.PHONY : src/HybridForceTangentialController.cpp.o
+
+src/HybridForceTangentialController.i: src/HybridForceTangentialController.cpp.i
+.PHONY : src/HybridForceTangentialController.i
+
+# target to preprocess a source file
+src/HybridForceTangentialController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.i
+.PHONY : src/HybridForceTangentialController.cpp.i
+
+src/HybridForceTangentialController.s: src/HybridForceTangentialController.cpp.s
+.PHONY : src/HybridForceTangentialController.s
+
+# target to generate assembly for a file
+src/HybridForceTangentialController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.s
+.PHONY : src/HybridForceTangentialController.cpp.s
+
 src/TangentialVelocityController.o: src/TangentialVelocityController.cpp.o
 .PHONY : src/TangentialVelocityController.o
 
@@ -887,6 +924,7 @@ help:
 	@echo "... fr3_control_publish__rosidl_typesupport_introspection_c__pyext"
 	@echo "... fr3_control_publish__rosidl_typesupport_introspection_cpp"
 	@echo "... fr3_monitor"
+	@echo "... hybridforcetangentialcontroller"
 	@echo "... jacobian_publisher"
 	@echo "... simple_control_node"
 	@echo "... tangential_velocity_controller"
@@ -923,6 +961,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.s"
+	@echo "... src/HybridForceTangentialController.o"
+	@echo "... src/HybridForceTangentialController.i"
+	@echo "... src/HybridForceTangentialController.s"
 	@echo "... src/TangentialVelocityController.o"
 	@echo "... src/TangentialVelocityController.i"
 	@echo "... src/TangentialVelocityController.s"

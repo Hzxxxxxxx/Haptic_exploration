@@ -81,6 +81,7 @@ all: CMakeFiles/fr3_monitor.dir/all
 all: CMakeFiles/jacobian_publisher.dir/all
 all: CMakeFiles/force_position_controller.dir/all
 all: CMakeFiles/tangential_velocity_controller.dir/all
+all: CMakeFiles/hybridforcetangentialcontroller.dir/all
 all: fr3_control_publish__py/all
 .PHONY : all
 
@@ -111,6 +112,7 @@ clean: CMakeFiles/fr3_monitor.dir/clean
 clean: CMakeFiles/jacobian_publisher.dir/clean
 clean: CMakeFiles/force_position_controller.dir/clean
 clean: CMakeFiles/tangential_velocity_controller.dir/clean
+clean: CMakeFiles/hybridforcetangentialcontroller.dir/clean
 clean: fr3_control_publish__py/clean
 .PHONY : clean
 
@@ -598,7 +600,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/clean:
 CMakeFiles/simple_control_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=38,39 "Built target simple_control_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=40,41 "Built target simple_control_node"
 .PHONY : CMakeFiles/simple_control_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -651,7 +653,7 @@ CMakeFiles/jacobian_publisher.dir/all: CMakeFiles/fr3_control_publish__cpp.dir/a
 CMakeFiles/jacobian_publisher.dir/all: CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobian_publisher.dir/build.make CMakeFiles/jacobian_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobian_publisher.dir/build.make CMakeFiles/jacobian_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=36,37 "Built target jacobian_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=38,39 "Built target jacobian_publisher"
 .PHONY : CMakeFiles/jacobian_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -704,7 +706,7 @@ CMakeFiles/force_position_controller.dir/clean:
 CMakeFiles/tangential_velocity_controller.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangential_velocity_controller.dir/build.make CMakeFiles/tangential_velocity_controller.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangential_velocity_controller.dir/build.make CMakeFiles/tangential_velocity_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=40,41 "Built target tangential_velocity_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=42,43 "Built target tangential_velocity_controller"
 .PHONY : CMakeFiles/tangential_velocity_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -722,6 +724,32 @@ tangential_velocity_controller: CMakeFiles/tangential_velocity_controller.dir/ru
 CMakeFiles/tangential_velocity_controller.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangential_velocity_controller.dir/build.make CMakeFiles/tangential_velocity_controller.dir/clean
 .PHONY : CMakeFiles/tangential_velocity_controller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hybridforcetangentialcontroller.dir
+
+# All Build rule for target.
+CMakeFiles/hybridforcetangentialcontroller.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=36,37 "Built target hybridforcetangentialcontroller"
+.PHONY : CMakeFiles/hybridforcetangentialcontroller.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hybridforcetangentialcontroller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hybridforcetangentialcontroller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles 0
+.PHONY : CMakeFiles/hybridforcetangentialcontroller.dir/rule
+
+# Convenience name for target.
+hybridforcetangentialcontroller: CMakeFiles/hybridforcetangentialcontroller.dir/rule
+.PHONY : hybridforcetangentialcontroller
+
+# clean rule for target.
+CMakeFiles/hybridforcetangentialcontroller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/clean
+.PHONY : CMakeFiles/hybridforcetangentialcontroller.dir/clean
 
 #=============================================================================
 # Target rules for target fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir

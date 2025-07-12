@@ -1,0 +1,7 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/TangentialVelocityController.cpp:[m[K In constructor ‘[01m[KHybridForceTangentialController::HybridForceTangentialController()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/TangentialVelocityController.cpp:70:7:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   70 |       [01;31m[K10ms[m[K, std::bind(&HybridForceTangentialController::control_loop, this));
+      |       [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/tangential_velocity_controller.dir/build.make:76：CMakeFiles/tangential_velocity_controller.dir/src/TangentialVelocityController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:706：CMakeFiles/tangential_velocity_controller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,29 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In constructor ‘[01m[KHybridForceTangentialController::HybridForceTangentialController()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:34:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KHybridForceTangentialController[m[K’ does not have any field named ‘[01m[Kstate_[m[K’
+   34 |     [01;31m[Kstate_[m[K(ScanState::INIT_SCAN)
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:68:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kee_pose_topic_[m[K’ was not declared in this scope
+   68 |     this->get_parameter("ee_pose_topic",   [01;31m[Kee_pose_topic_[m[K);
+      |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::control_loop()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:214:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstatic[m[K’?
+  214 |     switch([01;31m[Kstate_[m[K) {
+      |            [01;31m[K^~~~~~[m[K
+      |            [32m[Kstatic[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:284:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstatic[m[K’?
+  284 |       "[Loop " << loop_count_ << "] state=" << static_cast<int>([01;31m[Kstate_[m[K)
+      |                                                                 [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:734：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

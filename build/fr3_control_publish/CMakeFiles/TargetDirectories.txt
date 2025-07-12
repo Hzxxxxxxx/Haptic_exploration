@@ -20,6 +20,7 @@
 /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/jacobian_publisher.dir
 /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/force_position_controller.dir
 /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/tangential_velocity_controller.dir
+/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/hybridforcetangentialcontroller.dir
 /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/test.dir
 /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/edit_cache.dir
 /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles/rebuild_cache.dir

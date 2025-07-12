@@ -1,0 +1,80 @@
+[0.105s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.282s] [35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[0.310s] [  6%] Built target fr3_control_publish__rosidl_generator_c
+[0.337s] [ 11%] Built target tangential_velocity_controller
+[0.339s] [ 13%] Built target fr3_control_publish__cpp
+[0.381s] [ 16%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[0.385s] [ 20%] Built target fr3_monitor
+[0.391s] [ 25%] Built target simple_control_node
+[0.441s] [ 25%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.479s] [ 32%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.491s] [ 41%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.491s] [ 46%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.499s] [ 53%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.525s] [ 60%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.558s] [ 67%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.713s] [ 72%] Built target jacobian_publisher
+[0.713s] [ 76%] Built target force_position_controller
+[0.714s] [ 76%] Built target fr3_control_publish
+[0.757s] [ 79%] Built target fr3_control_publish__py
+[0.839s] [ 83%] Built target fr3_control_publish__rosidl_generator_py
+[0.921s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.922s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.924s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[1.432s] running egg_info
+[1.491s] writing fr3_control_publish.egg-info/PKG-INFO
+[1.492s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[1.494s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[1.707s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[1.710s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[1.827s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[8.281s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In constructor ‘[01m[KHybridForceTangentialController::HybridForceTangentialController()[m[K’:
+[8.281s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:264:62:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridForceTangentialController::have_pose_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[8.282s]   264 |   bool have_js_, have_jacobian_, have_wrench_, initialized_, [01;35m[Khave_pose_[m[K;
+[8.282s]       |                                                              [01;35m[K^~~~~~~~~~[m[K
+[8.282s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:115:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KHybridForceTangentialController::ScanState HybridForceTangentialController::state_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[8.282s]   115 |   ScanState [01;35m[Kstate_[m[K;
+[8.282s]       |             [01;35m[K^~~~~~[m[K
+[8.282s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:16:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[8.282s]    16 |   [01;35m[KHybridForceTangentialController[m[K()
+[8.283s]       |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.321s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:54:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kee_pose_topic_[m[K’ was not declared in this scope
+[8.322s]    54 |     this->get_parameter("ee_pose_topic", [01;31m[Kee_pose_topic_[m[K);
+[8.322s]       |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.660s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::control_loop()[m[K’:
+[8.661s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:182:49:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[KEigen::Matrix<double, 6, 1, 0, 6, 1>[m[K’ and ‘[01m[Kdouble [6][m[K’)
+[8.661s]   182 |     Eigen::Matrix<double,6,1> delta_f = [32m[Kf_ext6_[m[K [01;31m[K-[m[K [34m[Kf_des_[m[K;
+[8.661s]       |                                         [32m[K~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~[m[K
+[8.661s]       |                                         [32m[K|[m[K         [34m[K|[m[K
+[8.661s]       |                                         [32m[K|[m[K         [34m[Kdouble [6][m[K
+[8.662s]       |                                         [32m[KEigen::Matrix<double, 6, 1, 0, 6, 1>[m[K
+[8.662s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[8.662s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[8.662s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[8.662s] [01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h:19:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>, const Derived, const OtherDerived> Eigen::MatrixBase<Derived>::operator-(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Eigen::Matrix<double, 6, 1, 0, 6, 1>][m[K’
+[8.663s]    19 | EIGEN_MAKE_CWISE_BINARY_OP([01;36m[Koperator[m[K-,difference)
+[8.663s]       |                            [01;36m[K^~~~~~~~[m[K
+[8.663s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1339:4:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_MAKE_CWISE_BINARY_OP[m[K’
+[8.663s]  1339 |   ([01;36m[KMETHOD[m[K)(const EIGEN_CURRENT_STORAGE_BASE_CLASS<OtherDerived> &other) const \
+[8.664s]       |    [01;36m[K^~~~~~[m[K
+[8.664s] [01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h:19:28:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.664s]    19 | EIGEN_MAKE_CWISE_BINARY_OP([01;36m[Koperator[m[K-,difference)
+[8.664s]       |                            [01;36m[K^~~~~~~~[m[K
+[8.664s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1339:4:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_MAKE_CWISE_BINARY_OP[m[K’
+[8.664s]  1339 |   ([01;36m[KMETHOD[m[K)(const EIGEN_CURRENT_STORAGE_BASE_CLASS<OtherDerived> &other) const \
+[8.665s]       |    [01;36m[K^~~~~~[m[K
+[8.665s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:182:51:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[Kdouble [6][m[K’
+[8.665s]   182 |     Eigen::Matrix<double,6,1> delta_f = f_ext6_ - [01;36m[Kf_des_[m[K;
+[8.665s]       |                                                   [01;36m[K^~~~~~[m[K
+[8.665s] In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:658[m[K,
+[8.665s]                  from [01m[K/usr/include/eigen3/Eigen/Core:272[m[K,
+[8.666s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[8.666s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[8.666s] [01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst NegativeReturnType Eigen::DenseBase<Derived>::operator-() const [with Derived = Eigen::Matrix<double, 6, 1, 0, 6, 1>; Eigen::DenseBase<Derived>::NegativeReturnType = Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >][m[K’
+[8.666s]    45 | [01;36m[Koperator[m[K-() const { return NegativeReturnType(derived()); }
+[8.666s]       | [01;36m[K^~~~~~~~[m[K
+[8.666s] [01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:45:1:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[23.336s] gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+[23.337s] gmake[1]: *** [CMakeFiles/Makefile2:734：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+[23.337s] gmake: *** [Makefile:146：all] 错误 2
+[23.341s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

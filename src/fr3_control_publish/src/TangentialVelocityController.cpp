@@ -14,17 +14,19 @@ public:
   TangentialVelocityController()
   : Node("tangential_velocity_controller")
   {
-    // 参数
-    this->declare_parameter<double>("v_t", 0.005);
+    // 1) 参数声明与获取
+    this->declare_parameter<double>("v_t", 0.005);               // 切向速度 (m/s)
     this->declare_parameter<std::vector<double>>(
-      "reference_axis", std::vector<double>{1.0, 0.0, 0.0});
-    this->declare_parameter<double>("damping_lambda", 0.1);
+      "reference_axis", std::vector<double>{1.0, 0.0, 0.0});     // 参考方向
+    this->declare_parameter<double>("damping_lambda", 0.1);      // 阻尼伪逆正则化
+    this->declare_parameter<double>("min_force", 0.05);          // 法向力阈值 (N)
 
-    this->get_parameter("v_t", v_t_);
+    this->get_parameter("v_t",            v_t_);
+    this->get_parameter("damping_lambda", lambda_);
+    this->get_parameter("min_force",      min_force_);
     std::vector<double> a;
     this->get_parameter("reference_axis", a);
     ref_axis_ = Eigen::Vector3d(a[0], a[1], a[2]).normalized();
-    this->get_parameter("damping_lambda", lambda_);
 
     joint_names_ = {
       "fr3_joint1","fr3_joint2","fr3_joint3",
@@ -38,22 +40,24 @@ public:
 
     RCLCPP_INFO(get_logger(), "TangentialVelocityController 启动完成");
 
-    // 订阅
+    // 2) 订阅
     sub_js_ = create_subscription<sensor_msgs::msg::JointState>(
       "/joint_states", 10,
       std::bind(&TangentialVelocityController::on_joint_state, this, _1));
+
     sub_jacobian_ = create_subscription<std_msgs::msg::Float64MultiArray>(
       "/jacobian", 10,
       std::bind(&TangentialVelocityController::on_jacobian, this, _1));
+
     sub_wrench_ = create_subscription<geometry_msgs::msg::WrenchStamped>(
       "/touch_tip/wrench", rclcpp::SensorDataQoS(),
       std::bind(&TangentialVelocityController::on_wrench, this, _1));
 
-    // 发布到与法向节点相同的话题
+    // 3) 发布到 /joint_position_controller/commands
     pub_cmd_ = create_publisher<std_msgs::msg::Float64MultiArray>(
       "/joint_position_controller/commands", 10);
 
-    // 定时器
+    // 4) 定时器 (100 Hz)
     timer_ = create_wall_timer(
       std::chrono::milliseconds(10),
       std::bind(&TangentialVelocityController::control_loop, this));
@@ -97,10 +101,19 @@ private:
     if (!have_js_ || !have_jacobian_ || !have_wrench_) return;
     ++loop_count_;
 
-    // 计算法向
+    // —— 新增：法向力阈值检测 —— 
+    double f_norm = f_ext_.norm();
+    if (f_norm < min_force_) {
+      RCLCPP_INFO_STREAM(get_logger(),
+        "[Loop " << loop_count_ << "] 法向力 " << f_norm 
+        << "N 低于阈值 " << min_force_ << "N，跳过切向运动");
+      return;
+    }
+
+    // 1) 计算接触面法向
     Eigen::Vector3d n = f_ext_.normalized();
 
-    // 切向投影
+    // 2) 切平面投影
     Eigen::Matrix3d P = Eigen::Matrix3d::Identity() - n * n.transpose();
     Eigen::Vector3d t_unnorm = P * ref_axis_;
     if (t_unnorm.norm() < 1e-6) {
@@ -109,39 +122,44 @@ private:
     }
     Eigen::Vector3d t = t_unnorm.normalized();
 
-    // 生成笛卡尔切向速度
+    // 3) 生成笛卡尔切向速度
     Eigen::Matrix<double,6,1> x_dot = Eigen::Matrix<double,6,1>::Zero();
     x_dot.template head<3>() = v_t_ * t;
 
-    // 阻尼伪逆映射
+    // 4) 阻尼伪逆映射到关节速度
     Eigen::Matrix<double,6,6> M = J_ * J_.transpose()
       + lambda_ * lambda_ * Eigen::Matrix<double,6,6>::Identity();
     Eigen::Matrix<double,6,6> M_inv = M.inverse();
     Eigen::Vector<double,7> q_dot = J_.transpose() * M_inv * x_dot;
 
-    // 积分
+    // 5) 数值积分生成目标位置
     constexpr double dt = 0.01;
     q_des_ += q_dot * dt;
 
-    // 发布到 /joint_position_controller/commands
+    // 6) 发布
     std_msgs::msg::Float64MultiArray cmd;
     cmd.data.assign(q_des_.data(), q_des_.data() + 7);
     pub_cmd_->publish(cmd);
 
-    // 日志
+    // 7) 日志打印
     RCLCPP_INFO_STREAM(get_logger(),
-      "[Loop " << loop_count_ << "] t_dir=" << t.transpose()
-      << "  q_dot=" << q_dot.transpose());
+      "[Loop " << loop_count_ << "] f_norm=" << f_norm
+      << " t_dir=" << t.transpose()
+      << " q_dot=" << q_dot.transpose());
   }
 
-  double v_t_, lambda_;
+  // 参数
+  double v_t_, lambda_, min_force_;
   Eigen::Vector3d ref_axis_, f_ext_;
   std::vector<std::string> joint_names_;
+
+  // 状态
   bool have_js_, have_jacobian_, have_wrench_;
   size_t loop_count_;
   Eigen::Vector<double,7> q_curr_, q_des_;
   Eigen::Matrix<double,6,7> J_;
 
+  // ROS 接口
   rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr    sub_js_;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_jacobian_;
   rclcpp::Subscription<geometry_msgs::msg::WrenchStamped>::SharedPtr sub_wrench_;

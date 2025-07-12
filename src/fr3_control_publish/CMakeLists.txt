@@ -79,6 +79,10 @@ add_executable(tangential_velocity_controller src/TangentialVelocityController.c
 ament_target_dependencies(tangential_velocity_controller
 rclcpp sensor_msgs std_msgs geometry_msgs)
 
+add_executable(hybridforcetangentialcontroller src/HybridForceTangentialController.cpp)
+ament_target_dependencies(hybridforcetangentialcontroller
+rclcpp sensor_msgs std_msgs geometry_msgs)
+
 ###############################################################################
 # 5. 安装
 ###############################################################################
@@ -88,6 +92,7 @@ install(TARGETS
     jacobian_publisher
     force_position_controller
     tangential_velocity_controller
+    hybridforcetangentialcontroller
   DESTINATION lib/${PROJECT_NAME}
 )
 
