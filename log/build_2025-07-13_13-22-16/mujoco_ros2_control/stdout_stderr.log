@@ -1,0 +1,14 @@
+[ 33%] Built target mujoco_system_plugins
+[ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:77:18:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmujoco_ros2_control::MujocoRendering::init(mjModel*&, mjData*&)[m[K’
+   77 |   [01;31m[Krendering->init(mujoco_model, mujoco_data)[m[K;
+      |   [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:25[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/mujoco_ros2_control/mujoco_rendering.hpp:37:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid mujoco_ros2_control::MujocoRendering::init(rclcpp::Node::SharedPtr&, mjModel*, mjData*)[m[K’
+   37 |   void [01;36m[Kinit[m[K(rclcpp::Node::SharedPtr &node, mjModel *mujoco_model, mjData *mujoco_data);
+      |        [01;36m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/mujoco_ros2_control/mujoco_rendering.hpp:37:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

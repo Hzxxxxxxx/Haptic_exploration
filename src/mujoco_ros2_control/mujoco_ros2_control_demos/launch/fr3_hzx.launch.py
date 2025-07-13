@@ -26,7 +26,7 @@ def generate_launch_description():
         output='screen',
         parameters=[robot_description,
                     controller_yaml,
-                    {'mujoco_model_path': scene_xml}]
+                    {'mujoco_model_path': scene_xml},]
     )
 
     # ---------- 3. Robot State Publisher ----------

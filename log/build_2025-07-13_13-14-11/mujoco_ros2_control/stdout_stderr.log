@@ -1,0 +1,23 @@
+[ 33%] Built target mujoco_system_plugins
+[ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable mujoco_ros2_control[0m
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)':
+mujoco_ros2_control.cpp:(.text+0xc): multiple definition of `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0xc): first defined here
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)':
+mujoco_ros2_control.cpp:(.text+0xc): multiple definition of `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0xc): first defined here
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()':
+mujoco_ros2_control.cpp:(.text+0x272): multiple definition of `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x272): first defined here
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()':
+mujoco_ros2_control.cpp:(.text+0x272): multiple definition of `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x272): first defined here
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::init()':
+mujoco_ros2_control.cpp:(.text+0x4ca): multiple definition of `mujoco_ros2_control::MujocoRos2Control::init()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x4ca): first defined here
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::update()':
+mujoco_ros2_control.cpp:(.text+0x1fce): multiple definition of `mujoco_ros2_control::MujocoRos2Control::update()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x1fce): first defined here
+/usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::publish_sim_time(rclcpp::Time)':
+mujoco_ros2_control.cpp:(.text+0x21f8): multiple definition of `mujoco_ros2_control::MujocoRos2Control::publish_sim_time(rclcpp::Time)'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x21f8): first defined here
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:373：mujoco_ros2_control] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,29 @@
+[0.070s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.289s] [  2%] Built target fr3_control_publish__cpp
+[0.315s] [  6%] Built target simple_control_node
+[0.331s] [ 11%] Built target fr3_monitor
+[0.341s] [ 18%] Built target fr3_control_publish__rosidl_generator_c
+[0.348s] [ 23%] Built target tangential_velocity_controller
+[0.367s] [ 23%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.405s] [ 27%] Built target hybridforcetangentialcontroller
+[0.481s] [ 34%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.482s] [ 41%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.486s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.499s] [ 55%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.510s] [ 65%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.512s] [ 69%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.617s] [ 74%] Built target jacobian_publisher
+[0.617s] [ 76%] Built target fr3_control_publish
+[0.617s] [ 79%] Built target force_position_controller
+[0.681s] [ 81%] Built target fr3_control_publish__py
+[0.764s] [ 86%] Built target fr3_control_publish__rosidl_generator_py
+[0.856s] [ 90%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.856s] [ 95%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.857s] [100%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[1.261s] running egg_info
+[1.318s] writing fr3_control_publish.egg-info/PKG-INFO
+[1.320s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[1.321s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[1.481s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[1.484s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[1.552s] [100%] Built target ament_cmake_python_build_fr3_control_publish_egg

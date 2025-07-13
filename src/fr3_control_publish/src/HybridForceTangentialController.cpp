@@ -186,6 +186,18 @@ private:
   }
 
   void on_wrench(const geometry_msgs::msg::WrenchStamped::SharedPtr msg) {
+    RCLCPP_INFO(get_logger(),
+    "[DEBUG on_wrench] frame_id=%s, fx=%.3f, fy=%.3f, fz=%.3f",
+    msg->header.frame_id.c_str(),
+    msg->wrench.force.x,
+    msg->wrench.force.y,
+    msg->wrench.force.z);
+    if (msg->header.frame_id != "touch_tip") {
+        RCLCPP_WARN(get_logger(),
+        "[DEBUG on_wrench] ignored non-touch_tip frame: %s",
+        msg->header.frame_id.c_str());
+        return;
+    }
     // 仅处理 touch_tip 坐标系下的力
     if(msg->header.frame_id != "touch_tip") return;
     // 保存三维力和六维力
@@ -202,6 +214,10 @@ private:
   }
 
   void on_pose(const geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+    RCLCPP_INFO(get_logger(), "[DEBUG on_pose] frame_id=%s, x=%.3f, y=%.3f",
+              msg->header.frame_id.c_str(),
+              msg->pose.position.x,
+              msg->pose.position.y);
     // 获取末端在世界坐标系下的 XY 平面位置
     ee_pos_(0) = msg->pose.position.x;
     ee_pos_(1) = msg->pose.position.y;
@@ -222,7 +238,11 @@ private:
 
   // —— 主控制循环 —— 
   void control_loop() {
-    // 确保所有数据已就绪
+    // 新增调试：打印各个 have_* 的状态
+    RCLCPP_DEBUG(get_logger(),
+    "[DEBUG control_loop] state=%d, have_js=%d, have_jac=%d, inited=%d, have_wrench=%d, have_pose=%d",
+    static_cast<int>(state_), have_js_, have_jacobian_, initialized_,
+    have_wrench_, have_pose_);
     // 只要 joint_states、jacobian、q_des_ 就能启动 INIT_SCAN
     if (!(have_js_ && have_jacobian_ && initialized_)) return;
 

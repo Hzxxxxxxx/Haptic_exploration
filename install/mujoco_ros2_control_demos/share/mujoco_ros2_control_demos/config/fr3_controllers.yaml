@@ -36,3 +36,4 @@ joint_position_controller:
       - position
       - velocity
       # - effort   ← 去掉这一行，MuJoCoSystem 暂不支持 effort state
+    

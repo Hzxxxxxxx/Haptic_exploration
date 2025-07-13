@@ -1,0 +1,25 @@
+[0.080s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.331s] [ 33%] Built target mujoco_system_plugins
+[0.408s] [ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[16.523s] [ 66%] [32m[1mLinking CXX executable mujoco_ros2_control[0m
+[16.667s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)':
+[16.673s] mujoco_ros2_control.cpp:(.text+0xc): multiple definition of `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0xc): first defined here
+[16.674s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)':
+[16.675s] mujoco_ros2_control.cpp:(.text+0xc): multiple definition of `mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control(std::shared_ptr<rclcpp::Node>&, mjModel_*, mjData_*)'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0xc): first defined here
+[16.676s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()':
+[16.677s] mujoco_ros2_control.cpp:(.text+0x272): multiple definition of `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x272): first defined here
+[16.677s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()':
+[16.678s] mujoco_ros2_control.cpp:(.text+0x272): multiple definition of `mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x272): first defined here
+[16.679s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::init()':
+[16.680s] mujoco_ros2_control.cpp:(.text+0x4ca): multiple definition of `mujoco_ros2_control::MujocoRos2Control::init()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x4ca): first defined here
+[16.681s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::update()':
+[16.684s] mujoco_ros2_control.cpp:(.text+0x1fce): multiple definition of `mujoco_ros2_control::MujocoRos2Control::update()'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x1fce): first defined here
+[16.685s] /usr/bin/ld: CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o: in function `mujoco_ros2_control::MujocoRos2Control::publish_sim_time(rclcpp::Time)':
+[16.686s] mujoco_ros2_control.cpp:(.text+0x21f8): multiple definition of `mujoco_ros2_control::MujocoRos2Control::publish_sim_time(rclcpp::Time)'; CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o:mujoco_ros2_control_node.cpp:(.text+0x21f8): first defined here
+[17.553s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[17.553s] (.text+0x1b): undefined reference to `main'
+[17.604s] collect2: error: ld returned 1 exit status
+[17.608s] gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:373：mujoco_ros2_control] 错误 1
+[17.609s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+[17.610s] gmake: *** [Makefile:146：all] 错误 2
+[17.616s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
