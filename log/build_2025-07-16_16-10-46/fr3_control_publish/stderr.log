@@ -1,0 +1,8 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/ee_pose_bridge.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.h: 没有那个文件或目录
+    5 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ee_pose_bridge.dir/build.make:76：CMakeFiles/ee_pose_bridge.dir/src/ee_pose_bridge.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:602：CMakeFiles/ee_pose_bridge.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:146：all] 错误 2

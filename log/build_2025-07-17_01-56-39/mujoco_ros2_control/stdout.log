@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_ros2_control[0m
+[ 33%] Built target mujoco_system_plugins
+[ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_rendering.cpp.o[0m

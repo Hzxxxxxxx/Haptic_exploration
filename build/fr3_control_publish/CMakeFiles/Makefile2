@@ -76,7 +76,7 @@ all: CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/all
 all: CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/all
 all: CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/all
 all: CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/all
-all: CMakeFiles/simple_control_node.dir/all
+all: CMakeFiles/ee_pose_bridge.dir/all
 all: CMakeFiles/fr3_monitor.dir/all
 all: CMakeFiles/jacobian_publisher.dir/all
 all: CMakeFiles/force_position_controller.dir/all
@@ -107,7 +107,7 @@ clean: CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/clean
 clean: CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/clean
 clean: CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/clean
 clean: CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/clean
-clean: CMakeFiles/simple_control_node.dir/clean
+clean: CMakeFiles/ee_pose_bridge.dir/clean
 clean: CMakeFiles/fr3_monitor.dir/clean
 clean: CMakeFiles/jacobian_publisher.dir/clean
 clean: CMakeFiles/force_position_controller.dir/clean
@@ -223,7 +223,7 @@ CMakeFiles/fr3_control_publish.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=5,6,7 "Built target fr3_control_publish__rosidl_generator_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=7,8,9 "Built target fr3_control_publish__rosidl_generator_c"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +249,7 @@ CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=18,19,20 "Built target fr3_control_publish__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=20,21,22 "Built target fr3_control_publish__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -275,7 +275,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=26,27,28 "Built target fr3_control_publish__rosidl_typesupport_introspection_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=28,29,30 "Built target fr3_control_publish__rosidl_typesupport_introspection_c"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -301,7 +301,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/all: CMakeFiles/fr3_control_publish__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=10,11,12 "Built target fr3_control_publish__rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=12,13,14 "Built target fr3_control_publish__rosidl_typesupport_c"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -327,7 +327,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_c.dir/clean:
 CMakeFiles/fr3_control_publish__cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__cpp.dir/build.make CMakeFiles/fr3_control_publish__cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__cpp.dir/build.make CMakeFiles/fr3_control_publish__cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=3 "Built target fr3_control_publish__cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=5 "Built target fr3_control_publish__cpp"
 .PHONY : CMakeFiles/fr3_control_publish__cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -353,7 +353,7 @@ CMakeFiles/fr3_control_publish__cpp.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/fr3_control_publish__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=23,24,25 "Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=25,26,27 "Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/fr3_control_publish__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=31,32,33 "Built target fr3_control_publish__rosidl_typesupport_introspection_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=33,34,35 "Built target fr3_control_publish__rosidl_typesupport_introspection_cpp"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -405,7 +405,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_cpp.dir/clean:
 CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/all: CMakeFiles/fr3_control_publish__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=15,16,17 "Built target fr3_control_publish__rosidl_typesupport_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=17,18,19 "Built target fr3_control_publish__rosidl_typesupport_cpp"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -485,7 +485,7 @@ CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/all: CMakeFiles/fr3_cont
 CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/all: fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/build.make CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/build.make CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=8,9 "Built target fr3_control_publish__rosidl_generator_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=10,11 "Built target fr3_control_publish__rosidl_generator_py"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_generator_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -515,7 +515,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/all: CM
 CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/all: fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=21,22 "Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=23,24 "Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
@@ -545,7 +545,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/al
 CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/all: fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=29,30 "Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=31,32 "Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_introspection_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
@@ -574,7 +574,7 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/
 CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/all: fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=13,14 "Built target fr3_control_publish__rosidl_typesupport_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=15,16 "Built target fr3_control_publish__rosidl_typesupport_c__pyext"
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
@@ -594,30 +594,30 @@ CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/clean:
 .PHONY : CMakeFiles/fr3_control_publish__rosidl_typesupport_c__pyext.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/simple_control_node.dir
+# Target rules for target CMakeFiles/ee_pose_bridge.dir
 
 # All Build rule for target.
-CMakeFiles/simple_control_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=40,41 "Built target simple_control_node"
-.PHONY : CMakeFiles/simple_control_node.dir/all
+CMakeFiles/ee_pose_bridge.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=1,2 "Built target ee_pose_bridge"
+.PHONY : CMakeFiles/ee_pose_bridge.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/simple_control_node.dir/rule: cmake_check_build_system
+CMakeFiles/ee_pose_bridge.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simple_control_node.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ee_pose_bridge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles 0
-.PHONY : CMakeFiles/simple_control_node.dir/rule
+.PHONY : CMakeFiles/ee_pose_bridge.dir/rule
 
 # Convenience name for target.
-simple_control_node: CMakeFiles/simple_control_node.dir/rule
-.PHONY : simple_control_node
+ee_pose_bridge: CMakeFiles/ee_pose_bridge.dir/rule
+.PHONY : ee_pose_bridge
 
 # clean rule for target.
-CMakeFiles/simple_control_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/clean
-.PHONY : CMakeFiles/simple_control_node.dir/clean
+CMakeFiles/ee_pose_bridge.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/clean
+.PHONY : CMakeFiles/ee_pose_bridge.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fr3_monitor.dir
@@ -626,7 +626,7 @@ CMakeFiles/simple_control_node.dir/clean:
 CMakeFiles/fr3_monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_monitor.dir/build.make CMakeFiles/fr3_monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_monitor.dir/build.make CMakeFiles/fr3_monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=34,35 "Built target fr3_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=36,37 "Built target fr3_monitor"
 .PHONY : CMakeFiles/fr3_monitor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -653,7 +653,7 @@ CMakeFiles/jacobian_publisher.dir/all: CMakeFiles/fr3_control_publish__cpp.dir/a
 CMakeFiles/jacobian_publisher.dir/all: CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobian_publisher.dir/build.make CMakeFiles/jacobian_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobian_publisher.dir/build.make CMakeFiles/jacobian_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=38,39 "Built target jacobian_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=40,41 "Built target jacobian_publisher"
 .PHONY : CMakeFiles/jacobian_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -680,7 +680,7 @@ CMakeFiles/force_position_controller.dir/all: CMakeFiles/fr3_control_publish__cp
 CMakeFiles/force_position_controller.dir/all: CMakeFiles/fr3_control_publish__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_position_controller.dir/build.make CMakeFiles/force_position_controller.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_position_controller.dir/build.make CMakeFiles/force_position_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=1,2 "Built target force_position_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=3,4 "Built target force_position_controller"
 .PHONY : CMakeFiles/force_position_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -732,7 +732,7 @@ CMakeFiles/tangential_velocity_controller.dir/clean:
 CMakeFiles/hybridforcetangentialcontroller.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hybridforcetangentialcontroller.dir/build.make CMakeFiles/hybridforcetangentialcontroller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=36,37 "Built target hybridforcetangentialcontroller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=38,39 "Built target hybridforcetangentialcontroller"
 .PHONY : CMakeFiles/hybridforcetangentialcontroller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -758,7 +758,7 @@ CMakeFiles/hybridforcetangentialcontroller.dir/clean:
 fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/all: CMakeFiles/fr3_control_publish.dir/all
 	$(MAKE) $(MAKESILENT) -f fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/build.make fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/depend
 	$(MAKE) $(MAKESILENT) -f fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/build.make fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=4 "Built target fr3_control_publish__py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish/CMakeFiles --progress-num=6 "Built target fr3_control_publish__py"
 .PHONY : fr3_control_publish__py/CMakeFiles/fr3_control_publish__py.dir/all
 
 # Build rule for subdir invocation for target.

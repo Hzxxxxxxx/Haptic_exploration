@@ -30,6 +30,7 @@ namespace mujoco_ros2_control
 class MujocoRendering
 {
 public:
+  mjvOption mjv_opt_; // moved from private by hzx for mujoco_ros2_control_node.cpp(contact vislazation)
   MujocoRendering(const MujocoRendering &obj) = delete;
   void operator=(const MujocoRendering &) = delete;
 
@@ -55,7 +56,7 @@ private:
   mjModel *mj_model_;
   mjData *mj_data_;
   mjvCamera mjv_cam_;
-  mjvOption mjv_opt_;
+  // mjvOption mjv_opt_;
   mjvScene mjv_scn_;
   mjrContext mjr_con_;
 

@@ -1,0 +1,19 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:79:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mujoco_ros2_control::MujocoRendering[m[K’ has no member named ‘[01m[Kvopt[m[K’
+   79 |   rendering->[01;31m[Kvopt[m[K.flags[mujoco::mjtVisFlag::mjVIS_CONTACTPOINT] = 1;  // 显示接触点
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:79:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmujoco[m[K’ has not been declared
+   79 |   rendering->vopt.flags[[01;31m[Kmujoco[m[K::mjtVisFlag::mjVIS_CONTACTPOINT] = 1;  // 显示接触点
+      |                         [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:80:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mujoco_ros2_control::MujocoRendering[m[K’ has no member named ‘[01m[Kvopt[m[K’
+   80 |   rendering->[01;31m[Kvopt[m[K.flags[mujoco::mjtVisFlag::mjVIS_CONTACTFORCE] = 1;  // 显示接触力向量
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:80:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmujoco[m[K’ has not been declared
+   80 |   rendering->vopt.flags[[01;31m[Kmujoco[m[K::mjtVisFlag::mjVIS_CONTACTFORCE] = 1;  // 显示接触力向量
+      |                         [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:81:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mujoco_ros2_control::MujocoRendering[m[K’ has no member named ‘[01m[Kvopt[m[K’
+   81 |   rendering->[01;31m[Kvopt[m[K.contactwidth = 0.002;                             // 可选：调粗向量线宽
+      |              [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

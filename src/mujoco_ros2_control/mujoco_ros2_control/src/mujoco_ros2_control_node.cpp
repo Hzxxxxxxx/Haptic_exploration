@@ -5,6 +5,8 @@
 #include "mujoco_ros2_control/mujoco_rendering.hpp"
 #include "mujoco_ros2_control/mujoco_ros2_control.hpp"
 
+#include "mujoco/mjvisualize.h"
+
 #include <array>
 #include <cstring>
 
@@ -68,6 +70,14 @@ int main(int argc, const char **argv)
   auto rendering = mujoco_ros2_control::MujocoRendering::get_instance();
   rendering->init(node, mujoco_model, mujoco_data);
   RCLCPP_INFO(node->get_logger(), "Mujoco rendering initialized");
+
+  // —— 在这里开启 Contact Visualization —— 
+  // 显示碰撞接触点
+  rendering->mjv_opt_.flags[mjVIS_CONTACTPOINT] = 1;
+  // 显示碰撞接触力向量
+  rendering->mjv_opt_.flags[mjVIS_CONTACTFORCE] = 1;
+
+
 
   // ----------------------------- 主循环 (60 FPS 渲染, 实时仿真) -----------------------------
   while (rclcpp::ok() && !rendering->is_close_flag_raised())

@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/ee_pose_bridge.dir/build.make:76: CMakeFiles/ee_pose_bridge.dir/src/ee_pose_bridge.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:602: CMakeFiles/ee_pose_bridge.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

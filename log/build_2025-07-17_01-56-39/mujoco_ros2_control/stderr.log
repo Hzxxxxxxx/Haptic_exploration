@@ -1,0 +1,34 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:[m[K In member function ‘[01m[Kvoid mujoco_ros2_control::MujocoRendering::keyboard_callback_impl(GLFWwindow*, int, int, int, int)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:138:15:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kwindow[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  138 |   [01;35m[KGLFWwindow *window[m[K, int key, int scancode, int act, int mods)
+      |   [01;35m[K~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:138:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kscancode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  138 |   GLFWwindow *window, int key, [01;35m[Kint scancode[m[K, int act, int mods)
+      |                                [01;35m[K~~~~^~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:138:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmods[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  138 |   GLFWwindow *window, int key, int scancode, int act, [01;35m[Kint mods[m[K)
+      |                                                       [01;35m[K~~~~^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:[m[K In member function ‘[01m[Kvoid mujoco_ros2_control::MujocoRendering::mouse_button_callback_impl(GLFWwindow*, int, int, int)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:148:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbutton[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  148 | void MujocoRendering::mouse_button_callback_impl(GLFWwindow *window, [01;35m[Kint button[m[K, int act, int mods)
+      |                                                                      [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:148:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kact[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  148 | void MujocoRendering::mouse_button_callback_impl(GLFWwindow *window, int button, [01;35m[Kint act[m[K, int mods)
+      |                                                                                  [01;35m[K~~~~^~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:148:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmods[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  148 | void MujocoRendering::mouse_button_callback_impl(GLFWwindow *window, int button, int act, [01;35m[Kint mods[m[K)
+      |                                                                                           [01;35m[K~~~~^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:[m[K In member function ‘[01m[Kvoid mujoco_ros2_control::MujocoRendering::scroll_callback_impl(GLFWwindow*, double, double)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:201:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kwindow[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  201 | void MujocoRendering::scroll_callback_impl([01;35m[KGLFWwindow *window[m[K, double xoffset, double yoffset)
+      |                                            [01;35m[K~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_rendering.cpp:201:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kxoffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  201 | void MujocoRendering::scroll_callback_impl(GLFWwindow *window, [01;35m[Kdouble xoffset[m[K, double yoffset)
+      |                                                                [01;35m[K~~~~~~~^~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:80:23:[m[K [01;31m[Kerror: [m[K‘[01m[KmjvOption[m[K’ {aka ‘[01m[Kstruct mjvOption_[m[K’} has no member named ‘[01m[Kcontactwidth[m[K’
+   80 |   rendering->mjv_opt_.[01;31m[Kcontactwidth[m[K = 0.002;
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

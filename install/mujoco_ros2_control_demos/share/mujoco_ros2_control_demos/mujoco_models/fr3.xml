@@ -1,4 +1,4 @@
-<mujoco model="fr3">
+<mujoco model="fr3" version="3.3.3">
   <compiler angle="radian" meshdir="assets"/>
 
   <option integrator="implicitfast"/>
@@ -200,7 +200,17 @@
                               material="gray" class="visual" group="0"/>
                       </body>
 
-                    </body> </body> </body> </body> </body> </body> </body> </body> </body> <body name="exploration_object" pos="0.5 -0.3 0.05">
+                    </body> 
+                  </body> 
+                </body> 
+              </body> 
+            </body> 
+          </body> 
+        </body> 
+      </body> 
+    </body> 
+
+    <body name="exploration_object" pos="0.7 0 0.15">
       <geom type="mesh" mesh="exploration_object"
             material="gray" class="visual" group="0"/>
 

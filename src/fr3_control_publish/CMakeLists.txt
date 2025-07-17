@@ -39,6 +39,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(tf2_ros REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIRS})
 
 ###############################################################################
@@ -54,8 +55,12 @@ ament_export_dependencies(rosidl_default_runtime)
 # 4. 可执行节点
 ###############################################################################
 # ---- 4.1 simple_control_node ----------------------------------------------
-add_executable(simple_control_node src/fr3_publish_node.cpp)
-ament_target_dependencies(simple_control_node rclcpp trajectory_msgs)
+add_executable(ee_pose_bridge src/ee_pose_bridge.cpp)
+ament_target_dependencies(ee_pose_bridge
+  rclcpp
+  geometry_msgs
+  tf2_ros
+)
 
 # ---- 4.2 fr3_monitor -------------------------------------------------------
 add_executable(fr3_monitor src/fr3_monitor_node.cpp)
@@ -87,7 +92,7 @@ rclcpp sensor_msgs std_msgs geometry_msgs)
 # 5. 安装
 ###############################################################################
 install(TARGETS
-    simple_control_node
+    ee_pose_bridge
     fr3_monitor
     jacobian_publisher
     force_position_controller

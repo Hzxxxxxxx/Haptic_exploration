@@ -1,7 +1,7 @@
 set(_AMENT_PACKAGE_NAME "fr3_control_publish")
 set(fr3_control_publish_VERSION "0.0.0")
 set(fr3_control_publish_MAINTAINER "mscrobotics2425laptop16 <1394698319@qq.com>")
-set(fr3_control_publish_BUILD_DEPENDS "rclcpp" "trajectory_msgs" "control_msgs" "diagnostic_msgs" "sensor_msgs" "std_msgs" "geometry_msgs" "builtin_interfaces")
+set(fr3_control_publish_BUILD_DEPENDS "rclcpp" "tf2_ros" "trajectory_msgs" "control_msgs" "diagnostic_msgs" "sensor_msgs" "std_msgs" "geometry_msgs" "builtin_interfaces")
 set(fr3_control_publish_BUILDTOOL_DEPENDS "ament_cmake" "rosidl_default_generators")
 set(fr3_control_publish_BUILD_EXPORT_DEPENDS )
 set(fr3_control_publish_BUILDTOOL_EXPORT_DEPENDS )

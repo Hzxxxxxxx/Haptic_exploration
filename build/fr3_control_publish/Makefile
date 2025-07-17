@@ -393,17 +393,17 @@ fr3_control_publish__rosidl_typesupport_c__pyext/fast:
 .PHONY : fr3_control_publish__rosidl_typesupport_c__pyext/fast
 
 #=============================================================================
-# Target rules for targets named simple_control_node
+# Target rules for targets named ee_pose_bridge
 
 # Build rule for target.
-simple_control_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_control_node
-.PHONY : simple_control_node
+ee_pose_bridge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ee_pose_bridge
+.PHONY : ee_pose_bridge
 
 # fast build rule for target.
-simple_control_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/build
-.PHONY : simple_control_node/fast
+ee_pose_bridge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/build
+.PHONY : ee_pose_bridge/fast
 
 #=============================================================================
 # Target rules for targets named fr3_monitor
@@ -795,6 +795,30 @@ src/TangentialVelocityController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangential_velocity_controller.dir/build.make CMakeFiles/tangential_velocity_controller.dir/src/TangentialVelocityController.cpp.s
 .PHONY : src/TangentialVelocityController.cpp.s
 
+src/ee_pose_bridge.o: src/ee_pose_bridge.cpp.o
+.PHONY : src/ee_pose_bridge.o
+
+# target to build an object file
+src/ee_pose_bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/src/ee_pose_bridge.cpp.o
+.PHONY : src/ee_pose_bridge.cpp.o
+
+src/ee_pose_bridge.i: src/ee_pose_bridge.cpp.i
+.PHONY : src/ee_pose_bridge.i
+
+# target to preprocess a source file
+src/ee_pose_bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/src/ee_pose_bridge.cpp.i
+.PHONY : src/ee_pose_bridge.cpp.i
+
+src/ee_pose_bridge.s: src/ee_pose_bridge.cpp.s
+.PHONY : src/ee_pose_bridge.s
+
+# target to generate assembly for a file
+src/ee_pose_bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_bridge.dir/build.make CMakeFiles/ee_pose_bridge.dir/src/ee_pose_bridge.cpp.s
+.PHONY : src/ee_pose_bridge.cpp.s
+
 src/force_position_controller.o: src/force_position_controller.cpp.o
 .PHONY : src/force_position_controller.o
 
@@ -867,30 +891,6 @@ src/fr3_monitor_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_monitor.dir/build.make CMakeFiles/fr3_monitor.dir/src/fr3_monitor_node.cpp.s
 .PHONY : src/fr3_monitor_node.cpp.s
 
-src/fr3_publish_node.o: src/fr3_publish_node.cpp.o
-.PHONY : src/fr3_publish_node.o
-
-# target to build an object file
-src/fr3_publish_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.o
-.PHONY : src/fr3_publish_node.cpp.o
-
-src/fr3_publish_node.i: src/fr3_publish_node.cpp.i
-.PHONY : src/fr3_publish_node.i
-
-# target to preprocess a source file
-src/fr3_publish_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.i
-.PHONY : src/fr3_publish_node.cpp.i
-
-src/fr3_publish_node.s: src/fr3_publish_node.cpp.s
-.PHONY : src/fr3_publish_node.s
-
-# target to generate assembly for a file
-src/fr3_publish_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_control_node.dir/build.make CMakeFiles/simple_control_node.dir/src/fr3_publish_node.cpp.s
-.PHONY : src/fr3_publish_node.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -911,6 +911,7 @@ help:
 	@echo "... fr3_control_publish__py"
 	@echo "... fr3_control_publish_uninstall"
 	@echo "... uninstall"
+	@echo "... ee_pose_bridge"
 	@echo "... force_position_controller"
 	@echo "... fr3_control_publish__rosidl_generator_c"
 	@echo "... fr3_control_publish__rosidl_generator_py"
@@ -926,7 +927,6 @@ help:
 	@echo "... fr3_monitor"
 	@echo "... hybridforcetangentialcontroller"
 	@echo "... jacobian_publisher"
-	@echo "... simple_control_node"
 	@echo "... tangential_velocity_controller"
 	@echo "... rosidl_generator_c/fr3_control_publish/msg/detail/touch_tip_wrench__functions.o"
 	@echo "... rosidl_generator_c/fr3_control_publish/msg/detail/touch_tip_wrench__functions.i"
@@ -967,6 +967,9 @@ help:
 	@echo "... src/TangentialVelocityController.o"
 	@echo "... src/TangentialVelocityController.i"
 	@echo "... src/TangentialVelocityController.s"
+	@echo "... src/ee_pose_bridge.o"
+	@echo "... src/ee_pose_bridge.i"
+	@echo "... src/ee_pose_bridge.s"
 	@echo "... src/force_position_controller.o"
 	@echo "... src/force_position_controller.i"
 	@echo "... src/force_position_controller.s"
@@ -976,9 +979,6 @@ help:
 	@echo "... src/fr3_monitor_node.o"
 	@echo "... src/fr3_monitor_node.i"
 	@echo "... src/fr3_monitor_node.s"
-	@echo "... src/fr3_publish_node.o"
-	@echo "... src/fr3_publish_node.i"
-	@echo "... src/fr3_publish_node.s"
 .PHONY : help
 
 

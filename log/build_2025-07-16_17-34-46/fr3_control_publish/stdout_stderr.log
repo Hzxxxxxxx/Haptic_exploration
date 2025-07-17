@@ -1,0 +1,81 @@
+[35m[1mConsolidate compiler generated dependencies of target ee_pose_bridge[0m
+[  6%] Built target fr3_control_publish__rosidl_generator_c
+[ 11%] Built target fr3_monitor
+[ 13%] Built target fr3_control_publish__cpp
+[ 18%] Built target tangential_velocity_controller
+[ 18%] Built target ament_cmake_python_copy_fr3_control_publish
+[ 25%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[ 27%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[ 34%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[ 41%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[ 44%] [32mBuilding CXX object CMakeFiles/ee_pose_bridge.dir/src/ee_pose_bridge.cpp.o[0m
+[ 51%] Built target fr3_control_publish__rosidl_typesupport_c
+[ 58%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[ 65%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[ 65%] Built target fr3_control_publish
+[ 69%] Built target jacobian_publisher
+[ 74%] Built target force_position_controller
+[ 76%] Built target fr3_control_publish__py
+[ 81%] Built target fr3_control_publish__rosidl_generator_py
+[ 86%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[ 90%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing fr3_control_publish.egg-info/PKG-INFO
+writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+writing top-level names to fr3_control_publish.egg-info/top_level.txt
+reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_fr3_control_publish_egg
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::on_jac(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:141:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::MultiArrayDimension_<std::allocator<void> >::_size_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  141 |       RCLCPP_WARN(get_logger(), [01;35m[K"收到错误维度的雅可比: [%zu, %zu]"[m[K,
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:141:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  141 |       RCLCPP_WARN(get_logger(), "收到错误维度的雅可比: [[01;36m[K%zu[m[K, %zu]",
+      |                                                         [01;36m[K~~^[m[K
+      |                                                           [01;36m[K|[m[K
+      |                                                           [01;36m[Klong unsigned int[m[K
+      |                                                         [32m[K%u[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:141:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 6 has type ‘[01m[Kstd_msgs::msg::MultiArrayDimension_<std::allocator<void> >::_size_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  141 |       RCLCPP_WARN(get_logger(), [01;35m[K"收到错误维度的雅可比: [%zu, %zu]"[m[K,
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:141:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  141 |       RCLCPP_WARN(get_logger(), "收到错误维度的雅可比: [%zu, [01;36m[K%zu[m[K]",
+      |                                                              [01;36m[K~~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Klong unsigned int[m[K
+      |                                                              [32m[K%u[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::compute_admittance()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:311:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Klambda_[m[K’
+  311 |     [01;31m[Klambda_[m[K*lambda_*Eigen::Matrix<double,6,6>::Identity();
+      |     [01;31m[K^~~~~~~[m[K
+[ 97%] [32m[1mLinking CXX executable ee_pose_bridge[0m
+[ 97%] Built target ee_pose_bridge
+gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:734：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

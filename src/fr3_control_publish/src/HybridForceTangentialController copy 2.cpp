@@ -38,13 +38,13 @@ public:
     // λ_f：法向正则化系数，影响伪逆映射的稳定性，默认 0.1，防止奇异  
 
     this->declare_parameter<std::vector<double>>("B_inv_diag",  
-      std::vector<double>{1.0/50,1.0/50,1.0/50,1.0/5,1.0/5,1.0/5});  
+      std::vector<double>{1.0/5000,1.0/5000,1.0/5000,1.0/500,1.0/500,1.0/500});  
     /* B_inv_diag：虚拟阻尼逆矩阵对角线，  
        前三个元素对应 XYZ 力维度，这里 1/50→阻尼较大，法向导纳响应较慢；  
        后三个元素对应 Roll/Pitch/Yaw 力矩维度，这里 1/5→阻尼更小，姿态响应更快 */
 
     this->declare_parameter<std::vector<double>>("f_des",  
-      std::vector<double>{0.0, 0.0, 0.0, 0.0, 0.0, 0.0});  
+      std::vector<double>{0.0, 0.0, 100.0, 0.0, 0.0, 0.0});  
     /* f_des：期望六维力/力矩，  
        默认 [0, -5, 0, 0, 0, 0] 表示沿 Y 方向保持 5N 推压力，其余方向和力矩为 0 */
 
@@ -60,19 +60,19 @@ public:
     this->declare_parameter<double>("axis_speed", 0.01);  
     // axis_speed：沿主扫描轴匀速移动速度，默认 0.01m/s  
 
-    this->declare_parameter<double>("lateral_speed", 0.05);  
+    this->declare_parameter<double>("lateral_speed", 0.12);  
     // lateral_speed：沿横向扫描轴匀速移动速度，默认 0.005m/s  
 
-    this->declare_parameter<double>("axis_max_dist", 0.8);  
+    this->declare_parameter<double>("axis_max_dist", 1.5);  
     // axis_max_dist：主扫描轴最大可达距离，默认 0.3m  
 
-    this->declare_parameter<double>("lateral_max_dist", 0.5);  
+    this->declare_parameter<double>("lateral_max_dist", 0.8);  
     // lateral_max_dist：横向扫描最大可达距离，默认 0.1m  
 
-    this->declare_parameter<double>("object_center_x", 0.0);  
+    this->declare_parameter<double>("object_center_x", 0.7);  
     // object_center_x：物体中心点在 X 轴上的预估坐标，默认 0.5m  
 
-    this->declare_parameter<double>("object_center_y", 1.0);  
+    this->declare_parameter<double>("object_center_y", 0.0);  
     // object_center_y：物体中心点在 Y 轴上的预估坐标，默认 0.0m  
 
     this->declare_parameter<std::string>("ee_pose_topic", "/ee_pose");  
@@ -186,6 +186,18 @@ private:
   }
 
   void on_wrench(const geometry_msgs::msg::WrenchStamped::SharedPtr msg) {
+    // RCLCPP_INFO(get_logger(),
+    // "[DEBUG on_wrench] frame_id=%s, fx=%.3f, fy=%.3f, fz=%.3f",
+    // msg->header.frame_id.c_str(),
+    // msg->wrench.force.x,
+    // msg->wrench.force.y,
+    // msg->wrench.force.z);
+    if (msg->header.frame_id != "touch_tip") {
+        RCLCPP_WARN(get_logger(),
+        "[DEBUG on_wrench] ignored non-touch_tip frame: %s",
+        msg->header.frame_id.c_str());
+        return;
+    }
     // 仅处理 touch_tip 坐标系下的力
     if(msg->header.frame_id != "touch_tip") return;
     // 保存三维力和六维力
@@ -202,6 +214,13 @@ private:
   }
 
   void on_pose(const geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+    static size_t pose_cb_cnt = 0;  pose_cb_cnt++;
+    RCLCPP_DEBUG(get_logger(),
+        "[DEBUG on_pose #%zu] frame_id=%s  x=%.3f  y=%.3f",
+        pose_cb_cnt,
+        msg->header.frame_id.c_str(),
+        msg->pose.position.x,
+    msg->pose.position.y);
     // 获取末端在世界坐标系下的 XY 平面位置
     ee_pos_(0) = msg->pose.position.x;
     ee_pos_(1) = msg->pose.position.y;
@@ -222,7 +241,13 @@ private:
 
   // —— 主控制循环 —— 
   void control_loop() {
-    // 确保所有数据已就绪
+
+    // 新增调试：打印各个 have_* 的状态
+    RCLCPP_DEBUG(get_logger(),
+    "[DEBUG control_loop] state=%d, have_js=%d, have_jac=%d, inited=%d, have_wrench=%d, have_pose=%d",
+    static_cast<int>(state_), have_js_, have_jacobian_, initialized_,
+    have_wrench_, have_pose_);
+
     // 只要 joint_states、jacobian、q_des_ 就能启动 INIT_SCAN
     if (!(have_js_ && have_jacobian_ && initialized_)) return;
 
@@ -310,11 +335,16 @@ private:
     pub_cmd_->publish(cmd);
 
     // 5) 诊断信息打印
-    RCLCPP_INFO_STREAM(get_logger(),
-      "[Loop " << loop_count_ << "] state=" << static_cast<int>(state_)
-      << " |f|=" << f_norm
-      << " v_xy=[" << v_xy.transpose() << "]"
-      << " ee_xy=[" << ee_pos_.transpose() << "]");
+    RCLCPP_DEBUG(
+    get_logger(),
+    "[Loop %zu] state=%d |f|=%f v_xy=[%f, %f] ee_xy=[%f, %f]",
+    loop_count_,
+    static_cast<int>(state_),
+    f_norm,
+    v_xy.x(), v_xy.y(),
+    ee_pos_.x(), ee_pos_.y()
+    );
+
   }
   size_t                          loop_count_;
   ScanState    state_;           // 当前扫描状态
