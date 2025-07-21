@@ -1,0 +1,575 @@
+[0.046s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.158s] [  2%] Built target fr3_control_publish__cpp
+[0.175s] [  8%] Built target fr3_control_publish__rosidl_generator_c
+[0.208s] [  8%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.226s] [ 13%] Built target tangential_velocity_controller
+[0.247s] [ 17%] Built target fr3_monitor
+[0.252s] [ 22%] Built target mujoco_sim_node
+[0.252s] [ 35%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.253s] [ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.253s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.254s] [ 44%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[0.256s] [ 48%] Built target ee_pose_bridge
+[0.291s] [ 55%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.299s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.299s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.346s] [ 73%] Built target jacobian_publisher
+[0.352s] [ 77%] Built target force_position_controller
+[0.356s] [ 77%] Built target fr3_control_publish
+[0.406s] [ 80%] Built target fr3_control_publish__py
+[0.453s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[0.512s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.513s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.515s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.876s] running egg_info
+[0.925s] writing fr3_control_publish.egg-info/PKG-INFO
+[0.929s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[0.929s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[1.061s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[1.063s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[1.118s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[3.578s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.579s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[3.579s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::on_jac(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.579s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:127:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::MultiArrayDimension_<std::allocator<void> >::_size_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.579s]   127 |       RCLCPP_WARN(get_logger(), [01;35m[K"雅可比维度错误: [%zu, %zu]"[m[K, msg->layout.dim[0].size, msg->layout.dim[1].size);
+[3.579s]       |                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.579s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:127:53:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.579s]   127 |       RCLCPP_WARN(get_logger(), "雅可比维度错误: [[01;36m[K%zu[m[K, %zu]", msg->layout.dim[0].size, msg->layout.dim[1].size);
+[3.579s]       |                                                   [01;36m[K~~^[m[K
+[3.579s]       |                                                     [01;36m[K|[m[K
+[3.580s]       |                                                     [01;36m[Klong unsigned int[m[K
+[3.580s]       |                                                   [32m[K%u[m[K
+[3.580s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.580s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[3.581s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:127:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 6 has type ‘[01m[Kstd_msgs::msg::MultiArrayDimension_<std::allocator<void> >::_size_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.581s]   127 |       RCLCPP_WARN(get_logger(), [01;35m[K"雅可比维度错误: [%zu, %zu]"[m[K, msg->layout.dim[0].size, msg->layout.dim[1].size);
+[3.581s]       |                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.581s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:127:58:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.581s]   127 |       RCLCPP_WARN(get_logger(), "雅可比维度错误: [%zu, [01;36m[K%zu[m[K]", msg->layout.dim[0].size, msg->layout.dim[1].size);
+[3.581s]       |                                                        [01;36m[K~~^[m[K
+[3.581s]       |                                                          [01;36m[K|[m[K
+[3.581s]       |                                                          [01;36m[Klong unsigned int[m[K
+[3.581s]       |                                                        [32m[K%u[m[K
+[3.588s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::on_wrench(geometry_msgs::msg::WrenchStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.588s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:133:87:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEigen::DenseBase<Eigen::Matrix<double, 6, 1> >::FixedSegmentReturnType<3>::Type[m[K’ {aka ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[3.588s]   133 |     f_ext6_.head<3>() = {msg->wrench.force.x, msg->wrench.force.y, msg->wrench.force.z[01;31m[K}[m[K;
+[3.589s]       |                                                                                       [01;31m[K^[m[K
+[3.589s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.589s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.589s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.589s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::ReturnByValue<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.589s]   154 |     Derived& [01;36m[Koperator[m[K=(const ReturnByValue<OtherDerived>& other);
+[3.589s]       |              [01;36m[K^~~~~~~~[m[K
+[3.589s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.589s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:133:87:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KOtherDerived[m[K’
+[3.589s]   133 |     f_ext6_.head<3>() = {msg->wrench.force.x, msg->wrench.force.y, msg->wrench.force.z[01;36m[K}[m[K;
+[3.590s]       |                                                                                       [01;36m[K^[m[K
+[3.590s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.590s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.590s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.590s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.590s]   150 |     Derived& [01;36m[Koperator[m[K=(const EigenBase<OtherDerived>& other);
+[3.590s]       |              [01;36m[K^~~~~~~~[m[K
+[3.590s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.590s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:133:87:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KOtherDerived[m[K’
+[3.590s]   133 |     f_ext6_.head<3>() = {msg->wrench.force.x, msg->wrench.force.y, msg->wrench.force.z[01;36m[K}[m[K;
+[3.590s]       |                                                                                       [01;36m[K^[m[K
+[3.590s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.590s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.590s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.591s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.591s]   146 |     Derived& [01;36m[Koperator[m[K=(const DenseBase<OtherDerived>& other);
+[3.591s]       |              [01;36m[K^~~~~~~~[m[K
+[3.591s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.591s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:133:87:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KOtherDerived[m[K’
+[3.591s]   133 |     f_ext6_.head<3>() = {msg->wrench.force.x, msg->wrench.force.y, msg->wrench.force.z[01;36m[K}[m[K;
+[3.591s]       |                                                                                       [01;36m[K^[m[K
+[3.591s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[3.591s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.591s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.591s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<double, 6, 1>; int BlockRows = 3; int BlockCols = 1; bool InnerPanel = false][m[K’
+[3.591s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+[3.591s]       |                                                    [01;36m[K^~~~~~~~[m[K
+[3.592s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.592s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.592s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.592s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.592s]   161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+[3.592s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.592s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::BlockImpl<Eigen::Matrix<double, 6, 1>, 3, 1, false, Eigen::Dense>&[m[K’
+[3.592s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+[3.592s]       |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.592s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.592s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.592s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.592s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.592s]   161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+[3.593s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.593s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:306[m[K,
+[3.593s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.593s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.593s] [01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:292:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MapBase<Derived, 1>::operator=(const Eigen::MapBase<Derived, 1>&) [with Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.593s]   292 |     Derived& [01;36m[Koperator[m[K=(const MapBase& other)
+[3.593s]       |              [01;36m[K^~~~~~~~[m[K
+[3.593s] [01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:292:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::MapBase<Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>, 1>&[m[K’
+[3.593s]   292 |     Derived& operator=([01;36m[Kconst MapBase& other[m[K)
+[3.593s]       |                        [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.593s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:282[m[K,
+[3.593s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.593s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.593s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.594s]    55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+[3.594s]       |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.594s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:79:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false> >&[m[K’
+[3.594s]    55 | EIGEN_STRONG_INLINE Derived& MatrixBase<Derived>::operator=([01;36m[Kconst MatrixBase& other[m[K)
+[3.594s]       |                                                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.594s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[3.594s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.594s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.594s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = Eigen::Matrix<double, 6, 1>; int BlockRows = 3; int BlockCols = 1; bool InnerPanel = false][m[K’
+[3.594s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+[3.594s]       |                                                    [01;36m[K^~~~~~~~[m[K
+[3.594s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.594s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.595s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.595s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.595s]   341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+[3.595s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.595s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::internal::BlockImpl_dense<Eigen::Matrix<double, 6, 1>, 3, 1, false, true>&[m[K’
+[3.595s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+[3.595s]       |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.595s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.595s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.595s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.595s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.595s]   341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+[3.595s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.595s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Block<XprType, BlockRows, BlockCols, InnerPanel>& Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>::operator=(const Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>&) [with XprType = Eigen::Matrix<double, 6, 1>; int BlockRows = 3; int BlockCols = 1; bool InnerPanel = false][m[K’
+[3.596s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+[3.596s]       |                                                    [01;36m[K^~~~~~~~[m[K
+[3.596s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.596s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.596s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.596s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.596s]   111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+[3.596s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.596s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>&[m[K’
+[3.596s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+[3.596s]       |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.596s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.596s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.597s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.597s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.597s]   111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+[3.597s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.597s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:310[m[K,
+[3.597s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.597s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.597s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>& Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>::operator=(const Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&)[m[K’
+[3.597s]    56 | template<typename VectorType, int Size> class [01;36m[KVectorBlock[m[K
+[3.597s]       |                                               [01;36m[K^~~~~~~~~~~[m[K
+[3.597s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&[m[K’
+[3.597s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>& Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>::operator=(Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&&)[m[K’
+[3.597s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&&[m[K’
+[3.597s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:134:90:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEigen::DenseBase<Eigen::Matrix<double, 6, 1> >::FixedSegmentReturnType<3>::Type[m[K’ {aka ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[3.598s]   134 |     f_ext6_.tail<3>() = {msg->wrench.torque.x, msg->wrench.torque.y, msg->wrench.torque.z[01;31m[K}[m[K;
+[3.598s]       |                                                                                          [01;31m[K^[m[K
+[3.598s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.598s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.598s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.598s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::ReturnByValue<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.598s]   154 |     Derived& [01;36m[Koperator[m[K=(const ReturnByValue<OtherDerived>& other);
+[3.598s]       |              [01;36m[K^~~~~~~~[m[K
+[3.598s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.598s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:134:90:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KOtherDerived[m[K’
+[3.598s]   134 |     f_ext6_.tail<3>() = {msg->wrench.torque.x, msg->wrench.torque.y, msg->wrench.torque.z[01;36m[K}[m[K;
+[3.598s]       |                                                                                          [01;36m[K^[m[K
+[3.598s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.598s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.599s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.599s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.599s]   150 |     Derived& [01;36m[Koperator[m[K=(const EigenBase<OtherDerived>& other);
+[3.599s]       |              [01;36m[K^~~~~~~~[m[K
+[3.599s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.599s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:134:90:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KOtherDerived[m[K’
+[3.599s]   134 |     f_ext6_.tail<3>() = {msg->wrench.torque.x, msg->wrench.torque.y, msg->wrench.torque.z[01;36m[K}[m[K;
+[3.599s]       |                                                                                          [01;36m[K^[m[K
+[3.599s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.599s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.599s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.599s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.599s]   146 |     Derived& [01;36m[Koperator[m[K=(const DenseBase<OtherDerived>& other);
+[3.600s]       |              [01;36m[K^~~~~~~~[m[K
+[3.600s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.600s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:134:90:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KOtherDerived[m[K’
+[3.600s]   134 |     f_ext6_.tail<3>() = {msg->wrench.torque.x, msg->wrench.torque.y, msg->wrench.torque.z[01;36m[K}[m[K;
+[3.600s]       |                                                                                          [01;36m[K^[m[K
+[3.600s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[3.600s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.600s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.600s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<double, 6, 1>; int BlockRows = 3; int BlockCols = 1; bool InnerPanel = false][m[K’
+[3.600s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+[3.600s]       |                                                    [01;36m[K^~~~~~~~[m[K
+[3.600s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.600s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.601s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.601s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.601s]   161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+[3.601s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.601s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::BlockImpl<Eigen::Matrix<double, 6, 1>, 3, 1, false, Eigen::Dense>&[m[K’
+[3.601s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+[3.601s]       |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.601s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.601s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.601s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.601s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.601s]   161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+[3.602s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.602s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:306[m[K,
+[3.602s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.602s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.602s] [01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:292:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MapBase<Derived, 1>::operator=(const Eigen::MapBase<Derived, 1>&) [with Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.602s]   292 |     Derived& [01;36m[Koperator[m[K=(const MapBase& other)
+[3.602s]       |              [01;36m[K^~~~~~~~[m[K
+[3.602s] [01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:292:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::MapBase<Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>, 1>&[m[K’
+[3.602s]   292 |     Derived& operator=([01;36m[Kconst MapBase& other[m[K)
+[3.602s]       |                        [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.602s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:282[m[K,
+[3.602s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.602s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.603s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[3.603s]    55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+[3.603s]       |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.603s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:79:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false> >&[m[K’
+[3.603s]    55 | EIGEN_STRONG_INLINE Derived& MatrixBase<Derived>::operator=([01;36m[Kconst MatrixBase& other[m[K)
+[3.603s]       |                                                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.603s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[3.603s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.603s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.603s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = Eigen::Matrix<double, 6, 1>; int BlockRows = 3; int BlockCols = 1; bool InnerPanel = false][m[K’
+[3.603s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+[3.604s]       |                                                    [01;36m[K^~~~~~~~[m[K
+[3.604s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.604s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.604s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.604s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.604s]   341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+[3.604s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.604s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::internal::BlockImpl_dense<Eigen::Matrix<double, 6, 1>, 3, 1, false, true>&[m[K’
+[3.604s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+[3.604s]       |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.604s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.604s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.604s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.605s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.605s]   341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+[3.605s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.605s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:52:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Block<XprType, BlockRows, BlockCols, InnerPanel>& Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>::operator=(const Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>&) [with XprType = Eigen::Matrix<double, 6, 1>; int BlockRows = 3; int BlockCols = 1; bool InnerPanel = false][m[K’
+[3.605s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+[3.605s]       |                                                    [01;36m[K^~~~~~~~[m[K
+[3.605s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.605s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.605s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.605s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.605s]   111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+[3.605s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.605s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1205:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>&[m[K’
+[3.606s]  1205 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& operator=([01;36m[Kconst Derived& other[m[K) \
+[3.606s]       |                                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.606s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Macros.h:1232:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+[3.606s]  1232 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived) \
+[3.606s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.606s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+[3.606s]   111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+[3.606s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.606s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:310[m[K,
+[3.606s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.606s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[3.606s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>& Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>::operator=(const Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&)[m[K’
+[3.606s]    56 | template<typename VectorType, int Size> class [01;36m[KVectorBlock[m[K
+[3.606s]       |                                               [01;36m[K^~~~~~~~~~~[m[K
+[3.607s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&[m[K’
+[3.607s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>& Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>::operator=(Eigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&&)[m[K’
+[3.607s] [01m[K/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:56:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[KEigen::VectorBlock<Eigen::Matrix<double, 6, 1>, 3>&&[m[K’
+[4.013s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+[4.013s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[4.013s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:7[m[K:
+[4.013s] /usr/include/eigen3/Eigen/src/Core/Dot.h: In instantiation of ‘[01m[Ktypename Eigen::ScalarBinaryOpTraits<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>::ReturnType Eigen::MatrixBase<Derived>::dot(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<double, 6, 1>; Derived = Eigen::Matrix<double, 3, 1>; typename Eigen::ScalarBinaryOpTraits<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>::ReturnType = double; typename Eigen::internal::traits<OtherDerived>::Scalar = double; typename Eigen::internal::traits<T>::Scalar = double][m[K’:
+[4.013s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:190:38:[m[K   required from here
+[4.013s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:171:5:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_VECTORS_OF_DIFFERENT_SIZES
+[4.013s]   169 |       [01;31m[K(int(TYPE0::SizeAtCompileTime)==Eigen::Dynamic \[m[K
+[4.013s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.013s]   170 | [01;31m[K    || int(TYPE1::SizeAtCompileTime)==Eigen::Dynamic \[m[K
+[4.013s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.013s]   171 | [01;31m[K    || int(TYPE0::SizeAtCompileTime)==int(TYPE1::SizeAtCompileTime))[m[K,\
+[4.014s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.014s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.014s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.014s]       |                                                      [01;36m[K^[m[K
+[4.014s] [01m[K/usr/include/eigen3/Eigen/src/Core/Dot.h:76:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_VECTOR_SIZE[m[K’
+[4.014s]    76 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_VECTOR_SIZE[m[K(Derived,OtherDerived)
+[4.014s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.014s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:171:5:[m[K [01;36m[Knote: [m[K‘[01m[K(((((int)Eigen::Matrix<double, 3, 1>::SizeAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Matrix<double, 6, 1>::SizeAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 3, 1>::SizeAtCompileTime) == ((int)Eigen::Matrix<double, 6, 1>::SizeAtCompileTime)))[m[K’ evaluates to false
+[4.014s]   169 |       [01;36m[K(int(TYPE0::SizeAtCompileTime)==Eigen::Dynamic \[m[K
+[4.014s]       |       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.014s]   170 | [01;36m[K    || int(TYPE1::SizeAtCompileTime)==Eigen::Dynamic \[m[K
+[4.014s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.014s]   171 | [01;36m[K    || int(TYPE0::SizeAtCompileTime)==int(TYPE1::SizeAtCompileTime))[m[K,\
+[4.014s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.014s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.015s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.015s]       |                                                      [01;36m[K^[m[K
+[4.015s] [01m[K/usr/include/eigen3/Eigen/src/Core/Dot.h:76:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_VECTOR_SIZE[m[K’
+[4.015s]    76 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_VECTOR_SIZE[m[K(Derived,OtherDerived)
+[4.015s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.015s] /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h: In instantiation of ‘[01m[Ktypename Eigen::MatrixBase<Derived>::cross_product_return_type<OtherDerived>::type Eigen::MatrixBase<Derived>::cross(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<double, 6, 1>; Derived = Eigen::Matrix<double, 3, 1>; typename Eigen::MatrixBase<Derived>::cross_product_return_type<OtherDerived>::type = Eigen::Matrix<double, 3, 1>][m[K’:
+[4.015s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:193:49:[m[K   required from here
+[4.015s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:158:77:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: THIS_METHOD_IS_ONLY_FOR_VECTORS_OF_A_SPECIFIC_SIZE
+[4.015s]   158 |   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+[4.015s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.015s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.015s]       |                                                      [01;36m[K^[m[K
+[4.015s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:38:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K’
+[4.015s]    38 |   [01;36m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K(OtherDerived,3)
+[4.016s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.016s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:158:77:[m[K [01;36m[Knote: [m[K‘[01m[K(((int)Eigen::Matrix<double, 6, 1>::SizeAtCompileTime) == 3)[m[K’ evaluates to false
+[4.016s]   158 |   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+[4.016s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.016s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.016s]       |                                                      [01;36m[K^[m[K
+[4.016s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:38:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K’
+[4.016s]    38 |   [01;36m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K(OtherDerived,3)
+[4.016s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.818s] /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, 3, 1>; Src = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >; Func = Eigen::internal::assign_op<double, double>][m[K’:
+[4.818s] [01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:797:41:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >; Derived = Eigen::Matrix<double, 3, 1>][m[K’
+[4.818s] [01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:883:25:[m[K   required from ‘[01m[Kvoid Eigen::PlainObjectBase<Derived>::_init1(const Eigen::DenseBase<ElseDerived>&) [with T = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >; OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >; Derived = Eigen::Matrix<double, 3, 1>][m[K’
+[4.818s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:332:31:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T&) [with T = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >; _Scalar = double; int _Rows = 3; int _Cols = 1; int _Options = 0; int _MaxRows = 3; int _MaxCols = 1][m[K’
+[4.818s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:158:65:[m[K   required from here
+[4.818s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_MATRICES_OF_DIFFERENT_SIZES
+[4.819s]   175 |      [01;31m[K( \[m[K
+[4.819s]       |      [01;31m[K~~~[m[K
+[4.819s]   176 | [01;31m[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \[m[K
+[4.819s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.819s]   177 | [01;31m[K    || (\[m[K
+[4.819s]       |     [01;31m[K^~~~~[m[K
+[4.819s]   178 | [01;31m[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.819s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.819s]   179 | [01;31m[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.819s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.819s]   180 | [01;31m[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \[m[K
+[4.819s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.819s]   181 | [01;31m[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.819s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.819s]   182 | [01;31m[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.820s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.820s]   183 | [01;31m[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\[m[K
+[4.820s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.820s]   184 | [01;31m[K       ) \[m[K
+[4.820s]       |        [01;31m[K~~~[m[K
+[4.820s]   185 | [01;31m[K     )[m[K
+[4.820s]       |      [01;31m[K~[m[K
+[4.820s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.820s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.820s]       |                                                      [01;36m[K^[m[K
+[4.820s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K’
+[4.820s]   194 |      [01;36m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K(TYPE0,TYPE1),\
+[4.820s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.820s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K’
+[4.820s]   887 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+[4.821s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.821s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:[m[K [01;36m[Knote: [m[K‘[01m[K(((((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Matrix<double, 3, 1> >::ret) == 0) && (((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> > >::ret) == 0)) || ((((((int)Eigen::Matrix<double, 3, 1>::RowsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >::RowsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 3, 1>::RowsAtCompileTime) == ((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >::RowsAtCompileTime))) && (((((int)Eigen::Matrix<double, 3, 1>::ColsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >::ColsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 3, 1>::ColsAtCompileTime) == ((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::Matrix<double, 2, 1>, const Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false> >::ColsAtCompileTime)))))[m[K’ evaluates to false
+[4.821s]   175 |      [01;36m[K( \[m[K
+[4.821s]       |      [01;36m[K~~~[m[K
+[4.821s]   176 | [01;36m[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \[m[K
+[4.821s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.821s]   177 | [01;36m[K    || (\[m[K
+[4.821s]       |     [01;36m[K^~~~~[m[K
+[4.821s]   178 | [01;36m[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.821s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.821s]   179 | [01;36m[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.821s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.821s]   180 | [01;36m[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \[m[K
+[4.821s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.822s]   181 | [01;36m[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.822s]       |       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.822s]   182 | [01;36m[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.822s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.822s]   183 | [01;36m[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\[m[K
+[4.822s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.822s]   184 | [01;36m[K       ) \[m[K
+[4.822s]       |        [01;36m[K~~~[m[K
+[4.822s]   185 | [01;36m[K     )[m[K
+[4.822s]       |      [01;36m[K~[m[K
+[4.822s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.822s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.822s]       |                                                      [01;36m[K^[m[K
+[4.822s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K’
+[4.822s]   194 |      [01;36m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K(TYPE0,TYPE1),\
+[4.823s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.823s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K’
+[4.823s]   887 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+[4.823s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.828s] /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>; Src = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >; Func = Eigen::internal::assign_op<double, double>][m[K’:
+[4.828s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:858:27:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>; Src = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >; Func = Eigen::internal::assign_op<double, double>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[4.828s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:836:18:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>; Src = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >][m[K’
+[4.829s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:66:28:[m[K   required from ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >; Derived = Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>][m[K’
+[4.829s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:205:51:[m[K   required from here
+[4.829s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_MATRICES_OF_DIFFERENT_SIZES
+[4.829s]   175 |      [01;31m[K( \[m[K
+[4.829s]       |      [01;31m[K~~~[m[K
+[4.829s]   176 | [01;31m[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \[m[K
+[4.829s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.829s]   177 | [01;31m[K    || (\[m[K
+[4.829s]       |     [01;31m[K^~~~~[m[K
+[4.829s]   178 | [01;31m[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.829s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.829s]   179 | [01;31m[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.829s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.829s]   180 | [01;31m[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \[m[K
+[4.829s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.830s]   181 | [01;31m[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.830s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.830s]   182 | [01;31m[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.830s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.830s]   183 | [01;31m[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\[m[K
+[4.830s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.830s]   184 | [01;31m[K       ) \[m[K
+[4.830s]       |        [01;31m[K~~~[m[K
+[4.830s]   185 | [01;31m[K     )[m[K
+[4.830s]       |      [01;31m[K~[m[K
+[4.830s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.830s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.830s]       |                                                      [01;36m[K^[m[K
+[4.830s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K’
+[4.830s]   194 |      [01;36m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K(TYPE0,TYPE1),\
+[4.830s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.831s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K’
+[4.831s]   887 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+[4.831s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.831s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:[m[K [01;36m[Knote: [m[K‘[01m[K(((((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false> >::ret) == 0) && (((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > > >::ret) == 0)) || ((((((int)Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>::RowsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >::RowsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>::RowsAtCompileTime) == ((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >::RowsAtCompileTime))) && (((((int)Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>::ColsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >::ColsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Block<Eigen::Matrix<double, 6, 1>, 3, 1, false>::ColsAtCompileTime) == ((int)Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, 6, 1>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 6, 1> > >::ColsAtCompileTime)))))[m[K’ evaluates to false
+[4.831s]   175 |      [01;36m[K( \[m[K
+[4.831s]       |      [01;36m[K~~~[m[K
+[4.831s]   176 | [01;36m[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \[m[K
+[4.831s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.831s]   177 | [01;36m[K    || (\[m[K
+[4.831s]       |     [01;36m[K^~~~~[m[K
+[4.831s]   178 | [01;36m[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.831s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.831s]   179 | [01;36m[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.831s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.831s]   180 | [01;36m[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \[m[K
+[4.832s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.832s]   181 | [01;36m[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.832s]       |       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.832s]   182 | [01;36m[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.832s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.832s]   183 | [01;36m[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\[m[K
+[4.832s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.832s]   184 | [01;36m[K       ) \[m[K
+[4.832s]       |        [01;36m[K~~~[m[K
+[4.832s]   185 | [01;36m[K     )[m[K
+[4.832s]       |      [01;36m[K~[m[K
+[4.832s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.832s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.832s]       |                                                      [01;36m[K^[m[K
+[4.832s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K’
+[4.832s]   194 |      [01;36m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K(TYPE0,TYPE1),\
+[4.833s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.833s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K’
+[4.833s]   887 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+[4.833s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.950s] /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, 6, 1>; Src = Eigen::Matrix<double, 3, 1>; Func = Eigen::internal::assign_op<double, double>][m[K’:
+[4.951s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:858:27:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Matrix<double, 6, 1>; Src = Eigen::Matrix<double, 3, 1>; Func = Eigen::internal::assign_op<double, double>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[4.951s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:836:18:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Matrix<double, 6, 1>; Src = Eigen::Matrix<double, 3, 1>][m[K’
+[4.951s] [01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:779:32:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<double, 3, 1>; Derived = Eigen::Matrix<double, 6, 1>][m[K’
+[4.951s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:225:24:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<double, 3, 1>; _Scalar = double; int _Rows = 6; int _Cols = 1; int _Options = 0; int _MaxRows = 6; int _MaxCols = 1][m[K’
+[4.951s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:182:47:[m[K   required from here
+[4.951s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_MATRICES_OF_DIFFERENT_SIZES
+[4.951s]   175 |      [01;31m[K( \[m[K
+[4.951s]       |      [01;31m[K~~~[m[K
+[4.952s]   176 | [01;31m[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \[m[K
+[4.952s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.952s]   177 | [01;31m[K    || (\[m[K
+[4.952s]       |     [01;31m[K^~~~~[m[K
+[4.952s]   178 | [01;31m[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.952s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.952s]   179 | [01;31m[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.952s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.952s]   180 | [01;31m[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \[m[K
+[4.952s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.952s]   181 | [01;31m[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.952s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.952s]   182 | [01;31m[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.952s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.952s]   183 | [01;31m[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\[m[K
+[4.952s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.953s]   184 | [01;31m[K       ) \[m[K
+[4.953s]       |        [01;31m[K~~~[m[K
+[4.953s]   185 | [01;31m[K     )[m[K
+[4.953s]       |      [01;31m[K~[m[K
+[4.953s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.953s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.953s]       |                                                      [01;36m[K^[m[K
+[4.953s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K’
+[4.953s]   194 |      [01;36m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K(TYPE0,TYPE1),\
+[4.953s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.953s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K’
+[4.953s]   887 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+[4.953s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.953s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:[m[K [01;36m[Knote: [m[K‘[01m[K(((((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Matrix<double, 6, 1> >::ret) == 0) && (((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Matrix<double, 3, 1> >::ret) == 0)) || ((((((int)Eigen::Matrix<double, 6, 1>::RowsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Matrix<double, 3, 1>::RowsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 6, 1>::RowsAtCompileTime) == ((int)Eigen::Matrix<double, 3, 1>::RowsAtCompileTime))) && (((((int)Eigen::Matrix<double, 6, 1>::ColsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Matrix<double, 3, 1>::ColsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 6, 1>::ColsAtCompileTime) == ((int)Eigen::Matrix<double, 3, 1>::ColsAtCompileTime)))))[m[K’ evaluates to false
+[4.953s]   175 |      [01;36m[K( \[m[K
+[4.953s]       |      [01;36m[K~~~[m[K
+[4.953s]   176 | [01;36m[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \[m[K
+[4.953s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.953s]   177 | [01;36m[K    || (\[m[K
+[4.953s]       |     [01;36m[K^~~~~[m[K
+[4.953s]   178 | [01;36m[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.953s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.953s]   179 | [01;36m[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.953s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.954s]   180 | [01;36m[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \[m[K
+[4.954s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.954s]   181 | [01;36m[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.954s]       |       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.954s]   182 | [01;36m[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \[m[K
+[4.954s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.954s]   183 | [01;36m[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\[m[K
+[4.954s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.954s]   184 | [01;36m[K       ) \[m[K
+[4.954s]       |        [01;36m[K~~~[m[K
+[4.954s]   185 | [01;36m[K     )[m[K
+[4.954s]       |      [01;36m[K~[m[K
+[4.954s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[4.954s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[4.954s]       |                                                      [01;36m[K^[m[K
+[4.954s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K’
+[4.954s]   194 |      [01;36m[KEIGEN_PREDICATE_SAME_MATRIX_SIZE[m[K(TYPE0,TYPE1),\
+[4.954s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.954s] [01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K’
+[4.954s]   887 |   [01;36m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+[4.954s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.195s] gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+[9.195s] gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+[9.195s] gmake: *** [Makefile:146：all] 错误 2
+[9.198s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

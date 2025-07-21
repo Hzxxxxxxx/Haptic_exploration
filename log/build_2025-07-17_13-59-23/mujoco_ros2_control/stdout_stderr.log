@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_ros2_control[0m
+[ 33%] Built target mujoco_system_plugins
+[ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:94:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktip_geom[m[K’ was not declared in this scope
+   94 |         if (ct.geom1 == [01;31m[Ktip_geom[m[K || ct.geom2 == tip_geom) {
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:99:66:[m[K [01;31m[Kerror: [m[K‘[01m[KmjOption[m[K’ {aka ‘[01m[Kstruct mjOption_[m[K’} has no member named ‘[01m[Knsubsteps[m[K’
+   99 |       double dt = mujoco_model->opt.timestep / mujoco_model->opt.[01;31m[Knsubsteps[m[K;
+      |                                                                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:143:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  143 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:18:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   18 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

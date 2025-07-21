@@ -42,6 +42,13 @@ find_package(Eigen3 REQUIRED)
 find_package(tf2_ros REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIRS})
 
+# GLFW
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLFW REQUIRED glfw3)
+include_directories(${GLFW_INCLUDE_DIRS})
+link_directories(${GLFW_LIBRARY_DIRS})
+add_definitions(${GLFW_CFLAGS_OTHER})
+
 ###############################################################################
 # 3. 生成自定义消息
 ###############################################################################
@@ -69,9 +76,13 @@ ament_target_dependencies(fr3_monitor rclcpp control_msgs diagnostic_msgs)
 # ---- 4.3 jacobian_publisher ------------------------------------------------
 add_executable(jacobian_publisher src/fr3_jacobian_publisher.cpp)
 ament_target_dependencies(jacobian_publisher rclcpp sensor_msgs std_msgs)
-#  typesupport + MuJoCo
+
+# typesupport
 rosidl_get_typesupport_target(jac_ts ${PROJECT_NAME} "rosidl_typesupport_cpp")
-target_link_libraries(jacobian_publisher ${MUJOCO_LIB} ${jac_ts})
+target_link_libraries(jacobian_publisher
+    ${MUJOCO_LIB}
+    ${jac_ts}
+)
 
 # ---- 4.4 force_position_controller ----------------------------------------
 add_executable(force_position_controller src/force_position_controller.cpp)
@@ -88,6 +99,14 @@ add_executable(hybridforcetangentialcontroller src/HybridForceTangentialControll
 ament_target_dependencies(hybridforcetangentialcontroller
 rclcpp sensor_msgs std_msgs geometry_msgs)
 
+
+add_executable(mujoco_sim_node src/mujoco_sim_node.cpp)
+ament_target_dependencies(mujoco_sim_node rclcpp sensor_msgs std_msgs geometry_msgs)
+# 链接 MuJoCo 库
+target_link_libraries(mujoco_sim_node
+  ${MUJOCO_LIB}
+  ${GLFW_LIBRARIES}
+)
 ###############################################################################
 # 5. 安装
 ###############################################################################
@@ -98,6 +117,7 @@ install(TARGETS
     force_position_controller
     tangential_velocity_controller
     hybridforcetangentialcontroller
+    mujoco_sim_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

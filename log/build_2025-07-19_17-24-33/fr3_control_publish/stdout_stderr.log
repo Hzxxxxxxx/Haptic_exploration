@@ -1,0 +1,59 @@
+[  2%] Built target fr3_control_publish__cpp
+[  8%] Built target fr3_control_publish__rosidl_generator_c
+[ 13%] Built target fr3_monitor
+[ 13%] Built target ament_cmake_python_copy_fr3_control_publish
+[ 17%] Built target hybridforcetangentialcontroller
+[ 22%] Built target tangential_velocity_controller
+[ 24%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o[0m
+[ 28%] Built target ee_pose_bridge
+[ 40%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[ 55%] Built target fr3_control_publish__rosidl_typesupport_c
+[ 62%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[ 68%] Built target fr3_control_publish
+[ 75%] Built target force_position_controller
+[ 77%] Built target jacobian_publisher
+[ 80%] Built target fr3_control_publish__py
+[ 84%] Built target fr3_control_publish__rosidl_generator_py
+[ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+running egg_info
+writing fr3_control_publish.egg-info/PKG-INFO
+writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+writing top-level names to fr3_control_publish.egg-info/top_level.txt
+reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:[m[K In constructor ‘[01m[KMujocoSimNode::MujocoSimNode()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow_[m[K’ was not declared in this scope
+   26 |     [01;31m[Kwindow_[m[K = glfwCreateWindow(1200, 900, "MuJoCo Simulation", nullptr, nullptr);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:36:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_[m[K’ was not declared in this scope; did you mean ‘[01m[Km_[m[K’?
+   36 |     mjv_defaultCamera(&[01;31m[Kcam_[m[K);          // camera defaults
+      |                        [01;31m[K^~~~[m[K
+      |                        [32m[Km_[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:37:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kopt_[m[K’ was not declared in this scope
+   37 |     mjv_defaultOption(&[01;31m[Kopt_[m[K);          // visualization options
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:38:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kscn_[m[K’ was not declared in this scope
+   38 |     mjv_defaultScene(&[01;31m[Kscn_[m[K);           // empty scene
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:39:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcon_[m[K’ was not declared in this scope
+   39 |     mjr_defaultContext(&[01;31m[Kcon_[m[K);         // custom GPU context
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:[m[K In destructor ‘[01m[Kvirtual MujocoSimNode::~MujocoSimNode()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:110:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcon_[m[K’ was not declared in this scope
+  110 |     mjr_freeContext(&[01;31m[Kcon_[m[K);
+      |                      [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:111:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kscn_[m[K’ was not declared in this scope
+  111 |     mjv_freeScene(&[01;31m[Kscn_[m[K);
+      |                    [01;31m[K^~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:112:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow_[m[K’ was not declared in this scope
+  112 |     glfwDestroyWindow([01;31m[Kwindow_[m[K);
+      |                       [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:76：CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:762：CMakeFiles/mujoco_sim_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

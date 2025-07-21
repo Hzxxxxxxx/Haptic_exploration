@@ -1,0 +1,16 @@
+[0.041s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target mujoco_system_plugins[0m
+[0.187s] [ 16%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[0.222s] [ 83%] Built target mujoco_ros2_control
+[4.556s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[4.556s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:149:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmujoco_data_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmj_data_[m[K’?
+[4.556s]   149 |   mj_rne(mj_model_, [01;31m[Kmujoco_data_[m[K, /*flg_coriolis=*/1, mujoco_data_->qfrc_inverse);
+[4.556s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[4.556s]       |                     [32m[Kmj_data_[m[K
+[4.557s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:145:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdt_ns[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.557s]   145 |   double [01;35m[Kdt_ns[m[K = period.nanoseconds();
+[4.557s]       |          [01;35m[K^~~~~[m[K
+[5.794s] gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+[5.795s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+[5.795s] gmake: *** [Makefile:146：all] 错误 2
+[5.798s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

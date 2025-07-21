@@ -1,0 +1,29 @@
+[  2%] Built target fr3_control_publish__cpp
+[  8%] Built target fr3_control_publish__rosidl_generator_c
+[  8%] Built target ament_cmake_python_copy_fr3_control_publish
+[ 13%] Built target tangential_velocity_controller
+[ 17%] Built target fr3_monitor
+[ 22%] Built target mujoco_sim_node
+[ 35%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[ 44%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[ 48%] Built target ee_pose_bridge
+[ 55%] Built target fr3_control_publish__rosidl_typesupport_c
+[ 62%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[ 68%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[ 73%] Built target jacobian_publisher
+[ 77%] Built target force_position_controller
+[ 77%] Built target fr3_control_publish
+[ 80%] Built target fr3_control_publish__py
+[ 84%] Built target fr3_control_publish__rosidl_generator_py
+[ 88%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing fr3_control_publish.egg-info/PKG-INFO
+writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+writing top-level names to fr3_control_publish.egg-info/top_level.txt
+reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg

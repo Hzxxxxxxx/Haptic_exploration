@@ -1,0 +1,111 @@
+[0.033s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.120s] [35m[1mConsolidate compiler generated dependencies of target mujoco_ros2_control[0m
+[0.150s] [ 33%] Built target mujoco_system_plugins
+[0.161s] [ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[3.534s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[3.534s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:100:62:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KmjtNum[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kconst double*[m[K’ in initialization
+[3.534s]   100 |       const double* touch = [01;31m[Kmujoco_data->sensordata[adr_touch][m[K;
+[3.534s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.535s]       |                                                              [01;31m[K|[m[K
+[3.535s]       |                                                              [01;31m[KmjtNum {aka double}[m[K
+[3.543s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:109:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktouch_norm[m[K’ was not declared in this scope; did you mean ‘[01m[Kmju_norm[m[K’?
+[3.543s]   109 |       [01;31m[Ktouch_norm[m[K = std::max(touch_norm, current_norm);
+[3.543s]       |       [01;31m[K^~~~~~~~~~[m[K
+[3.543s]       |       [32m[Kmju_norm[m[K
+[3.543s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.543s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.543s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[3.543s]   112 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(),
+[3.543s]       |                   [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[3.544s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.544s]   112 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),
+[3.544s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[3.544s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.544s]   112 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),
+[3.544s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[3.544s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.544s]   112 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),
+[3.544s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[3.544s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.544s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.545s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.545s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[3.546s]   112 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(),
+[3.546s]       |                   [01;31m[K^~~~[m[K
+[3.546s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:112:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[3.546s]   112 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(),
+[3.546s]       |                   [01;31m[K^~~~[m[K
+[3.546s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:96:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kf_raw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.546s]    96 |       const double *[01;35m[Kf_raw[m[K = mujoco_data->sensordata + adr_force;   // Fx, Fy, Fz (world frame)
+[3.546s]       |                     [01;35m[K^~~~~[m[K
+[3.546s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:97:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_raw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.546s]    97 |       const double *[01;35m[Kt_raw[m[K = mujoco_data->sensordata + adr_torque;  // Tx, Ty, Tz (world frame)
+[3.546s]       |                     [01;35m[K^~~~~[m[K
+[3.548s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:121:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kf_raw[m[K’ was not declared in this scope
+[3.548s]   121 |         std::memcpy(f0.data(), [01;31m[Kf_raw[m[K, 3 * sizeof(double));
+[3.548s]       |                                [01;31m[K^~~~~[m[K
+[3.552s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:122:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kt_raw[m[K’ was not declared in this scope
+[3.552s]   122 |         std::memcpy(t0.data(), [01;31m[Kt_raw[m[K, 3 * sizeof(double));
+[3.552s]       |                                [01;31m[K^~~~~[m[K
+[3.558s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:130:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kf_raw[m[K’ was not declared in this scope
+[3.558s]   130 |       msg.wrench.force.x  = [01;31m[Kf_raw[m[K[0] - f0[0];
+[3.559s]       |                             [01;31m[K^~~~~[m[K
+[3.563s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:133:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kt_raw[m[K’ was not declared in this scope
+[3.563s]   133 |       msg.wrench.torque.x = [01;31m[Kt_raw[m[K[0] - t0[0];
+[3.563s]       |                             [01;31m[K^~~~~[m[K
+[3.568s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K At global scope:
+[3.568s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:144:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krendering[m[K’ does not name a type
+[3.568s]   144 |   [01;31m[Krendering[m[K->close();
+[3.568s]       |   [01;31m[K^~~~~~~~~[m[K
+[3.569s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:145:16:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[3.569s]   145 |   mj_deleteData[01;31m[K([m[Kmujoco_data);
+[3.569s]       |                [01;31m[K^[m[K
+[3.569s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:146:17:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[3.569s]   146 |   mj_deleteModel[01;31m[K([m[Kmujoco_model);
+[3.569s]       |                 [01;31m[K^[m[K
+[3.569s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.569s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.569s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:148:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[3.569s]   148 |   [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "MuJoCo simulation terminated. Bye!");
+[3.569s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[3.569s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:148:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[3.569s]   148 |   [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "MuJoCo simulation terminated. Bye!");
+[3.569s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[3.570s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:149:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[3.570s]   149 |   [01;31m[Kreturn[m[K 0;
+[3.570s]       |   [01;31m[K^~~~~~[m[K
+[3.570s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:150:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[3.570s]   150 | [01;31m[K}[m[K
+[3.570s]       | [01;31m[K^[m[K
+[4.667s] gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+[4.667s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+[4.667s] gmake: *** [Makefile:146：all] 错误 2
+[4.671s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

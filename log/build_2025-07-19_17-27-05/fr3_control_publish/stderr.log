@@ -1,0 +1,17 @@
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::MujocoSimNode()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x140e): undefined reference to `glfwInit'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x163d): undefined reference to `glfwCreateWindow'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x17d2): undefined reference to `glfwTerminate'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x187b): undefined reference to `glfwMakeContextCurrent'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::~MujocoSimNode()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x61): undefined reference to `glfwDestroyWindow'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x66): undefined reference to `glfwTerminate'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::update()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x848): undefined reference to `glfwWindowShouldClose'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x93f): undefined reference to `glfwGetFramebufferSize'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x9ef): undefined reference to `glfwSwapBuffers'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x9f4): undefined reference to `glfwPollEvents'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:176：mujoco_sim_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:762：CMakeFiles/mujoco_sim_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

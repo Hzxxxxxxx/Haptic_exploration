@@ -37,6 +37,17 @@ public:
     rclcpp::Node::SharedPtr &node, mjModel *mujoco_model, mjData *mujoco_data,
     const urdf::Model &urdf_model, const hardware_interface::HardwareInfo &hardware_info) = 0;
 
+  // --- 新增：从 base class 继承的 read/write 接口声明 ---
+  /// \brief 读取仿真状态（position/velocity）到 ROS2 state interface
+  virtual hardware_interface::return_type read(
+    const rclcpp::Time & time,
+    const rclcpp::Duration & period) override = 0;
+
+  /// \brief 写入 ROS2 command interface 到仿真（在这里转位置/速度命令为 qfrc_applied）
+  virtual hardware_interface::return_type write(
+    const rclcpp::Time & time,
+    const rclcpp::Duration & period) override = 0;
+
 protected:
   rclcpp::Node::SharedPtr node_;  // TODO(sangteak601): need node?
 };

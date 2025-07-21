@@ -1,0 +1,47 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_sim_node[0m
+[  2%] Built target fr3_control_publish__cpp
+[  8%] Built target fr3_control_publish__rosidl_generator_c
+[ 15%] Built target fr3_monitor
+[ 17%] Built target tangential_velocity_controller
+[ 22%] Built target ee_pose_bridge
+[ 22%] Built target ament_cmake_python_copy_fr3_control_publish
+[ 24%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o[0m
+[ 28%] Built target hybridforcetangentialcontroller
+[ 35%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[ 55%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[ 62%] Built target fr3_control_publish__rosidl_typesupport_c
+[ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[ 73%] Built target jacobian_publisher
+[ 77%] Built target force_position_controller
+[ 77%] Built target fr3_control_publish
+[ 80%] Built target fr3_control_publish__py
+[ 84%] Built target fr3_control_publish__rosidl_generator_py
+[ 93%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[ 93%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing fr3_control_publish.egg-info/PKG-INFO
+writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+writing top-level names to fr3_control_publish.egg-info/top_level.txt
+reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[100%] [32m[1mLinking CXX executable mujoco_sim_node[0m
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::MujocoSimNode()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x2d6): undefined reference to `mj_loadXML'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x519): undefined reference to `mj_makeData'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x7e3): undefined reference to `mj_name2id'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0xa25): undefined reference to `mj_name2id'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0xa4d): undefined reference to `mj_name2id'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::~MujocoSimNode()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x2d): undefined reference to `mj_deleteData'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x40): undefined reference to `mj_deleteModel'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::update()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0xc1): undefined reference to `mj_step'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x4d2): undefined reference to `mj_jacSite'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:175：mujoco_sim_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:762：CMakeFiles/mujoco_sim_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

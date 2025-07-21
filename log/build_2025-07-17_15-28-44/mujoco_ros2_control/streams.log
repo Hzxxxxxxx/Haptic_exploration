@@ -1,0 +1,131 @@
+[0.020s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target mujoco_ros2_control[0m
+[0.125s] [ 33%] Built target mujoco_system_plugins
+[0.135s] [ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[3.396s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.397s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.397s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[3.398s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.398s]   102 |       RCLCPP_INFO(node->get_logger(), [01;35m[K"touch=[%.3f,%.3f,%.3f,%.3f,%.3f,%.3f]"[m[K,
+[3.398s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.398s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.398s]   102 |       RCLCPP_INFO(node->get_logger(), "touch=[%.3f,[01;36m[K%.3f[m[K,%.3f,%.3f,%.3f,%.3f]",
+[3.398s]       |                                                    [01;36m[K~~~^[m[K
+[3.398s]       |                                                       [01;36m[K|[m[K
+[3.398s]       |                                                       [01;36m[Kdouble[m[K
+[3.398s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.398s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.399s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.399s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.399s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.400s]   102 |       RCLCPP_INFO(node->get_logger(), [01;35m[K"touch=[%.3f,%.3f,%.3f,%.3f,%.3f,%.3f]"[m[K,
+[3.400s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.400s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.400s]   102 |       RCLCPP_INFO(node->get_logger(), "touch=[%.3f,%.3f,[01;36m[K%.3f[m[K,%.3f,%.3f,%.3f]",
+[3.400s]       |                                                         [01;36m[K~~~^[m[K
+[3.400s]       |                                                            [01;36m[K|[m[K
+[3.400s]       |                                                            [01;36m[Kdouble[m[K
+[3.400s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.400s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.400s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.400s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.400s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.401s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.401s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.401s]   102 |       RCLCPP_INFO(node->get_logger(), [01;35m[K"touch=[%.3f,%.3f,%.3f,%.3f,%.3f,%.3f]"[m[K,
+[3.401s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.401s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:65:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.401s]   102 |       RCLCPP_INFO(node->get_logger(), "touch=[%.3f,%.3f,%.3f,[01;36m[K%.3f[m[K,%.3f,%.3f]",
+[3.402s]       |                                                              [01;36m[K~~~^[m[K
+[3.402s]       |                                                                 [01;36m[K|[m[K
+[3.402s]       |                                                                 [01;36m[Kdouble[m[K
+[3.402s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.403s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.403s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.403s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.403s]   102 |       RCLCPP_INFO(node->get_logger(), [01;35m[K"touch=[%.3f,%.3f,%.3f,%.3f,%.3f,%.3f]"[m[K,
+[3.403s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.403s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.403s]   102 |       RCLCPP_INFO(node->get_logger(), "touch=[%.3f,%.3f,%.3f,%.3f,[01;36m[K%.3f[m[K,%.3f]",
+[3.403s]       |                                                                   [01;36m[K~~~^[m[K
+[3.403s]       |                                                                      [01;36m[K|[m[K
+[3.403s]       |                                                                      [01;36m[Kdouble[m[K
+[3.403s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.403s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.403s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.404s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:2[m[K:
+[3.404s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.404s]   102 |       RCLCPP_INFO(node->get_logger(), [01;35m[K"touch=[%.3f,%.3f,%.3f,%.3f,%.3f,%.3f]"[m[K,
+[3.404s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.404s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:102:75:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.405s]   102 |       RCLCPP_INFO(node->get_logger(), "touch=[%.3f,%.3f,%.3f,%.3f,%.3f,[01;36m[K%.3f[m[K]",
+[3.405s]       |                                                                        [01;36m[K~~~^[m[K
+[3.405s]       |                                                                           [01;36m[K|[m[K
+[3.405s]       |                                                                           [01;36m[Kdouble[m[K
+[5.270s] [ 66%] [32m[1mLinking CXX executable mujoco_ros2_control[0m
+[5.670s] [100%] Built target mujoco_ros2_control
+[5.686s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[5.688s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control
+[5.698s] -- Install configuration: ""
+[5.699s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/libmujoco_system_plugins.so
+[5.699s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/mujoco_ros2_control/mujoco_ros2_control
+[5.701s] -- Set runtime path of "/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/mujoco_ros2_control/mujoco_ros2_control" to "/opt/ros/humble/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/opt/ros/humble/lib/x86_64-linux-gnu"
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/mujoco_system_plugins.xml
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/package_run_dependencies/mujoco_ros2_control
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/parent_prefix_path/mujoco_ros2_control
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/ament_prefix_path.sh
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/ament_prefix_path.dsv
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/path.sh
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/path.dsv
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.bash
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.sh
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.zsh
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.dsv
+[5.701s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.dsv
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/packages/mujoco_ros2_control
+[5.701s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/mujoco_ros2_control__pluginlib__plugin/mujoco_ros2_control
+[5.702s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/cmake/mujoco_ros2_controlConfig.cmake
+[5.702s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/cmake/mujoco_ros2_controlConfig-version.cmake
+[5.702s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.xml
+[5.705s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control

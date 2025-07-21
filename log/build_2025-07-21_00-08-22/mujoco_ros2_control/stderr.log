@@ -1,0 +1,6 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:148:34:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Khardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  148 |   const rclcpp::Duration & period[01;31m[K)[m[K
+      |                                  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,124 @@
+[0.045s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos -- -j12 -l12
+[0.209s] [ 16%] Built target example_position
+[0.214s] [ 33%] Built target example_velocity
+[0.221s] [ 50%] Built target example_tricycle_drive
+[0.222s] [ 66%] Built target example_gripper
+[0.232s] [ 83%] Built target example_diff_drive
+[0.244s] [100%] Built target example_effort
+[0.273s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos -- -j12 -l12
+[0.296s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos
+[0.313s] -- Install configuration: ""
+[0.313s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch
+[0.313s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/vertical_cart_example_velocity.launch.py
+[0.318s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/cart_example_velocity.launch.py
+[0.318s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/cart_example_effort.launch.py
+[0.318s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/fr3_admittance_hzx.launch.py
+[0.318s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/fr3_hzx.launch copy.py
+[0.318s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/tricycle_drive.launch.py
+[0.319s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/diff_drive.launch.py
+[0.319s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/vertical_cart_example_position_pid.launch.py
+[0.319s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/ft_sensor_example.launch.py
+[0.319s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py
+[0.320s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/cart_example_position.launch.py
+[0.320s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/fr3_hzx.launch.py
+[0.320s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config
+[0.321s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/tricycle_drive_controller.yaml
+[0.321s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/fr3_admittance_control.yaml
+[0.321s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/diff_drive_controller.yaml
+[0.321s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/gripper_controller.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/fr3_controllers copy.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/fr3_controllers.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/cartpole_controller_effort.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/cartpole_controller_velocity.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/ft_broadcaster.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/cartpole_controller_position.yaml
+[0.322s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf
+[0.323s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_cart_effort.xacro.urdf
+[0.323s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf
+[0.323s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_vertical_cart_position_pid.xacro.urdf
+[0.323s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf
+[0.323s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/fr3_nohand.urdf
+[0.323s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_ft_sensor.xacro.urdf
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_cart_position.xacro.urdf
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/fr3_nohand copy.urdf
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_vertical_cart_velocity_pid.xacro.urdf
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_diff_drive.xacro.urdf
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models
+[0.324s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_gripper_mimic_joint.xml
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/scene.xml
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/fr3_copy.xml
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_4.obj
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_2.obj
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0.obj
+[0.325s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_2.obj
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link1.obj
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5_0.obj
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_6.obj
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3_1.obj
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_0.obj
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/Hapic_Exploration.stl
+[0.326s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_4.obj
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link2.stl
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6.stl
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7.obj
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4_1.obj
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_3.obj
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5_2.obj
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_1.obj
+[0.327s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5_1.obj
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5.obj
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_5.obj
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4_0.obj
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7.stl
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_5.obj
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5.stl
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4.obj
+[0.328s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4.stl
+[0.333s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3.obj
+[0.333s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_7.obj
+[0.333s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6.obj
+[0.333s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_3.obj
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_1.obj
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_0.obj
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3_0.obj
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_0.obj
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3.stl
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/Cylinder.stl
+[0.334s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link1.stl
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_3.obj
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_2.obj
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0.stl
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/tantou_Meshed.stl
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_1.obj
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_6.obj
+[0.335s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link2.obj
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_ft_sensor.xml
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_vertical_cart.xml
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_tricycle_drive.xml
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_cart.xml
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/fr3.xml
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_diff_drive.xml
+[0.336s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_position
+[0.341s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_velocity
+[0.344s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_effort
+[0.344s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_diff_drive
+[0.344s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_tricycle_drive
+[0.344s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_gripper
+[0.344s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/mujoco_ros2_control_demos
+[0.344s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/mujoco_ros2_control_demos
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/ament_prefix_path.sh
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/ament_prefix_path.dsv
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/path.sh
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/path.dsv
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.bash
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.sh
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.zsh
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.dsv
+[0.345s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.dsv
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/ament_index/resource_index/packages/mujoco_ros2_control_demos
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/cmake/mujoco_ros2_control_demosConfig.cmake
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/cmake/mujoco_ros2_control_demosConfig-version.cmake
+[0.345s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.xml
+[0.346s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos

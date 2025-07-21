@@ -23,7 +23,7 @@ public:
     max_joint_vel_ = 0.5;
 
     f_des_.setZero();
-    f_des_(1) = -5.0;
+    f_des_(0) = -10.0;
 
     Eigen::Vector<double,6> diag;
     diag << 1.0/50, 1.0/50, 1.0/50, 1.0/5, 1.0/5, 1.0/5;
@@ -120,6 +120,11 @@ private:
   /* ---------- 主控制循环 ---------- */
   void control_loop()
   {
+    if(f_ext_sensor_.norm() > 20.0) {
+      RCLCPP_WARN(get_logger(), "外力过大，停止控制");
+      return;
+    }
+    
     if (!initialized_ || !have_jacobian_ || !have_wrench_) return;
     ++loop_count_;
 

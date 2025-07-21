@@ -1,0 +1,12 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:140:33:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::return_type mujoco_ros2_control::MujocoSystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+  140 | hardware_interface::return_type [01;31m[KMujocoSystemInterface[m[K::write(
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:140:33:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::return_type mujoco_ros2_control::MujocoSystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+In file included from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/mujoco_ros2_control/mujoco_system.hpp:31[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:21[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/mujoco_ros2_control/mujoco_system_interface.hpp:33:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass mujoco_ros2_control::MujocoSystemInterface[m[K’ defined here
+   33 | class [01;36m[KMujocoSystemInterface[m[K : public hardware_interface::SystemInterface
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

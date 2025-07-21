@@ -1,0 +1,48 @@
+[0.023s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target mujoco_sim_node[0m
+[0.132s] [  6%] Built target fr3_control_publish__rosidl_generator_c
+[0.141s] [  8%] Built target fr3_control_publish__cpp
+[0.144s] [  8%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.147s] [ 11%] [32m[1mLinking CXX executable mujoco_sim_node[0m
+[0.151s] [ 15%] Built target tangential_velocity_controller
+[0.156s] [ 20%] Built target hybridforcetangentialcontroller
+[0.156s] [ 24%] Built target fr3_monitor
+[0.159s] [ 28%] Built target ee_pose_bridge
+[0.197s] [ 37%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.197s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.225s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.227s] [ 57%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.228s] [ 64%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.228s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.263s] [ 73%] Built target jacobian_publisher
+[0.287s] [ 77%] Built target force_position_controller
+[0.287s] [ 77%] Built target fr3_control_publish
+[0.323s] [ 80%] Built target fr3_control_publish__py
+[0.367s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[0.406s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.422s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.422s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.492s] running egg_info
+[0.508s] writing fr3_control_publish.egg-info/PKG-INFO
+[0.509s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[0.510s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[0.612s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.614s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.668s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[0.818s] /usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::MujocoSimNode()':
+[0.818s] mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x2d6): undefined reference to `mj_loadXML'
+[0.818s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x519): undefined reference to `mj_makeData'
+[0.818s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x7e3): undefined reference to `mj_name2id'
+[0.819s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0xa25): undefined reference to `mj_name2id'
+[0.819s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0xa4d): undefined reference to `mj_name2id'
+[0.819s] /usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::~MujocoSimNode()':
+[0.820s] mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x2d): undefined reference to `mj_deleteData'
+[0.820s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x40): undefined reference to `mj_deleteModel'
+[0.820s] /usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::update()':
+[0.820s] mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0xc1): undefined reference to `mj_step'
+[0.820s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x4d2): undefined reference to `mj_jacSite'
+[0.878s] collect2: error: ld returned 1 exit status
+[0.880s] gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:175：mujoco_sim_node] 错误 1
+[0.880s] gmake[1]: *** [CMakeFiles/Makefile2:762：CMakeFiles/mujoco_sim_node.dir/all] 错误 2
+[0.881s] gmake: *** [Makefile:146：all] 错误 2
+[0.884s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

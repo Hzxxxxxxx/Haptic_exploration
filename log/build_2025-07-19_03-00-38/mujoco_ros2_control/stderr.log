@@ -1,0 +1,15 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:174:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kis_acceleration_control_enabled[m[K’; did you mean ‘[01m[Kis_position_control_enabled[m[K’?
+  174 |     if (joint_state.[01;31m[Kis_acceleration_control_enabled[m[K) {
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[Kis_position_control_enabled[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:177:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kacceleration_command[m[K’
+  177 |       mj_data_->qacc[joint_state.mj_vel_adr] = joint_state.[01;31m[Kacceleration_command[m[K;
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:186:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kis_acceleration_control_enabled[m[K’; did you mean ‘[01m[Kis_position_control_enabled[m[K’?
+  186 |       if (joint_state.[01;31m[Kis_acceleration_control_enabled[m[K) {
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Kis_position_control_enabled[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

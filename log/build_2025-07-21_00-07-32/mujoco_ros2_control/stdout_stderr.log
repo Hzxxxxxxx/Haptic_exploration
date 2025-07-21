@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_system_plugins[0m
+[35m[1mConsolidate compiler generated dependencies of target mujoco_ros2_control[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[ 83%] Built target mujoco_ros2_control
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:160:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass control_toolbox::Pid[m[K’ has no member named ‘[01m[KgetDerivativeTerm[m[K’; did you mean ‘[01m[KgetDerivativeError[m[K’?
+  160 |     double qd_cmd = js.position_pid.[01;31m[KgetDerivativeTerm[m[K(); // 如果 PID 提供期望速度，可用此项
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[KgetDerivativeError[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:163:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kqdd_desired[m[K’ was not declared in this scope
+  163 |     [01;31m[Kqdd_desired[m[K[qi] =
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:164:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass control_toolbox::Pid[m[K’ has no member named ‘[01m[KgetProportionalGain[m[K’
+  164 |       js.position_pid.[01;31m[KgetProportionalGain[m[K()  * err
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:165:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass control_toolbox::Pid[m[K’ has no member named ‘[01m[KgetDerivativeGain[m[K’; did you mean ‘[01m[KgetDerivativeError[m[K’?
+  165 |     - js.position_pid.[01;31m[KgetDerivativeGain[m[K()    * qd;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[KgetDerivativeError[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:160:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kqd_cmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  160 |     double [01;35m[Kqd_cmd[m[K = js.position_pid.getDerivativeTerm(); // 如果 PID 提供期望速度，可用此项
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:169:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kqdd_desired[m[K’ was not declared in this scope
+  169 |   mj_rne(mj_model_, mj_data_, [01;31m[Kqdd_desired[m[K.data(), torque_ff.data());
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:169:51:[m[K [01;31m[Kerror: [m[K‘[01m[Ktorque_ff[m[K’ was not declared in this scope
+  169 |   mj_rne(mj_model_, mj_data_, qdd_desired.data(), [01;31m[Ktorque_ff[m[K.data());
+      |                                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:145:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  145 |   int [01;35m[Knv[m[K = mj_model_->nv;
+      |       [01;35m[K^~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:142:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  142 |   [01;35m[Kconst rclcpp::Duration & period[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

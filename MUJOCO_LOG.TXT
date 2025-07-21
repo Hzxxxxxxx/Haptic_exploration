@@ -81,3 +81,78 @@ Element name 'home', id 0
 Thu Jul 17 13:56:10 2025
 ERROR: Cannot find sensor: tip_force
 
+Thu Jul 17 14:03:11 2025
+ERROR: Cannot find geometry: touch_head_collision
+
+Thu Jul 17 14:03:34 2025
+ERROR: Cannot find geometry: touch_head_collision
+
+Thu Jul 17 14:06:43 2025
+ERROR: Load model error: Error: keyframe 0: invalid qpos size, expected length 8
+Element name 'home', id 0
+
+Thu Jul 17 14:07:33 2025
+ERROR: Load model error: Error: keyframe 0: invalid qpos size, expected length 8
+Element name 'home', id 0
+
+Thu Jul 17 14:08:44 2025
+ERROR: Load model error: Error: keyframe 0: invalid qpos size, expected length 8
+Element name 'home', id 0
+
+Thu Jul 17 14:08:53 2025
+ERROR: Load model error: Error: keyframe 0: invalid ctrl size, expected length 7
+Element name 'home', id 0
+
+Thu Jul 17 15:21:40 2025
+ERROR: Load model error: XML Error: Schema violation: unrecognized attribute: 'objtype'
+Element 'touch', line 0
+
+
+Thu Jul 17 17:59:01 2025
+ERROR: Load model error: XML Error: Schema violation: unrecognized attribute: 'joint'
+Element 'force', line 0
+
+
+Thu Jul 17 18:14:12 2025
+ERROR: Load model error: Error: joint must be limited in sensor
+Element name 'tip_contact_frc', id 2, line 0
+
+Thu Jul 17 18:14:36 2025
+ERROR: Load model error: Error: joint must be limited in sensor
+Element name 'tip_contact_frc', id 2, line 0
+
+Fri Jul 18 01:47:35 2025
+ERROR: Load model error: Error: keyframe 0: invalid qpos size, expected length 7
+Element name 'home', id 0
+
+Fri Jul 18 22:20:26 2025
+ERROR: Load model error: XML Error: Schema violation: unrecognized element
+Element 'contact', line 0
+
+
+Fri Jul 18 22:22:22 2025
+ERROR: Load model error: XML Error: Schema violation: unrecognized element
+Element 'contact', line 0
+
+
+Sat Jul 19 01:10:53 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 6. The simulation is unstable. Time = 1.4380.
+
+Sat Jul 19 17:28:41 2025
+WARNING: Pre-allocated visual geom buffer is full. Increase maxgeom above 0. Time = 0.0020.
+
+Sat Jul 19 17:28:41 2025
+ERROR: mjv_room2model: mjvScene scale too small
+
+Mon Jul 21 01:25:23 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 54.7280.
+
+Mon Jul 21 01:51:01 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 29.9780.
+
+Mon Jul 21 02:11:58 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 5. The simulation is unstable. Time = 260.1740.
+
+Mon Jul 21 02:12:45 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 7.5320.
+

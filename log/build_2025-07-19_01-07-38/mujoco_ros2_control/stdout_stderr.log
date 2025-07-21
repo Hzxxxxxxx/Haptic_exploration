@@ -1,0 +1,21 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[ 83%] Built target mujoco_ros2_control
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:181:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kkp_pos[m[K’
+  181 |         double tau_pd = joint_state.[01;31m[Kkp_pos[m[K * pos_err + joint_state.kd_pos * vel_err;
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:181:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kkd_pos[m[K’
+  181 |         double tau_pd = joint_state.kp_pos * pos_err + joint_state.[01;31m[Kkd_pos[m[K * vel_err;
+      |                                                                    [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:199:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kkp_vel[m[K’
+  199 |         double tau_vel = joint_state.[01;31m[Kkp_vel[m[K * vel_err;   // 或 joint_state.kv
+      |                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:222:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Ktau_max[m[K’
+  222 |     double tau_limit = joint_state.[01;31m[Ktau_max[m[K > 0.0 ? joint_state.tau_max : 0.0;
+      |                                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:222:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Ktau_max[m[K’
+  222 |     double tau_limit = joint_state.tau_max > 0.0 ? joint_state.[01;31m[Ktau_max[m[K : 0.0;
+      |                                                                [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

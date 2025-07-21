@@ -62,6 +62,7 @@ public:
     double effort;
     double position_command;
     double velocity_command;
+    double acceleration_command;               // 新增
     double effort_command;
     double min_position_command;
     double max_position_command;
@@ -73,6 +74,7 @@ public:
     control_toolbox::Pid velocity_pid;
     bool is_position_control_enabled{false};
     bool is_velocity_control_enabled{false};
+    bool is_acceleration_control_enabled;      // 新增
     bool is_effort_control_enabled{false};
     bool is_pid_enabled{false};
     joint_limits::JointLimits joint_limits;
@@ -82,6 +84,7 @@ public:
     int mj_joint_type;
     int mj_pos_adr;
     int mj_vel_adr;
+    int actuator_adr; 
   };
 
   template <typename T>

@@ -137,6 +137,105 @@ hardware_interface::return_type MujocoSystem::write(
   return hardware_interface::return_type::OK;
 }
 
+// hardware_interface::return_type MujocoSystem::write(
+//   const rclcpp::Time & /*time*/,
+//   const rclcpp::Duration & period)
+// {
+//   // 1. 更新 mimic 关节
+//   for (auto &js : joint_states_) {
+//     if (js.is_mimic) {
+//       const auto &src = joint_states_[ js.mimicked_joint_index ];
+//       js.position_command = js.mimic_multiplier * src.position_command;
+//       js.velocity_command = js.mimic_multiplier * src.velocity_command;
+//       js.effort_command   = js.mimic_multiplier * src.effort_command;
+//     }
+//   }
+
+//   // 2. 计算重力 + Coriolis 偏置
+//   //    flg_coriolis=1 表示包含 Coriolis 和重力项
+//   mj_rne(mj_model_, mj_data_, /*flg_coriolis=*/1, mj_data_->qfrc_inverse);
+
+//   // 3. 控制周期（纳秒）
+//   double dt_ns = period.nanoseconds();
+
+//   // 4. 对每个关节做控制
+//   for (auto &js : joint_states_) {
+//     // 4.1 查 actuator 索引
+//     int act_id = mj_name2id(mj_model_, mjOBJ_ACTUATOR, js.name.c_str());
+//     if (act_id < 0) {
+//       RCLCPP_ERROR(
+//         node_->get_logger(),
+//         "无法找到 actuator '%s'", js.name.c_str()
+//       );
+//       continue;
+//     }
+
+//     // 4.2 计算扭矩 tau
+//     double tau = 0.0;
+
+//     // 位置控制 (PD + 偏置)
+//     if (js.is_position_control_enabled) {
+//       double q   = mj_data_->qpos[js.mj_pos_adr];
+//       double dq  = mj_data_->qvel[js.mj_vel_adr];
+//       double qd  = js.position_command;
+//       double e   = qd - q;
+//       double tau_pd = js.position_pid.computeCommand(e, dt_ns);
+//       double bias   = mj_data_->qfrc_inverse[js.mj_vel_adr];
+//       tau = tau_pd + bias;
+
+//       RCLCPP_DEBUG(
+//         node_->get_logger(),
+//         "[%s] pos: cmd=%.3f pos=%.3f err=%.3f pd=%.3f bias=%.3f -> tau=%.3f",
+//         js.name.c_str(), qd, q, e, tau_pd, bias, tau
+//       );
+//     }
+//     // 速度控制 (PD)
+//     else if (js.is_velocity_control_enabled) {
+//       double dq   = mj_data_->qvel[js.mj_vel_adr];
+//       double dqc  = js.velocity_command;
+//       double ev   = dqc - dq;
+//       double tauv = js.velocity_pid.computeCommand(ev, dt_ns);
+//       tau = tauv;
+
+//       RCLCPP_DEBUG(
+//         node_->get_logger(),
+//         "[%s] vel: cmd=%.3f vel=%.3f err=%.3f -> tau=%.3f",
+//         js.name.c_str(), dqc, dq, ev, tau
+//       );
+//     }
+//     // Effort 控制 (直接命令)
+//     else if (js.is_effort_control_enabled) {
+//       tau = std::clamp(
+//         js.effort_command,
+//         -js.joint_limits.max_effort,
+//          js.joint_limits.max_effort
+//       );
+
+//       RCLCPP_DEBUG(
+//         node_->get_logger(),
+//         "[%s] eff: cmd=%.3f -> tau=%.3f",
+//         js.name.c_str(), js.effort_command, tau
+//       );
+//     }
+//     // 未使能任何控制
+//     else {
+//       tau = 0.0;
+//       RCLCPP_DEBUG(
+//         node_->get_logger(),
+//         "[%s] no control -> tau=0",
+//         js.name.c_str()
+//       );
+//     }
+
+//     // 5. 写入 actuator 控制口
+//     mj_data_->ctrl[act_id] = tau;
+//   }
+
+//   return hardware_interface::return_type::OK;
+// }
+
+
+
 bool MujocoSystem::init_sim(
   rclcpp::Node::SharedPtr &node, mjModel *mujoco_model, mjData *mujoco_data,
   const urdf::Model &urdf_model, const hardware_interface::HardwareInfo &hardware_info)

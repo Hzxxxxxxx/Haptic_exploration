@@ -1,0 +1,23 @@
+[0.035s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.118s] [ 16%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[0.145s] [ 83%] Built target mujoco_ros2_control
+[2.660s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[2.660s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:181:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kkp_pos[m[K’
+[2.660s]   181 |         double tau_pd = joint_state.[01;31m[Kkp_pos[m[K * pos_err + joint_state.kd_pos * vel_err;
+[2.660s]       |                                     [01;31m[K^~~~~~[m[K
+[2.660s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:181:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kkd_pos[m[K’
+[2.660s]   181 |         double tau_pd = joint_state.kp_pos * pos_err + joint_state.[01;31m[Kkd_pos[m[K * vel_err;
+[2.660s]       |                                                                    [01;31m[K^~~~~~[m[K
+[2.660s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:199:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kkp_vel[m[K’
+[2.661s]   199 |         double tau_vel = joint_state.[01;31m[Kkp_vel[m[K * vel_err;   // 或 joint_state.kv
+[2.661s]       |                                      [01;31m[K^~~~~~[m[K
+[2.661s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:222:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Ktau_max[m[K’
+[2.661s]   222 |     double tau_limit = joint_state.[01;31m[Ktau_max[m[K > 0.0 ? joint_state.tau_max : 0.0;
+[2.661s]       |                                    [01;31m[K^~~~~~~[m[K
+[2.661s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:222:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Ktau_max[m[K’
+[2.661s]   222 |     double tau_limit = joint_state.tau_max > 0.0 ? joint_state.[01;31m[Ktau_max[m[K : 0.0;
+[2.662s]       |                                                                [01;31m[K^~~~~~~[m[K
+[3.583s] gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+[3.583s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+[3.583s] gmake: *** [Makefile:146：all] 错误 2
+[3.586s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

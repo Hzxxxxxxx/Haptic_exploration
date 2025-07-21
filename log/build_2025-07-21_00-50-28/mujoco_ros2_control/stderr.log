@@ -1,0 +1,24 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:152:23:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KmjData*[m[K’ {aka ‘[01m[KmjData_*[m[K’} to ‘[01m[KmjtNum*[m[K’ {aka ‘[01m[Kdouble*[m[K’}
+  152 |   mj_fullM(mj_model_, [01;31m[Kmj_data_[m[K, M.data(), 1);
+      |                       [01;31m[K^~~~~~~~[m[K
+      |                       [01;31m[K|[m[K
+      |                       [01;31m[KmjData* {aka mjData_*}[m[K
+In file included from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/mujoco_ros2_control/mujoco_system_interface.hpp:25[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/include/mujoco_ros2_control/mujoco_system.hpp:31[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:21[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco/mujoco-install/include/mujoco/mujoco.h:488:47:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid mj_fullM(const mjModel*, mjtNum*, const mjtNum*)[m[K’
+  488 | MJAPI void mj_fullM(const mjModel* m, [01;36m[KmjtNum* dst[m[K, const mjtNum* M);
+      |                                       [01;36m[K~~~~~~~~^~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:182:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct control_toolbox::Pid::Gains[m[K’ has no member named ‘[01m[Kp[m[K’
+  182 |     double qdd_des = js.position_pid.getGains().[01;31m[Kp[m[K * e
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:183:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct control_toolbox::Pid::Gains[m[K’ has no member named ‘[01m[Kd[m[K’
+  183 |                    + js.position_pid.getGains().[01;31m[Kd[m[K * de;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:145:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  145 |   double [01;35m[Kdt[m[K = period.nanoseconds() * 1e-9;
+      |          [01;35m[K^~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

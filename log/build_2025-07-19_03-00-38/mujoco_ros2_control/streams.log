@@ -1,0 +1,20 @@
+[0.065s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target mujoco_system_plugins[0m
+[0.207s] [ 66%] Built target mujoco_ros2_control
+[0.227s] [ 83%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[3.055s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.055s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:174:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kis_acceleration_control_enabled[m[K’; did you mean ‘[01m[Kis_position_control_enabled[m[K’?
+[3.055s]   174 |     if (joint_state.[01;31m[Kis_acceleration_control_enabled[m[K) {
+[3.055s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.056s]       |                     [32m[Kis_position_control_enabled[m[K
+[3.056s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:177:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kacceleration_command[m[K’
+[3.056s]   177 |       mj_data_->qacc[joint_state.mj_vel_adr] = joint_state.[01;31m[Kacceleration_command[m[K;
+[3.056s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.056s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:186:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mujoco_ros2_control::MujocoSystem::JointState[m[K’ has no member named ‘[01m[Kis_acceleration_control_enabled[m[K’; did you mean ‘[01m[Kis_position_control_enabled[m[K’?
+[3.056s]   186 |       if (joint_state.[01;31m[Kis_acceleration_control_enabled[m[K) {
+[3.056s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.056s]       |                       [32m[Kis_position_control_enabled[m[K
+[3.968s] gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+[3.968s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+[3.968s] gmake: *** [Makefile:146：all] 错误 2
+[3.972s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

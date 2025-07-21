@@ -171,7 +171,7 @@ private:
     if (!(have_js_ && have_jacobian_ && have_wrench_ && have_pose_ && initialized_)) return;
 
     double f_norm = f_ext6_.head<3>().norm();
-    RCLCPP_DEBUG(get_logger(), "当前法向力 f_norm=%.3f", f_norm);
+    RCLCPP_INFO(get_logger(), "当前法向力 f_norm=%.3f", f_norm);
 
     switch (state_) {
 
@@ -185,7 +185,7 @@ private:
         init_scan_dir_ = dir2d;
         init_scan_dir_computed_ = true;
       }
-      f_des_.head<3>() = init_scan_dir_ * (-75);
+      f_des_.head<3>() = init_scan_dir_ * (-200);
       compute_admittance();
       RCLCPP_DEBUG(get_logger(), "INIT_SCAN: f_des=[%.3f,%.3f,%.3f]", 
                    f_des_.x(), f_des_.y(), f_des_.z());

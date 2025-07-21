@@ -45,6 +45,14 @@ int main(int argc, const char **argv)
   // 创建 simulation data
   mujoco_data = mj_makeData(mujoco_model);
 
+  // 在加载并编译完 mjModel* m 之后，mjData* d 之前
+  int id_ee  = mj_name2id(mujoco_model, mjOBJ_GEOM, "touch_tip_collision");
+  int id_box = mj_name2id(mujoco_model, mjOBJ_GEOM, "exploration_object_collision");
+
+  if (id_ee < 0 || id_box < 0) {
+    mju_error("找不到对应的 geom name");
+  }
+
   // ----------------------------- 查找触摸头力传感器 -----------------------------
   const int id_force   = mj_name2id(mujoco_model, mjOBJ_SENSOR, "touch_tip_force");
   const int id_torque  = mj_name2id(mujoco_model, mjOBJ_SENSOR, "touch_tip_torque");
@@ -83,20 +91,69 @@ int main(int argc, const char **argv)
   while (rclcpp::ok() && !rendering->is_close_flag_raised())
   {
     const mjtNum simstart = mujoco_data->time;          // 当前渲染帧开始时刻
-    while (mujoco_data->time - simstart < 1.0 / 60.0)   // 填满 1/60 s 仿真
+    while (mujoco_data->time - simstart < 1.0 / 100.0)   // 填满 1/60 s 仿真
     {
       control.update();                // 这一步内部会调用 mj_step()
+
+      control.update();  // 完成步骤
+      // —— DEBUG: 打印接触对数量和穿透深度 —— 
+      RCLCPP_INFO(node->get_logger(), "DEBUG: ncon=%d nefc=%d", 
+                  mujoco_data->ncon, mujoco_data->nefc);
+
+      for (int i=0; i<mujoco_data->ncon; ++i) {
+        mjContact& con = mujoco_data->contact[i];
+        if ((con.geom1==id_ee && con.geom2==id_box) ||
+            (con.geom1==id_box && con.geom2==id_ee)) {
+
+          RCLCPP_INFO(node->get_logger(),
+            " contact %d: geom1=%d geom2=%d dist=%.5g exclude=%d dim=%d efc_address=%d "
+            "friction=[%.3g %.3g %.3g]",
+            i, con.geom1, con.geom2, con.dist, con.exclude, con.dim, con.efc_address,
+            con.friction[0], con.friction[1], con.friction[2]);
+
+          mjtNum ft[6] = {0};
+          mj_contactForce(mujoco_model, mujoco_data, i, ft);
+          RCLCPP_INFO(node->get_logger(),
+            "  mj_contactForce -> F=[%.6g %.6g %.6g] M=[%.6g %.6g %.6g]",
+            ft[0], ft[1], ft[2], ft[3], ft[4], ft[5]);
+        }
+      }
+
+      for (int i = 0; i < mujoco_data->ncon; i++) {
+        mjContact& con = mujoco_data->contact[i];
+        RCLCPP_INFO(node->get_logger(),
+                    "  contact %d: geom1=%d geom2=%d dist=%.6f",
+                    i, con.geom1, con.geom2, con.dist);
+      }
+
+
+      // 读取并打印接触力
+      for (int i = 0; i < mujoco_data->ncon; i++) {
+        mjContact& con = mujoco_data->contact[i];
+        if ((con.geom1 == id_ee && con.geom2 == id_box) ||
+            (con.geom1 == id_box && con.geom2 == id_ee)) {
+          mjtNum ft[6];
+          // 从第 i 个 contact 提取 6D 力（3）和力矩（3），单位在 contact 坐标系下
+          mj_contactForce(mujoco_model, mujoco_data, i, ft);  // :contentReference[oaicite:0]{index=0}
+
+          RCLCPP_INFO(
+            node->get_logger(),
+            "Contact #%d: force=[%f,%f,%f], torque=[%f,%f,%f]",
+            i, ft[0], ft[1], ft[2], ft[3], ft[4], ft[5]
+          );
+        }
+    }
 
       // ------------------ 读取传感器并发布 ------------------
       const double *f_raw = mujoco_data->sensordata + adr_force;   // Fx, Fy, Fz (world frame)
       const double *t_raw = mujoco_data->sensordata + adr_torque;  // Tx, Ty, Tz (world frame)
 
-      // 第一次有数据时记录零点 (静止、无接触)
-      if (!zero_calibrated && mujoco_data->time > 0.0) {
-        std::memcpy(f0.data(), f_raw, 3 * sizeof(double));
-        std::memcpy(t0.data(), t_raw, 3 * sizeof(double));
-        zero_calibrated = true;
-      }
+      // // 第一次有数据时记录零点 (静止、无接触)
+      // if (!zero_calibrated && mujoco_data->time > 0.0) {
+      //   std::memcpy(f0.data(), f_raw, 3 * sizeof(double));
+      //   std::memcpy(t0.data(), t_raw, 3 * sizeof(double));
+      //   zero_calibrated = true;
+      // }
 
       geometry_msgs::msg::WrenchStamped msg;
       msg.header.stamp = node->get_clock()->now();

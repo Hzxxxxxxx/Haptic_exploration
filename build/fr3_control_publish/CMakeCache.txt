@@ -457,6 +457,9 @@ libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
 
 //Path to a library.
+pkgcfg_lib_GLFW_glfw:FILEPATH=/usr/lib/x86_64-linux-gnu/libglfw.so
+
+//Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
 //Path to a library.
@@ -759,6 +762,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/humble/include][/opt/ros/humble/lib/libfastrtps.so;/opt/ros/humble/lib/libfastcdr.so][v()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.10.12()]
 //Details about finding PythonExtra
@@ -769,6 +774,41 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.10.12(3
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.10.so][/usr/include/python3.10][v3.10.12(3.5)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+GLFW_CFLAGS:INTERNAL=
+GLFW_CFLAGS_I:INTERNAL=
+GLFW_CFLAGS_OTHER:INTERNAL=
+GLFW_FOUND:INTERNAL=1
+GLFW_INCLUDEDIR:INTERNAL=/usr/include
+GLFW_INCLUDE_DIRS:INTERNAL=
+GLFW_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lglfw
+GLFW_LDFLAGS_OTHER:INTERNAL=
+GLFW_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW_LIBRARIES:INTERNAL=glfw
+GLFW_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW_LIBS:INTERNAL=
+GLFW_LIBS_L:INTERNAL=
+GLFW_LIBS_OTHER:INTERNAL=
+GLFW_LIBS_PATHS:INTERNAL=
+GLFW_MODULE_NAME:INTERNAL=glfw3
+GLFW_PREFIX:INTERNAL=/usr
+GLFW_STATIC_CFLAGS:INTERNAL=
+GLFW_STATIC_CFLAGS_I:INTERNAL=
+GLFW_STATIC_CFLAGS_OTHER:INTERNAL=
+GLFW_STATIC_INCLUDE_DIRS:INTERNAL=
+GLFW_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lglfw;-lrt;-lm;-ldl
+GLFW_STATIC_LDFLAGS_OTHER:INTERNAL=
+GLFW_STATIC_LIBDIR:INTERNAL=
+GLFW_STATIC_LIBRARIES:INTERNAL=glfw;rt;m;dl
+GLFW_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW_STATIC_LIBS:INTERNAL=
+GLFW_STATIC_LIBS_L:INTERNAL=
+GLFW_STATIC_LIBS_OTHER:INTERNAL=
+GLFW_STATIC_LIBS_PATHS:INTERNAL=
+GLFW_VERSION:INTERNAL=3.3.6
+GLFW_glfw3_INCLUDEDIR:INTERNAL=
+GLFW_glfw3_LIBDIR:INTERNAL=
+GLFW_glfw3_PREFIX:INTERNAL=
+GLFW_glfw3_VERSION:INTERNAL=
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
@@ -834,8 +874,12 @@ _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=0f3e53742e142b1d9e50e4ca5b901dd8
+__pkg_config_arguments_GLFW:INTERNAL=REQUIRED;glfw3
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
+__pkg_config_checked_GLFW:INTERNAL=1
 __pkg_config_checked__OPENSSL:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GLFW_glfw
+pkgcfg_lib_GLFW_glfw-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl

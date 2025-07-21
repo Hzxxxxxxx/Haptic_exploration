@@ -236,13 +236,9 @@
   <!-- ========================================================= -->
   <ros2_control name="MujocoSystem" type="system">
     <hardware>
-      <!-- MuJoCo 专用系统插件 -->
+
       <plugin>mujoco_ros2_control/MujocoSystem</plugin>
     </hardware>
-
-    <!-- ===== 列出你希望控制 / 读取状态的所有关节 ===== -->
-    <!-- 这里只给最常见的 position + velocity 组合；       -->
-    <!-- 如果要用 effort、torque 等，再加 command_interface name="effort" -->
  
     <joint name="fr3_joint1">
       <command_interface name="position"/>
@@ -280,5 +276,81 @@
       <state_interface   name="velocity"/>
     </joint>
   </ros2_control>
+
+  <!-- <ros2_control name="MujocoSystem" type="system">
+    <hardware>
+      <plugin>mujoco_ros2_control/MujocoSystem</plugin>
+    </hardware>
+
+
+    <joint name="fr3_joint1">
+
+      <command_interface name="position"/>
+
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+
+      <param name="position_commandkp" value="300"/>
+      <param name="position_commandkd" value="10"/>
+    </joint>
+
+    <joint name="fr3_joint2">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+      <param name="position_command_kp" value="300"/>
+      <param name="position_command_ki" value="0"/>
+      <param name="position_command_kd" value="10"/>
+
+    </joint>
+
+    <joint name="fr3_joint3">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+      <param name="position_commandkp" value="300"/>
+      <param name="position_commandkd" value="10"/>
+    </joint>
+
+    <joint name="fr3_joint4">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+      <param name="position_commandkp" value="300"/>
+      <param name="position_commandkd" value="10"/>
+    </joint>
+
+    <joint name="fr3_joint5">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+      <param name="position_commandkp" value="300"/>
+      <param name="position_commandkd" value="10"/>
+    </joint>
+
+    <joint name="fr3_joint6">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+      <param name="position_commandkp" value="300"/>
+      <param name="position_commandkd" value="10"/>
+    </joint>
+
+    <joint name="fr3_joint7">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+      <state_interface   name="velocity"/>
+      <state_interface   name="effort"/>
+      <param name="position_commandkp" value="300"/>
+      <param name="position_commandkd" value="10"/>
+    </joint>
+  </ros2_control> -->
+
 
 </robot>

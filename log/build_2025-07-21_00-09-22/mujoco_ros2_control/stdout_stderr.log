@@ -1,0 +1,81 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_system_plugins[0m
+[ 66%] Built target mujoco_ros2_control
+[ 83%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:148:34:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Khardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  148 |   const rclcpp::Duration & period[01;31m[K)[m[K
+      |                                  [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:194:87:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kbool mujoco_ros2_control::MujocoSystem::init_sim(rclcpp::Node::SharedPtr&, mjModel*, mjData*, const urdf::Model&, const hardware_interface::HardwareInfo&)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  194 |   const urdf::Model &urdf_model, const hardware_interface::HardwareInfo &hardware_info[01;31m[K)[m[K
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:210:87:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kvoid mujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  210 |   const urdf::Model &urdf_model, const hardware_interface::HardwareInfo &hardware_info[01;31m[K)[m[K
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvoid mujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:244:72:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kauto mujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>::operator()(const hardware_interface::ComponentInfo&) const[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  244 |         [&mimicked_joint](const hardware_interface::ComponentInfo &info[01;31m[K)[m[K
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:265:92:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kauto mujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>::operator()(const hardware_interface::InterfaceInfo&) const[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  265 |     auto get_initial_value = [this](const hardware_interface::InterfaceInfo &interface_info[01;31m[K)[m[K
+      |                                                                                            [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:301:88:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kauto mujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>::operator()(const hardware_interface::InterfaceInfo&) const[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  301 |     auto get_min_value = [this](const hardware_interface::InterfaceInfo &interface_info[01;31m[K)[m[K
+      |                                                                                        [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:314:88:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kauto mujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>::operator()(const hardware_interface::InterfaceInfo&) const[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem::register_joints(const urdf::Model&, const hardware_interface::HardwareInfo&)::<lambda>[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  314 |     auto get_max_value = [this](const hardware_interface::InterfaceInfo &interface_info[01;31m[K)[m[K
+      |                                                                                        [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K At global scope:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:377:94:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kvoid mujoco_ros2_control::MujocoSystem::register_sensors(const urdf::Model&, const hardware_interface::HardwareInfo&)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  377 |   const urdf::Model & /* urdf_model */, const hardware_interface::HardwareInfo &hardware_info[01;31m[K)[m[K
+      |                                                                                              [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:445:37:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kvoid mujoco_ros2_control::MujocoSystem::set_initial_pose()[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  445 | void MujocoSystem::set_initial_pose([01;31m[K)[m[K
+      |                                     [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:454:80:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kvoid mujoco_ros2_control::MujocoSystem::get_joint_limits(urdf::JointConstSharedPtr, joint_limits::JointLimits&)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  454 |   urdf::JointConstSharedPtr urdf_joint, joint_limits::JointLimits &joint_limits[01;31m[K)[m[K
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:466:85:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kcontrol_toolbox::Pid mujoco_ros2_control::MujocoSystem::get_pid_gains(const hardware_interface::ComponentInfo&, std::string)[m[K’ is not in namespace enclosing ‘[01m[Kmujoco_ros2_control::MujocoSystem[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  466 |   const hardware_interface::ComponentInfo &joint_info, std::string command_interface[01;31m[K)[m[K
+      |                                                                                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:527[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:529:24:[m[K [01;31m[Kerror: [m[K‘[01m[KMujocoSystem[m[K’ in namespace ‘[01m[Kmujoco_ros2_control::mujoco_ros2_control[m[K’ does not name a type
+  529 |   mujoco_ros2_control::[01;31m[KMujocoSystem[m[K, mujoco_ros2_control::MujocoSystemInterface)
+      |                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:529:59:[m[K [01;31m[Kerror: [m[K‘[01m[KMujocoSystemInterface[m[K’ in namespace ‘[01m[Kmujoco_ros2_control::mujoco_ros2_control[m[K’ does not name a type
+  529 |   mujoco_ros2_control::MujocoSystem, mujoco_ros2_control::[01;31m[KMujocoSystemInterface[m[K)
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In constructor ‘[01m[Kmujoco_ros2_control::{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:528:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+  528 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:528:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_base[m[K’ was not declared in this scope
+  528 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:528:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, <expression error> >(const char [34], const char [43])[m[K’
+  528 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:527[m[K:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void mujoco_ros2_control::class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+  210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:527[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:528:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  528 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:528:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K At global scope:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:528:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  528 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:24:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   24 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

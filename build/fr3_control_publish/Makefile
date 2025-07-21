@@ -471,6 +471,19 @@ hybridforcetangentialcontroller/fast:
 .PHONY : hybridforcetangentialcontroller/fast
 
 #=============================================================================
+# Target rules for targets named mujoco_sim_node
+
+# Build rule for target.
+mujoco_sim_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mujoco_sim_node
+.PHONY : mujoco_sim_node
+
+# fast build rule for target.
+mujoco_sim_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/build
+.PHONY : mujoco_sim_node/fast
+
+#=============================================================================
 # Target rules for targets named fr3_control_publish__py
 
 # Build rule for target.
@@ -891,6 +904,30 @@ src/fr3_monitor_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fr3_monitor.dir/build.make CMakeFiles/fr3_monitor.dir/src/fr3_monitor_node.cpp.s
 .PHONY : src/fr3_monitor_node.cpp.s
 
+src/mujoco_sim_node.o: src/mujoco_sim_node.cpp.o
+.PHONY : src/mujoco_sim_node.o
+
+# target to build an object file
+src/mujoco_sim_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o
+.PHONY : src/mujoco_sim_node.cpp.o
+
+src/mujoco_sim_node.i: src/mujoco_sim_node.cpp.i
+.PHONY : src/mujoco_sim_node.i
+
+# target to preprocess a source file
+src/mujoco_sim_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.i
+.PHONY : src/mujoco_sim_node.cpp.i
+
+src/mujoco_sim_node.s: src/mujoco_sim_node.cpp.s
+.PHONY : src/mujoco_sim_node.s
+
+# target to generate assembly for a file
+src/mujoco_sim_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.s
+.PHONY : src/mujoco_sim_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -927,6 +964,7 @@ help:
 	@echo "... fr3_monitor"
 	@echo "... hybridforcetangentialcontroller"
 	@echo "... jacobian_publisher"
+	@echo "... mujoco_sim_node"
 	@echo "... tangential_velocity_controller"
 	@echo "... rosidl_generator_c/fr3_control_publish/msg/detail/touch_tip_wrench__functions.o"
 	@echo "... rosidl_generator_c/fr3_control_publish/msg/detail/touch_tip_wrench__functions.i"
@@ -979,6 +1017,9 @@ help:
 	@echo "... src/fr3_monitor_node.o"
 	@echo "... src/fr3_monitor_node.i"
 	@echo "... src/fr3_monitor_node.s"
+	@echo "... src/mujoco_sim_node.o"
+	@echo "... src/mujoco_sim_node.i"
+	@echo "... src/mujoco_sim_node.s"
 .PHONY : help
 
 

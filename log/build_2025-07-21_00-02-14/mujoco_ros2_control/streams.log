@@ -1,0 +1,31 @@
+[0.033s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target mujoco_system_plugins[0m
+[0.234s] [ 16%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[0.245s] [ 33%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control.cpp.o[0m
+[0.256s] [ 50%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[6.323s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[6.323s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:145:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kmj_model_[m[K’ was not declared in this scope; did you mean ‘[01m[KmjModel_[m[K’?
+[6.323s]   145 |   int nv = [01;31m[Kmj_model_[m[K->nv;
+[6.324s]       |            [01;31m[K^~~~~~~~~[m[K
+[6.324s]       |            [32m[KmjModel_[m[K
+[6.339s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:149:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmj_data_[m[K’ was not declared in this scope; did you mean ‘[01m[KmjData_[m[K’?
+[6.339s]   149 |   mj_fullM(mj_model_, [01;31m[Kmj_data_[m[K, Mmat.data());
+[6.340s]       |                       [01;31m[K^~~~~~~~[m[K
+[6.340s]       |                       [32m[KmjData_[m[K
+[6.364s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:156:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_states_[m[K’ was not declared in this scope
+[6.364s]   156 |   for (auto &joint : [01;31m[Kjoint_states_[m[K)
+[6.364s]       |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[6.366s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:142:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.366s]   142 |   [01;35m[Kconst rclcpp::Duration & period[m[K)
+[6.366s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[6.503s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[6.503s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:71:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kzero_calibrated[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.503s]    71 |   bool [01;35m[Kzero_calibrated[m[K = false;   // baseline for gravity etc.
+[6.503s]       |        [01;35m[K^~~~~~~~~~~~~~~[m[K
+[8.280s] gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+[8.281s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+[8.281s] gmake[1]: *** 正在等待未完成的任务....
+[13.435s] [ 66%] [32m[1mLinking CXX executable mujoco_ros2_control[0m
+[14.018s] [ 83%] Built target mujoco_ros2_control
+[14.019s] gmake: *** [Makefile:146：all] 错误 2
+[14.022s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

@@ -1,0 +1,50 @@
+[0.026s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target mujoco_sim_node[0m
+[0.152s] [  2%] Built target fr3_control_publish__cpp
+[0.157s] [  8%] Built target fr3_control_publish__rosidl_generator_c
+[0.172s] [ 15%] Built target hybridforcetangentialcontroller
+[0.172s] [ 20%] Built target fr3_monitor
+[0.174s] [ 22%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.174s] [ 22%] Built target tangential_velocity_controller
+[0.175s] [ 26%] Built target ee_pose_bridge
+[0.186s] [ 28%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o[0m
+[0.224s] [ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.230s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.230s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.239s] [ 57%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.240s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.242s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.282s] [ 68%] Built target fr3_control_publish
+[0.306s] [ 73%] Built target jacobian_publisher
+[0.307s] [ 77%] Built target force_position_controller
+[0.315s] [ 80%] Built target fr3_control_publish__py
+[0.355s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[0.398s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.400s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.407s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.549s] running egg_info
+[0.564s] writing fr3_control_publish.egg-info/PKG-INFO
+[0.564s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[0.564s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[0.605s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.605s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.646s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[8.122s] [100%] [32m[1mLinking CXX executable mujoco_sim_node[0m
+[8.493s] /usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::MujocoSimNode()':
+[8.493s] mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x140e): undefined reference to `glfwInit'
+[8.493s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x163d): undefined reference to `glfwCreateWindow'
+[8.493s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x17d2): undefined reference to `glfwTerminate'
+[8.493s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeC2Ev[_ZN13MujocoSimNodeC5Ev]+0x187b): undefined reference to `glfwMakeContextCurrent'
+[8.494s] /usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::~MujocoSimNode()':
+[8.494s] mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x61): undefined reference to `glfwDestroyWindow'
+[8.494s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x66): undefined reference to `glfwTerminate'
+[8.494s] /usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o: in function `MujocoSimNode::update()':
+[8.495s] mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x848): undefined reference to `glfwWindowShouldClose'
+[8.495s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x93f): undefined reference to `glfwGetFramebufferSize'
+[8.495s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x9ef): undefined reference to `glfwSwapBuffers'
+[8.495s] /usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode6updateEv[_ZN13MujocoSimNode6updateEv]+0x9f4): undefined reference to `glfwPollEvents'
+[8.522s] collect2: error: ld returned 1 exit status
+[8.524s] gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:176：mujoco_sim_node] 错误 1
+[8.524s] gmake[1]: *** [CMakeFiles/Makefile2:762：CMakeFiles/mujoco_sim_node.dir/all] 错误 2
+[8.525s] gmake: *** [Makefile:146：all] 错误 2
+[8.528s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

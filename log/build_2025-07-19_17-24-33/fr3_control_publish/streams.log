@@ -1,0 +1,61 @@
+[0.022s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.118s] [  2%] Built target fr3_control_publish__cpp
+[0.121s] [  8%] Built target fr3_control_publish__rosidl_generator_c
+[0.130s] [ 13%] Built target fr3_monitor
+[0.131s] [ 13%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.150s] [ 17%] Built target hybridforcetangentialcontroller
+[0.160s] [ 22%] Built target tangential_velocity_controller
+[0.160s] [ 24%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o[0m
+[0.179s] [ 28%] Built target ee_pose_bridge
+[0.196s] [ 40%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.197s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.200s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.208s] [ 55%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.208s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.209s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.274s] [ 68%] Built target fr3_control_publish
+[0.275s] [ 75%] Built target force_position_controller
+[0.275s] [ 77%] Built target jacobian_publisher
+[0.293s] [ 80%] Built target fr3_control_publish__py
+[0.336s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[0.373s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.376s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.382s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.593s] running egg_info
+[0.634s] writing fr3_control_publish.egg-info/PKG-INFO
+[0.634s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[0.634s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[0.722s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.725s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.801s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[2.389s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:[m[K In constructor ‘[01m[KMujocoSimNode::MujocoSimNode()[m[K’:
+[2.389s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow_[m[K’ was not declared in this scope
+[2.389s]    26 |     [01;31m[Kwindow_[m[K = glfwCreateWindow(1200, 900, "MuJoCo Simulation", nullptr, nullptr);
+[2.390s]       |     [01;31m[K^~~~~~~[m[K
+[2.398s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:36:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_[m[K’ was not declared in this scope; did you mean ‘[01m[Km_[m[K’?
+[2.398s]    36 |     mjv_defaultCamera(&[01;31m[Kcam_[m[K);          // camera defaults
+[2.398s]       |                        [01;31m[K^~~~[m[K
+[2.399s]       |                        [32m[Km_[m[K
+[2.405s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:37:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kopt_[m[K’ was not declared in this scope
+[2.405s]    37 |     mjv_defaultOption(&[01;31m[Kopt_[m[K);          // visualization options
+[2.405s]       |                        [01;31m[K^~~~[m[K
+[2.412s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:38:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kscn_[m[K’ was not declared in this scope
+[2.412s]    38 |     mjv_defaultScene(&[01;31m[Kscn_[m[K);           // empty scene
+[2.412s]       |                       [01;31m[K^~~~[m[K
+[2.420s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:39:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcon_[m[K’ was not declared in this scope
+[2.421s]    39 |     mjr_defaultContext(&[01;31m[Kcon_[m[K);         // custom GPU context
+[2.421s]       |                         [01;31m[K^~~~[m[K
+[2.452s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:[m[K In destructor ‘[01m[Kvirtual MujocoSimNode::~MujocoSimNode()[m[K’:
+[2.452s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:110:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcon_[m[K’ was not declared in this scope
+[2.453s]   110 |     mjr_freeContext(&[01;31m[Kcon_[m[K);
+[2.453s]       |                      [01;31m[K^~~~[m[K
+[2.462s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:111:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kscn_[m[K’ was not declared in this scope
+[2.463s]   111 |     mjv_freeScene(&[01;31m[Kscn_[m[K);
+[2.463s]       |                    [01;31m[K^~~~[m[K
+[2.471s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/mujoco_sim_node.cpp:112:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow_[m[K’ was not declared in this scope
+[2.471s]   112 |     glfwDestroyWindow([01;31m[Kwindow_[m[K);
+[2.471s]       |                       [01;31m[K^~~~~~~[m[K
+[4.959s] gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:76：CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o] 错误 1
+[4.959s] gmake[1]: *** [CMakeFiles/Makefile2:762：CMakeFiles/mujoco_sim_node.dir/all] 错误 2
+[4.959s] gmake: *** [Makefile:146：all] 错误 2
+[4.962s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

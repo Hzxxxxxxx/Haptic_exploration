@@ -142,11 +142,11 @@
                       <site name="attachment_site" pos="0 0 0.107"/>
                       
                       <!-- Add touch head at the end-effector -->
-		      <body name="touch_head" pos="0 0 0.107">
-    			<geom type="mesh" mesh="touch_head_mesh" material="gray" class="visual"/>   			
-    			<!-- 添加一个用于传感器读取的 site -->
-			<site name="touch_tip" pos="0 0 0.05" size="0.005" rgba="1 0 0 1" />
-  		      </body>
+                      <body name="touch_head" pos="0 0 0.107">
+                        <geom type="mesh" mesh="touch_head_mesh" material="gray" class="visual"/>   			
+                        <!-- 添加一个用于传感器读取的 site -->
+                        <site name="touch_tip" pos="0 0 0.05" size="0.005" rgba="1 0 0 1" />
+                      </body>
   		      
                     </body>
                   </body>

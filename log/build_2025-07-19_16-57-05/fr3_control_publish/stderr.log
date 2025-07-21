@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:76: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:762: CMakeFiles/mujoco_sim_node.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

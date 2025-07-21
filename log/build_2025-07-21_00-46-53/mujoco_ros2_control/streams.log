@@ -1,0 +1,20 @@
+[0.030s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target mujoco_system_plugins[0m
+[0.166s] [ 16%] [32mBuilding CXX object CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o[0m
+[0.205s] [ 83%] Built target mujoco_ros2_control
+[3.101s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.101s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:163:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct control_toolbox::Pid::Gains[m[K’ has no member named ‘[01m[Kp_gain[m[K’; did you mean ‘[01m[Kp_gain_[m[K’?
+[3.101s]   163 |     double kp = gains.[01;31m[Kp_gain[m[K;
+[3.101s]       |                       [01;31m[K^~~~~~[m[K
+[3.101s]       |                       [32m[Kp_gain_[m[K
+[3.101s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:164:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct control_toolbox::Pid::Gains[m[K’ has no member named ‘[01m[Kd_gain[m[K’; did you mean ‘[01m[Kd_gain_[m[K’?
+[3.101s]   164 |     double kd = gains.[01;31m[Kd_gain[m[K;
+[3.101s]       |                       [01;31m[K^~~~~~[m[K
+[3.101s]       |                       [32m[Kd_gain_[m[K
+[3.101s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_system.cpp:145:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.101s]   145 |   double [01;35m[Kdt[m[K = period.seconds();
+[3.101s]       |          [01;35m[K^~[m[K
+[3.920s] gmake[2]: *** [CMakeFiles/mujoco_system_plugins.dir/build.make:76：CMakeFiles/mujoco_system_plugins.dir/src/mujoco_system.cpp.o] 错误 1
+[3.921s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/mujoco_system_plugins.dir/all] 错误 2
+[3.921s] gmake: *** [Makefile:146：all] 错误 2
+[3.924s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

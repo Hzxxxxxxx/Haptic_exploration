@@ -1,0 +1,75 @@
+[0.039s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.104s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.380s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.395s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.399s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.520s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.589s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.594s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.795s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.881s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.917s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[1.004s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[1.038s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.472s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.749s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.147s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.183s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.244s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.244s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.244s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.313s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.327s] -- Configuring done
+[2.436s] -- Generating done
+[2.477s] -- Build files have been written to: /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish
+[2.529s] [35m[1mConsolidate compiler generated dependencies of target fr3_monitor[0m
+[2.529s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_generator_c[0m
+[2.531s] [35m[1mConsolidate compiler generated dependencies of target tangential_velocity_controller[0m
+[2.536s] [35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[2.547s] [35m[1mConsolidate compiler generated dependencies of target ee_pose_bridge[0m
+[2.558s] [  2%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o[0m
+[2.560s] [  4%] Built target fr3_control_publish__cpp
+[2.564s] [ 11%] Built target fr3_control_publish__rosidl_generator_c
+[2.575s] [ 15%] Built target fr3_monitor
+[2.577s] [ 15%] Built target ament_cmake_python_copy_fr3_control_publish
+[2.580s] [ 20%] Built target hybridforcetangentialcontroller
+[2.580s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_fastrtps_c[0m
+[2.583s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_cpp[0m
+[2.586s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_introspection_cpp[0m
+[2.588s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_fastrtps_cpp[0m
+[2.591s] [ 24%] Built target ee_pose_bridge
+[2.591s] [ 28%] Built target tangential_velocity_controller
+[2.594s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_introspection_c[0m
+[2.597s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_c[0m
+[2.603s] [ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[2.609s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[2.609s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[2.614s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[2.614s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[2.615s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_c
+[2.626s] [35m[1mConsolidate compiler generated dependencies of target jacobian_publisher[0m
+[2.629s] [35m[1mConsolidate compiler generated dependencies of target force_position_controller[0m
+[2.650s] [ 68%] Built target fr3_control_publish
+[2.655s] [ 73%] Built target jacobian_publisher
+[2.659s] [ 77%] Built target force_position_controller
+[2.685s] [ 80%] Built target fr3_control_publish__py
+[2.696s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_generator_py[0m
+[2.714s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[2.727s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_introspection_c__pyext[0m
+[2.730s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_c__pyext[0m
+[2.730s] [35m[1mConsolidate compiler generated dependencies of target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.756s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[2.757s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[2.757s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[2.894s] running egg_info
+[2.908s] writing fr3_control_publish.egg-info/PKG-INFO
+[2.908s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[2.909s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[2.977s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[2.978s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[3.006s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[3.317s] gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:76: CMakeFiles/mujoco_sim_node.dir/src/mujoco_sim_node.cpp.o] 中断
+[3.317s] gmake[1]: *** [CMakeFiles/Makefile2:762: CMakeFiles/mujoco_sim_node.dir/all] 中断
+[3.318s] gmake: *** [Makefile:146: all] 中断
+[3.323s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
