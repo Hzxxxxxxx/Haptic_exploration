@@ -1,0 +1,30 @@
+[0.020s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target mujoco_ros2_control[0m
+[0.112s] [ 33%] Built target mujoco_system_plugins
+[0.137s] [ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[4.464s] [ 66%] [32m[1mLinking CXX executable mujoco_ros2_control[0m
+[4.809s] [100%] Built target mujoco_ros2_control
+[4.823s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[4.827s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control
+[4.833s] -- Install configuration: ""
+[4.833s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/libmujoco_system_plugins.so
+[4.833s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/mujoco_ros2_control/mujoco_ros2_control
+[4.835s] -- Set runtime path of "/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/mujoco_ros2_control/mujoco_ros2_control" to "/opt/ros/humble/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/opt/ros/humble/lib/x86_64-linux-gnu"
+[4.835s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/mujoco_system_plugins.xml
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/package_run_dependencies/mujoco_ros2_control
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/parent_prefix_path/mujoco_ros2_control
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/ament_prefix_path.sh
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/ament_prefix_path.dsv
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/path.sh
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/path.dsv
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.bash
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.sh
+[4.836s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.zsh
+[4.837s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.dsv
+[4.837s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.dsv
+[4.837s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/packages/mujoco_ros2_control
+[4.837s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/mujoco_ros2_control__pluginlib__plugin/mujoco_ros2_control
+[4.837s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/cmake/mujoco_ros2_controlConfig.cmake
+[4.837s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/cmake/mujoco_ros2_controlConfig-version.cmake
+[4.837s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.xml
+[4.840s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control

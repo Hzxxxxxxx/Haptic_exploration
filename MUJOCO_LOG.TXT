@@ -156,3 +156,20 @@ WARNING: Nan, Inf or huge value in QACC at DOF 5. The simulation is unstable. Ti
 Mon Jul 21 02:12:45 2025
 WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 7.5320.
 
+Mon Jul 21 02:52:07 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 3. The simulation is unstable. Time = 32.9980.
+
+Mon Jul 21 08:23:43 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 29.4100.
+
+Mon Jul 21 09:06:42 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 1.1740.
+
+Mon Jul 21 09:11:39 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 1.0780.
+
+Fri Jul 25 02:26:37 2025
+ERROR: Load model error: XML Error: invalid keyword: 'arrow'
+Element 'geom', line 0
+
+

@@ -8,6 +8,7 @@
 #include <vector>
 #include <deque>
 #include <algorithm>
+#include <chrono> 
 
 using std::placeholders::_1;
 
@@ -41,9 +42,17 @@ public:
     declare_parameter<double>("f_eps", 0.2);       // 力波动阈值, max-min<f_eps 认为稳定
     declare_parameter<double>("theta_tol_deg", 2.0);// 姿态对齐容差 (单位: deg)
     declare_parameter<double>("k_theta", 0.2);     // 姿态微旋系数, δθ=k_theta·θ
-    declare_parameter<double>("object_center_x", 0.7);// 物体中心X坐标 (单位: m)
+    declare_parameter<double>("object_center_x", 0.5);// 物体中心X坐标 (单位: m)
     declare_parameter<double>("object_center_y", 0.0);// 物体中心Y坐标 (单位: m)
     declare_parameter<std::string>("ee_pose_topic", "/ee_pose"); // 末端位姿话题名
+
+    // 假设你在 params 中也声明了一个长度 7 的 vector<double> joint_velocity_limits
+    declare_parameter<std::vector<double>>("joint_velocity_limits", std::vector<double>(7, 1.0));
+    std::vector<double> vel_limits;
+    get_parameter("joint_velocity_limits", vel_limits);
+    for (int i = 0; i < 7; ++i) {
+      qdot_max_(i) = vel_limits[i];
+    }
 
     // ------------ 参数获取 ------------
     get_parameter("f_high", f_high_);
@@ -115,6 +124,16 @@ public:
 
 private:
 
+  // 限制各关节最大速度
+  Eigen::Matrix<double,7,1> qdot_max_;
+
+  void clampJointVel(Eigen::Matrix<double,7,1> &qdot) {
+      for (int i = 0; i < 7; ++i) {
+        if (qdot(i) > qdot_max_(i))      qdot(i) = qdot_max_(i);
+        else if (qdot(i) < -qdot_max_(i)) qdot(i) = -qdot_max_(i);
+      }
+  }
+
   // --- 回调函数 ---
   void on_js(const sensor_msgs::msg::JointState::SharedPtr msg) {
     have_js_ = true;
@@ -139,13 +158,13 @@ private:
           J_(i,j) = msg->data[i*7 + j];
       have_jacobian_ = true;
     } else {
-      RCLCPP_WARN(get_logger(), "收到错误维度的雅可比: [%zu, %zu]", 
+      RCLCPP_WARN(get_logger(), "收到错误维度的雅可比: [%u, %u]", 
                   msg->layout.dim[0].size, msg->layout.dim[1].size);
     }
   }
 
   void on_wrench(const geometry_msgs::msg::WrenchStamped::SharedPtr msg) {
-    if (msg->header.frame_id != "touch_tip") return;
+    if (msg->header.frame_id != "world") return;
     f_ext6_.head<3>() = Eigen::Vector3d(
       msg->wrench.force.x, msg->wrench.force.y, msg->wrench.force.z);
     f_ext6_.tail<3>() = Eigen::Vector3d(
@@ -166,12 +185,12 @@ private:
   // --- 主循环 ---
   void control_loop() {
     // 打印状态以便调试
-    RCLCPP_DEBUG(get_logger(), "[Loop %zu] state=%d js=%d jac=%d wrench=%d pose=%d init=%d",
+    RCLCPP_DEBUG(get_logger(), "[Loop %lu] state=%d js=%d jac=%d wrench=%d pose=%d init=%d",
                   loop_count_, static_cast<int>(state_), have_js_, have_jacobian_, have_wrench_, have_pose_, initialized_);
     if (!(have_js_ && have_jacobian_ && have_wrench_ && have_pose_ && initialized_)) return;
 
     double f_norm = f_ext6_.head<3>().norm();
-    RCLCPP_INFO(get_logger(), "当前法向力 f_norm=%.3f", f_norm);
+    // RCLCPP_INFO(get_logger(), "当前法向力 f_norm=%.3f", f_norm);
 
     switch (state_) {
 
@@ -185,7 +204,7 @@ private:
         init_scan_dir_ = dir2d;
         init_scan_dir_computed_ = true;
       }
-      f_des_.head<3>() = init_scan_dir_ * (-200);
+      f_des_.head<3>() = init_scan_dir_ * (-500);
       compute_admittance();
       RCLCPP_DEBUG(get_logger(), "INIT_SCAN: f_des=[%.3f,%.3f,%.3f]", 
                    f_des_.x(), f_des_.y(), f_des_.z());
@@ -212,44 +231,108 @@ private:
       f_window_.push_back(f_ext6_);
       if ((now() - pause_start_).seconds() >= T_pause_ && f_window_.size() >= (size_t)N_min_) {
         auto f_est = median6(f_window_);
-        n_hat_   = f_est.head<3>().normalized();
+        n_hat_   = -f_est.head<3>().normalized();
         RCLCPP_INFO(get_logger(), "测力完成: f_est=[%.3f,%.3f,%.3f], n_hat=[%.3f,%.3f,%.3f]",
                      f_est.x(), f_est.y(), f_est.z(), n_hat_.x(), n_hat_.y(), n_hat_.z());
         state_ = ScanState::ALIGN_ORIENT;
       }
       break;
 
+    // case ScanState::ALIGN_ORIENT: {
+    //   // 3 ALIGN_ORIENT: 围绕contact_pt_纯旋对齐工具Z轴与n_hat_
+    //   Eigen::Vector3d z_tcp = R_t_.col(2);
+    //   Eigen::Vector3d r = ee_pos_ - contact_pt_;
+    //   double theta = std::acos(z_tcp.dot(n_hat_));
+    //   RCLCPP_DEBUG(get_logger(), "ALIGN_ORIENT: theta=%.3f deg", theta * 180.0/M_PI);
+    //   if (theta <= theta_tol_) {
+    //     RCLCPP_INFO(get_logger(), "姿态对齐完成, theta=%.3f deg", theta * 180.0/M_PI);
+    //     state_ = ScanState::UNFREEZE;
+    //     break;
+    //   }
+    //   Eigen::Vector3d omega_hat = z_tcp.cross(n_hat_).normalized();
+    //   double delta = k_theta_ * theta;
+    //   double w_mag = delta / dt_;
+    //   Eigen::Vector3d omega = omega_hat * w_mag;
+    //   Eigen::Vector3d v     = -omega.cross(r);
+    //   Eigen::Matrix<double,6,1> xd;
+    //   xd.head<3>() = v;
+    //   xd.tail<3>() = omega;
+    //   // 计算并发布关节命令
+    //   Eigen::Matrix<double,7,1> qdot = J_.transpose() 
+    //     * (J_*J_.transpose() + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity()).inverse()
+    //     * xd;
+    //   q_des_ += qdot * dt_;
+    //   publish_cmd();
+    //   break;
+    // }
+
     case ScanState::ALIGN_ORIENT: {
-      // 3 ALIGN_ORIENT: 围绕contact_pt_纯旋对齐工具Z轴与n_hat_
-      Eigen::Vector3d z_tcp = R_t_.col(2);
-      Eigen::Vector3d r = ee_pos_ - contact_pt_;
-      double theta = std::acos(z_tcp.dot(n_hat_));
-      RCLCPP_DEBUG(get_logger(), "ALIGN_ORIENT: theta=%.3f deg", theta * 180.0/M_PI);
-      if (theta <= theta_tol_) {
-        RCLCPP_INFO(get_logger(), "姿态对齐完成, theta=%.3f deg", theta * 180.0/M_PI);
-        state_ = ScanState::UNFREEZE;
-        break;
-      }
-      Eigen::Vector3d omega_hat = z_tcp.cross(n_hat_).normalized();
-      double delta = k_theta_ * theta;
-      double w_mag = delta / dt_;
-      Eigen::Vector3d omega = omega_hat * w_mag;
-      Eigen::Vector3d v     = -omega.cross(r);
-      Eigen::Matrix<double,6,1> xd;
-      xd.head<3>() = v;
-      xd.tail<3>() = omega;
-      // 计算并发布关节命令
-      Eigen::Matrix<double,7,1> qdot = J_.transpose() 
-        * (J_*J_.transpose() + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity()).inverse()
-        * xd;
-      q_des_ += qdot * dt_;
-      publish_cmd();
+    // --- 进入本阶段前须已执行：
+    //     B_inv_.setZero();
+    //     f_des_ = f_est_;
+
+    // 1) 读取当前工具Z轴与力
+    Eigen::Vector3d z_tcp = R_t_.col(2);            // 工具Z轴
+    Eigen::Vector3d f_ext = f_ext6_.head<3>();      // 当前外力
+    Eigen::Vector2d f_lat(f_ext.x(), f_ext.y());    // 切向力 (X,Y)
+    double lat_norm = f_lat.norm();
+
+    // 2) 计算姿态误差角
+    double cos_ang = std::clamp(z_tcp.dot(n_hat_), -1.0, 1.0);
+    double theta   = std::acos(cos_ang);
+
+    // 3) 收敛判据：切向力 ≈ 0 且 角度 ≤ 容差
+    RCLCPP_INFO(get_logger(),
+      "ALIGN_ORIENT: lat=%.3f N, θ=%.3f°",
+      lat_norm, theta * 180.0/M_PI);
+    // if (lat_norm <= f_eps_ && theta <= theta_tol_)
+    if (theta <= theta_tol_) {
+      RCLCPP_INFO(get_logger(),
+        "ALIGN_ORIENT 完成：lat=%.3f N, θ=%.3f°",
+        lat_norm, theta * 180.0/M_PI);
+      std::this_thread::sleep_for(std::chrono::seconds(5));
+      state_ = ScanState::UNFREEZE;
       break;
     }
 
+    // 4) 计算纯角速度 ω = ω̂ * (δθ/Δt)
+    Eigen::Vector3d omega_hat = z_tcp.cross(n_hat_);
+    if (omega_hat.norm() > 1e-6) {
+      omega_hat.normalize();
+    }
+    double delta_theta = k_theta_ * theta;  
+    Eigen::Vector3d omega = omega_hat * (delta_theta / dt_);
+
+    // 5) 计算“刚体纯旋”所需线速度 v = –ω × r
+    Eigen::Vector3d r      = ee_pos_ - contact_pt_;
+    Eigen::Vector3d v_full = -omega.cross(r);
+    // 去除任何法向分量，只留下切向成分
+    Eigen::Vector3d v_tan  = v_full - (v_full.dot(n_hat_)) * n_hat_;
+
+    // 6) 构造任务空间速度 x_d = [v_tan; ω]
+    Eigen::Matrix<double,6,1> x_d;
+    x_d.head<3>() = v_tan;
+    x_d.tail<3>() = omega;
+
+    // 7) 雅可比伪逆映射到关节速度并限幅
+    Eigen::Matrix<double,6,6> W = J_ * J_.transpose()
+                                + lambda_ * lambda_ * Eigen::Matrix<double,6,6>::Identity();
+    Eigen::Matrix<double,7,1> qdot = J_.transpose() * W.inverse() * x_d;
+    clampJointVel(qdot);                  // 用户定义的关节速度限幅函数
+
+    // 8) 更新并发布关节命令
+    q_des_ += qdot * dt_;
+    publish_cmd();
+
+    break;
+  }
+
+
+
     case ScanState::UNFREEZE:
       // 4 UNFREEZE: 恢复导纳, 设定下一步期望力
-      f_des_.head<3>() = n_hat_ * (f_high_ - 0.5);
+      f_des_.head<3>() = f_ext6_.head<3>();
+      //n_hat_ * (200);
       B_inv_ = B_inv_saved_;
       admittance_frozen_ = false;
       RCLCPP_INFO(get_logger(), "解冻导纳, f_des更新=[%.3f,%.3f,%.3f]", 
@@ -311,7 +394,10 @@ private:
 
   // 力导纳计算函数
   void compute_admittance() {
-    Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_;
+    // 方法一：先定义一个 offset 向量
+    Eigen::Matrix<double,6,1> offset;
+    offset << 0.0, 0.0, 0.5, 0.0, 0.0, 0.0;
+    Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_ - offset;
     Eigen::Matrix<double,6,1> xdn   = B_inv_ * delta;
     Eigen::Matrix<double,6,6> W     = J_*J_.transpose() + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity();
     Eigen::Matrix<double,6,1> xdot  = xdn;
@@ -320,8 +406,8 @@ private:
     q_des_ += qdot * dt_;
     publish_cmd();
 
-    RCLCPP_INFO(get_logger(), "delta=[%f, %f, %f, %f, %f, %f]", 
-                delta(0), delta(1), delta(2), delta(3), delta(4), delta(5));
+    // RCLCPP_INFO(get_logger(), "delta=[%f, %f, %f, %f, %f, %f]", 
+    //             delta(0), delta(1), delta(2), delta(3), delta(4), delta(5));
   }
 
   // 发布关节命令

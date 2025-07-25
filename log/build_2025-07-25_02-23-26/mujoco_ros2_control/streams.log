@@ -1,0 +1,11 @@
+[0.035s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.141s] [ 33%] Built target mujoco_system_plugins
+[0.182s] [ 50%] [32mBuilding CXX object CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o[0m
+[3.981s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[3.981s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control/src/mujoco_ros2_control_node.cpp:67:29:[m[K [01;31m[Kerror: [m[K‘[01m[KmjVIS_GLOBAL_FRAME[m[K’ was not declared in this scope
+[3.981s]    67 |   rendering->mjv_opt_.flags[[01;31m[KmjVIS_GLOBAL_FRAME[m[K]  = 1;
+[3.982s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.022s] gmake[2]: *** [CMakeFiles/mujoco_ros2_control.dir/build.make:76：CMakeFiles/mujoco_ros2_control.dir/src/mujoco_ros2_control_node.cpp.o] 错误 1
+[5.022s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/mujoco_ros2_control.dir/all] 错误 2
+[5.022s] gmake: *** [Makefile:146：all] 错误 2
+[5.024s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12

@@ -224,12 +224,48 @@
     <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-3.0159" soft_upper_limit="3.0159"/>
     <dynamics D="1" K="7000" damping="0.003" friction="0.2" mu_coulomb="0" mu_viscous="16"/>
   </joint>
-  <link name="fr3_link8"/>
+  <!-- <link name="fr3_link8"/>
   <joint name="fr3_joint8" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0.107"/>
     <parent link="fr3_link7"/>
     <child link="fr3_link8"/>
+  </joint> -->
+    <!-- 1. 在 <robot> 根元素里，找到 fr3_link7 的定义后面，添加一个固定关节 -->
+  <joint name="touch_tip_joint" type="fixed">
+    <parent link="fr3_link7"/>
+    <child  link="touch_tip"/>
+    <!-- 位置偏移到触摸杆最顶端 -->
+    <origin xyz="0 0 0.15" rpy="0 0 0"/>
   </joint>
+
+  <!-- 2. 定义 touch_tip 这个新 link（可以只定义一个空 frame；也可以带点可视化或碰撞几何） -->
+  <link name="touch_tip">
+    <!-- 可选：给个可视化球体，方便在 RViz 里看见 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <material name="Red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+
+    <!-- 可选：给个碰撞体，如果你用 Gazebo 或其他仿真器需要碰撞检测 -->
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+    </collision>
+
+    <!-- 可选：超小质量惯性，避免节点报缺失 inertial 警告 -->
+    <inertial>
+      <mass value="1e-6"/>
+      <inertia ixx="1e-8" ixy="0" ixz="0" iyy="1e-8" iyz="0" izz="1e-8"/>
+    </inertial>
+  </link>
+
 
   <!-- ========================================================= -->
   <!-- ros2_control                                               -->

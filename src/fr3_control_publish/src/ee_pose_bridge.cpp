@@ -16,7 +16,7 @@ public:
   {
     // 声明参数并设置默认值
     this->declare_parameter<std::string>("base_frame", "fr3_link0");
-    this->declare_parameter<std::string>("ee_frame",   "fr3_link7");
+    this->declare_parameter<std::string>("ee_frame",   "touch_tip");
     this->declare_parameter<std::string>("output_topic", "/ee_pose");
     this->declare_parameter<double>("publish_rate", 100.0);
 

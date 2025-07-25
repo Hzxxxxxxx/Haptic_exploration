@@ -1,0 +1,162 @@
+[0.094s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.310s] [35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[0.353s] [  2%] Built target fr3_control_publish__cpp
+[0.359s] [  8%] Built target fr3_control_publish__rosidl_generator_c
+[0.382s] [ 13%] Built target fr3_monitor
+[0.423s] [ 17%] Built target tangential_velocity_controller
+[0.469s] [ 22%] Built target mujoco_sim_node
+[0.470s] [ 26%] Built target ee_pose_bridge
+[0.479s] [ 33%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.501s] [ 35%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[0.511s] [ 35%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.554s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.555s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.565s] [ 55%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.577s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.619s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.727s] [ 73%] Built target jacobian_publisher
+[0.753s] [ 77%] Built target force_position_controller
+[0.754s] [ 77%] Built target fr3_control_publish
+[0.936s] [ 80%] Built target fr3_control_publish__py
+[0.992s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[1.062s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[1.089s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[1.089s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[1.838s] running egg_info
+[1.956s] writing fr3_control_publish.egg-info/PKG-INFO
+[1.963s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[1.964s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[2.312s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[2.316s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[2.504s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[57.671s] [100%] [32m[1mLinking CXX executable hybridforcetangentialcontroller[0m
+[61.768s] [100%] Built target hybridforcetangentialcontroller
+[61.832s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[61.842s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish
+[61.876s] -- Install configuration: ""
+[61.877s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/rosidl_interfaces/fr3_control_publish
+[61.878s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish
+[61.879s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg
+[61.879s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/touch_tip_wrench.h
+[61.880s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail
+[61.881s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.h
+[61.881s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__functions.h
+[61.881s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__functions.c
+[61.881s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__struct.h
+[61.882s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_generator_c__visibility_control.h
+[61.882s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/library_path.sh
+[61.882s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/library_path.dsv
+[61.883s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_generator_c.so
+[61.883s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish
+[61.885s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg
+[61.885s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail
+[61.886s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_fastrtps_c.h
+[61.886s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[61.886s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_fastrtps_c.so
+[61.886s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish
+[61.887s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg
+[61.887s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[61.887s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail
+[61.888s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.c
+[61.888s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_introspection_c.h
+[61.892s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_introspection_c.so
+[61.894s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_c.so
+[61.895s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish
+[61.896s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg
+[61.897s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail
+[61.897s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__traits.hpp
+[61.898s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.hpp
+[61.898s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__builder.hpp
+[61.898s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__struct.hpp
+[61.898s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/touch_tip_wrench.hpp
+[61.899s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_generator_cpp__visibility_control.hpp
+[61.899s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish
+[61.899s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg
+[61.899s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail
+[61.900s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/dds_fastrtps
+[61.900s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_fastrtps_cpp.hpp
+[61.900s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[61.901s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_fastrtps_cpp.so
+[61.901s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish
+[61.902s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg
+[61.902s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail
+[61.902s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.cpp
+[61.903s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_introspection_cpp.hpp
+[61.903s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_introspection_cpp.so
+[61.903s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_cpp.so
+[61.903s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/pythonpath.sh
+[61.904s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/pythonpath.dsv
+[61.904s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info
+[61.904s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/dependency_links.txt
+[61.905s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/PKG-INFO
+[61.905s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/top_level.txt
+[61.905s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/SOURCES.txt
+[61.905s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish
+[61.906s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/_fr3_control_publish_s.ep.rosidl_typesupport_fastrtps_c.c
+[61.906s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/libfr3_control_publish__rosidl_generator_py.so
+[61.906s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/__init__.py
+[61.906s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[61.906s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/_fr3_control_publish_s.ep.rosidl_typesupport_introspection_c.c
+[61.907s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg
+[61.907s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg/__init__.py
+[61.907s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg/_touch_tip_wrench.py
+[61.907s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg/_touch_tip_wrench_s.c
+[61.908s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/_fr3_control_publish_s.ep.rosidl_typesupport_c.c
+[61.908s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[61.908s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[62.036s] Listing '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish'...
+[62.036s] Listing '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg'...
+[62.049s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[62.051s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[62.053s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[62.054s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_generator_py.so
+[62.055s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/msg/TouchTipWrench.idl
+[62.055s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/msg/TouchTipWrench.msg
+[62.055s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/ee_pose_bridge
+[62.058s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/fr3_monitor
+[62.058s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/jacobian_publisher
+[62.059s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/force_position_controller
+[62.060s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/tangential_velocity_controller
+[62.061s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/hybridforcetangentialcontroller
+[62.114s] -- Set runtime path of "/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/hybridforcetangentialcontroller" to ""
+[62.115s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/mujoco_sim_node
+[62.115s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/package_run_dependencies/fr3_control_publish
+[62.116s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/parent_prefix_path/fr3_control_publish
+[62.116s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/ament_prefix_path.sh
+[62.116s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/ament_prefix_path.dsv
+[62.116s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/path.sh
+[62.116s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/path.dsv
+[62.116s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.bash
+[62.117s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.sh
+[62.117s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.zsh
+[62.117s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.dsv
+[62.119s] -- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.dsv
+[62.119s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/packages/fr3_control_publish
+[62.120s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_cExport.cmake
+[62.121s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_cExport-noconfig.cmake
+[62.121s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cExport.cmake
+[62.122s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[62.122s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cExport.cmake
+[62.122s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[62.123s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cExport.cmake
+[62.123s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cExport-noconfig.cmake
+[62.124s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_cppExport.cmake
+[62.124s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cppExport.cmake
+[62.124s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[62.124s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cppExport.cmake
+[62.124s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[62.124s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cppExport.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cppExport-noconfig.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_pyExport.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_pyExport-noconfig.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/rosidl_cmake-extras.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_dependencies-extras.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_include_directories-extras.cmake
+[62.125s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_libraries-extras.cmake
+[62.126s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_targets-extras.cmake
+[62.126s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[62.126s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[62.126s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publishConfig.cmake
+[62.126s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publishConfig-version.cmake
+[62.126s] -- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.xml
+[62.142s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish

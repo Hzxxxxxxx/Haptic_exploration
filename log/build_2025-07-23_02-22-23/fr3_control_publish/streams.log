@@ -1,0 +1,68 @@
+[0.027s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.097s] [35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[0.122s] [  2%] Built target fr3_control_publish__cpp
+[0.132s] [  8%] Built target ee_pose_bridge
+[0.133s] [ 13%] Built target fr3_control_publish__rosidl_generator_c
+[0.143s] [ 17%] Built target fr3_monitor
+[0.149s] [ 22%] Built target tangential_velocity_controller
+[0.152s] [ 26%] Built target mujoco_sim_node
+[0.156s] [ 26%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.173s] [ 28%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[0.207s] [ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.208s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.210s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.210s] [ 55%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.223s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.223s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.265s] [ 73%] Built target jacobian_publisher
+[0.286s] [ 73%] Built target fr3_control_publish
+[0.287s] [ 77%] Built target force_position_controller
+[0.327s] [ 80%] Built target fr3_control_publish__py
+[0.386s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[0.441s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.446s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.450s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.649s] running egg_info
+[0.695s] writing fr3_control_publish.egg-info/PKG-INFO
+[0.696s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[0.697s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[0.843s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.845s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.913s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[3.738s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In constructor ‘[01m[KHybridForceTangentialController::HybridForceTangentialController()[m[K’:
+[3.738s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:124:57:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.738s]   124 |     void clampJointVel(Eigen::Matrix<double,7,1> &qdot) [01;31m[K{[m[K
+[3.738s]       |                                                         [01;31m[K^[m[K
+[3.777s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.778s]                  from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[3.778s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::control_loop()[m[K’:
+[3.779s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:186:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%u[m[K’ expects argument of type ‘[01m[Kunsigned int[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.779s]   186 |     RCLCPP_DEBUG(get_logger(), [01;35m[K"[Loop %u] state=%d js=%d jac=%d wrench=%d pose=%d init=%d"[m[K,
+[3.779s]       |                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.779s]   187 |                   [32m[Kloop_count_[m[K, static_cast<int>(state_), have_js_, have_jacobian_, have_wrench_, have_pose_, initialized_);
+[3.779s]       |                   [32m[K~~~~~~~~~~~[m[K   
+[3.779s]       |                   [32m[K|[m[K
+[3.779s]       |                   [32m[Ksize_t {aka long unsigned int}[m[K
+[3.779s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:186:40:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.779s]   186 |     RCLCPP_DEBUG(get_logger(), "[Loop [01;36m[K%u[m[K] state=%d js=%d jac=%d wrench=%d pose=%d init=%d",
+[3.780s]       |                                       [01;36m[K~^[m[K
+[3.780s]       |                                        [01;36m[K|[m[K
+[3.780s]       |                                        [01;36m[Kunsigned int[m[K
+[3.780s]       |                                       [32m[K%lu[m[K
+[3.917s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:322:5:[m[K [01;31m[Kerror: [m[K‘[01m[KclampJointVel[m[K’ was not declared in this scope
+[3.918s]   322 |     [01;31m[KclampJointVel[m[K(qdot);
+[3.918s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[10.738s] gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+[10.738s] gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+[10.738s] gmake: *** [Makefile:146：all] 错误 2
+[10.741s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

@@ -1,0 +1,66 @@
+[35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[  2%] Built target fr3_control_publish__cpp
+[  8%] Built target ee_pose_bridge
+[ 13%] Built target fr3_control_publish__rosidl_generator_c
+[ 17%] Built target fr3_monitor
+[ 22%] Built target tangential_velocity_controller
+[ 26%] Built target mujoco_sim_node
+[ 26%] Built target ament_cmake_python_copy_fr3_control_publish
+[ 28%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[ 48%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[ 55%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[ 68%] Built target fr3_control_publish__rosidl_typesupport_c
+[ 73%] Built target jacobian_publisher
+[ 73%] Built target fr3_control_publish
+[ 77%] Built target force_position_controller
+[ 80%] Built target fr3_control_publish__py
+[ 84%] Built target fr3_control_publish__rosidl_generator_py
+[ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+running egg_info
+writing fr3_control_publish.egg-info/PKG-INFO
+writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+writing top-level names to fr3_control_publish.egg-info/top_level.txt
+reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In constructor ‘[01m[KHybridForceTangentialController::HybridForceTangentialController()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:124:57:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  124 |     void clampJointVel(Eigen::Matrix<double,7,1> &qdot) [01;31m[K{[m[K
+      |                                                         [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:1[m[K:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::control_loop()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:186:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%u[m[K’ expects argument of type ‘[01m[Kunsigned int[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  186 |     RCLCPP_DEBUG(get_logger(), [01;35m[K"[Loop %u] state=%d js=%d jac=%d wrench=%d pose=%d init=%d"[m[K,
+      |                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  187 |                   [32m[Kloop_count_[m[K, static_cast<int>(state_), have_js_, have_jacobian_, have_wrench_, have_pose_, initialized_);
+      |                   [32m[K~~~~~~~~~~~[m[K   
+      |                   [32m[K|[m[K
+      |                   [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:186:40:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  186 |     RCLCPP_DEBUG(get_logger(), "[Loop [01;36m[K%u[m[K] state=%d js=%d jac=%d wrench=%d pose=%d init=%d",
+      |                                       [01;36m[K~^[m[K
+      |                                        [01;36m[K|[m[K
+      |                                        [01;36m[Kunsigned int[m[K
+      |                                       [32m[K%lu[m[K
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:322:5:[m[K [01;31m[Kerror: [m[K‘[01m[KclampJointVel[m[K’ was not declared in this scope
+  322 |     [01;31m[KclampJointVel[m[K(qdot);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

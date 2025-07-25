@@ -1,0 +1,39 @@
+[0.036s] Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[0.125s] [  2%] Built target fr3_control_publish__cpp
+[0.136s] [  6%] Built target fr3_monitor
+[0.136s] [ 13%] Built target fr3_control_publish__rosidl_generator_c
+[0.137s] [ 17%] Built target ee_pose_bridge
+[0.154s] [ 20%] Built target ament_cmake_python_copy_fr3_control_publish
+[0.157s] [ 22%] Built target mujoco_sim_node
+[0.175s] [ 26%] Built target tangential_velocity_controller
+[0.181s] [ 28%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[0.213s] [ 35%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[0.220s] [ 42%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[0.229s] [ 48%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[0.237s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[0.237s] [ 62%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[0.239s] [ 68%] Built target fr3_control_publish__rosidl_typesupport_c
+[0.307s] [ 77%] Built target force_position_controller
+[0.308s] [ 77%] Built target jacobian_publisher
+[0.308s] [ 77%] Built target fr3_control_publish
+[0.350s] [ 80%] Built target fr3_control_publish__py
+[0.400s] [ 84%] Built target fr3_control_publish__rosidl_generator_py
+[0.448s] [ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+[0.449s] [ 93%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[0.459s] [ 97%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[0.616s] running egg_info
+[0.636s] writing fr3_control_publish.egg-info/PKG-INFO
+[0.637s] writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+[0.637s] writing top-level names to fr3_control_publish.egg-info/top_level.txt
+[0.724s] reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.725s] writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[0.771s] [ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[3.103s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::clampJointVel(Eigen::Matrix<double, 7, 1>&)[m[K’:
+[3.103s] [01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:128:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kqdot_max_[m[K’ was not declared in this scope
+[3.103s]   128 |         if (qdot(i) > [01;31m[Kqdot_max_[m[K(i))      qdot(i) = qdot_max_(i);
+[3.103s]       |                       [01;31m[K^~~~~~~~~[m[K
+[8.716s] gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+[8.716s] gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+[8.716s] gmake: *** [Makefile:146：all] 错误 2
+[8.719s] Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12

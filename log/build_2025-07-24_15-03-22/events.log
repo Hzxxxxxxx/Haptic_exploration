@@ -1,0 +1,948 @@
+[0.000000] (-) TimerEvent: {}
+[0.000928] (fr3_control_publish) JobQueued: {'identifier': 'fr3_control_publish', 'dependencies': OrderedDict()}
+[0.001011] (mujoco_ros2_control) JobQueued: {'identifier': 'mujoco_ros2_control', 'dependencies': OrderedDict()}
+[0.001046] (mujoco_ros2_control_demos) JobQueued: {'identifier': 'mujoco_ros2_control_demos', 'dependencies': OrderedDict()}
+[0.001074] (fr3_control_publish) JobStarted: {'identifier': 'fr3_control_publish'}
+[0.025755] (mujoco_ros2_control) JobStarted: {'identifier': 'mujoco_ros2_control'}
+[0.053663] (mujoco_ros2_control_demos) JobStarted: {'identifier': 'mujoco_ros2_control_demos'}
+[0.083562] (fr3_control_publish) JobProgress: {'identifier': 'fr3_control_publish', 'progress': 'cmake'}
+[0.088696] (fr3_control_publish) JobProgress: {'identifier': 'fr3_control_publish', 'progress': 'build'}
+[0.089133] (fr3_control_publish) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish', '--', '-j12', '-l12'], 'cwd': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_GB:en'), ('USER', 'mscrobotics2425laptop16'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mscrobotics2425laptop16/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/lib:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/openrobots/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/opt/openrobots/lib:'), ('HOME', '/home/mscrobotics2425laptop16'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.101.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/198/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/mscrobotics2425laptop16/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/198/usr/share/code/code'), ('ROS_IP', '10.134.190.8'), ('MANAGERPID', '1885'), ('SYSTEMD_EXEC_PID', '2126'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4646'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install:/home/mscrobotics2425laptop16/apriltag_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'mscrobotics2425laptop16'), ('JOURNAL_STREAM', '8:11839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mscrobotics2425laptop16'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/anaconda3/condabin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/.local/bin'), ('SESSION_MANAGER', 'local/e-10lux4295w27:@/tmp/.ICE-unix/2079,unix/e-10lux4295w27:/tmp/.ICE-unix/2079'), ('GTK_EXE_PREFIX', '/snap/code/198/usr'), ('INVOCATION_ID', '05af377d67b34502bc9bfe851b8059e7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('MUJOCO_DIR', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/198/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/mscrobotics2425laptop16/snap/code/198/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.SQJS92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-add2e010e2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mscrobotics2425laptop16/snap/code/198/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/mscrobotics2425laptop16/snap/code/198/.local/share:/home/mscrobotics2425laptop16/snap/code/198:/snap/code/198/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/openrobots/lib/python3.10/site-packages:/opt/openrobots/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/openrobots:/opt/openrobots::/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble')]), 'shell': False}
+[0.100527] (-) TimerEvent: {}
+[0.105107] (mujoco_ros2_control) JobProgress: {'identifier': 'mujoco_ros2_control', 'progress': 'cmake'}
+[0.105397] (mujoco_ros2_control) JobProgress: {'identifier': 'mujoco_ros2_control', 'progress': 'build'}
+[0.105481] (mujoco_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control', '--', '-j12', '-l12'], 'cwd': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_GB:en'), ('USER', 'mscrobotics2425laptop16'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mscrobotics2425laptop16/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/lib:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/openrobots/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/opt/openrobots/lib:'), ('HOME', '/home/mscrobotics2425laptop16'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.101.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/198/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/mscrobotics2425laptop16/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/198/usr/share/code/code'), ('ROS_IP', '10.134.190.8'), ('MANAGERPID', '1885'), ('SYSTEMD_EXEC_PID', '2126'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4646'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install:/home/mscrobotics2425laptop16/apriltag_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'mscrobotics2425laptop16'), ('JOURNAL_STREAM', '8:11839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mscrobotics2425laptop16'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/anaconda3/condabin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/.local/bin'), ('SESSION_MANAGER', 'local/e-10lux4295w27:@/tmp/.ICE-unix/2079,unix/e-10lux4295w27:/tmp/.ICE-unix/2079'), ('GTK_EXE_PREFIX', '/snap/code/198/usr'), ('INVOCATION_ID', '05af377d67b34502bc9bfe851b8059e7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('MUJOCO_DIR', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/198/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/mscrobotics2425laptop16/snap/code/198/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.SQJS92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-add2e010e2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mscrobotics2425laptop16/snap/code/198/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/mscrobotics2425laptop16/snap/code/198/.local/share:/home/mscrobotics2425laptop16/snap/code/198:/snap/code/198/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/openrobots/lib/python3.10/site-packages:/opt/openrobots/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/openrobots:/opt/openrobots::/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble')]), 'shell': False}
+[0.126548] (mujoco_ros2_control_demos) JobProgress: {'identifier': 'mujoco_ros2_control_demos', 'progress': 'cmake'}
+[0.128373] (mujoco_ros2_control_demos) JobProgress: {'identifier': 'mujoco_ros2_control_demos', 'progress': 'build'}
+[0.129446] (mujoco_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos', '--', '-j12', '-l12'], 'cwd': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_GB:en'), ('USER', 'mscrobotics2425laptop16'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mscrobotics2425laptop16/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/lib:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/openrobots/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/opt/openrobots/lib:'), ('HOME', '/home/mscrobotics2425laptop16'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.101.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/198/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/mscrobotics2425laptop16/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/198/usr/share/code/code'), ('ROS_IP', '10.134.190.8'), ('MANAGERPID', '1885'), ('SYSTEMD_EXEC_PID', '2126'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4646'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install:/home/mscrobotics2425laptop16/apriltag_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'mscrobotics2425laptop16'), ('JOURNAL_STREAM', '8:11839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mscrobotics2425laptop16'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/anaconda3/condabin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/.local/bin'), ('SESSION_MANAGER', 'local/e-10lux4295w27:@/tmp/.ICE-unix/2079,unix/e-10lux4295w27:/tmp/.ICE-unix/2079'), ('GTK_EXE_PREFIX', '/snap/code/198/usr'), ('INVOCATION_ID', '05af377d67b34502bc9bfe851b8059e7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('MUJOCO_DIR', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/198/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/mscrobotics2425laptop16/snap/code/198/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.SQJS92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-add2e010e2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mscrobotics2425laptop16/snap/code/198/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/mscrobotics2425laptop16/snap/code/198/.local/share:/home/mscrobotics2425laptop16/snap/code/198:/snap/code/198/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/openrobots/lib/python3.10/site-packages:/opt/openrobots/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/openrobots:/opt/openrobots::/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble')]), 'shell': False}
+[0.203327] (-) TimerEvent: {}
+[0.310495] (fr3_control_publish) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller\x1b[0m\n'}
+[0.311153] (-) TimerEvent: {}
+[0.353805] (fr3_control_publish) StdoutLine: {'line': b'[  2%] Built target fr3_control_publish__cpp\n'}
+[0.359710] (fr3_control_publish) StdoutLine: {'line': b'[  8%] Built target fr3_control_publish__rosidl_generator_c\n'}
+[0.382517] (fr3_control_publish) StdoutLine: {'line': b'[ 13%] Built target fr3_monitor\n'}
+[0.412285] (-) TimerEvent: {}
+[0.423039] (fr3_control_publish) StdoutLine: {'line': b'[ 17%] Built target tangential_velocity_controller\n'}
+[0.466793] (fr3_control_publish) StdoutLine: {'line': b'[ 22%] Built target mujoco_sim_node\n'}
+[0.470539] (fr3_control_publish) StdoutLine: {'line': b'[ 26%] Built target ee_pose_bridge\n'}
+[0.479090] (mujoco_ros2_control_demos) StdoutLine: {'line': b'[ 16%] Built target example_position\n'}
+[0.479731] (fr3_control_publish) StdoutLine: {'line': b'[ 33%] Built target fr3_control_publish__rosidl_typesupport_c\n'}
+[0.480645] (mujoco_ros2_control) StdoutLine: {'line': b'[ 66%] Built target mujoco_ros2_control\n'}
+[0.501724] (fr3_control_publish) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o\x1b[0m\n'}
+[0.511563] (fr3_control_publish) StdoutLine: {'line': b'[ 35%] Built target ament_cmake_python_copy_fr3_control_publish\n'}
+[0.512551] (-) TimerEvent: {}
+[0.522409] (mujoco_ros2_control_demos) StdoutLine: {'line': b'[ 33%] Built target example_effort\n'}
+[0.554336] (fr3_control_publish) StdoutLine: {'line': b'[ 42%] Built target fr3_control_publish__rosidl_typesupport_cpp\n'}
+[0.555865] (fr3_control_publish) StdoutLine: {'line': b'[ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp\n'}
+[0.562581] (mujoco_ros2_control_demos) StdoutLine: {'line': b'[ 50%] Built target example_diff_drive\n'}
+[0.565336] (fr3_control_publish) StdoutLine: {'line': b'[ 55%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp\n'}
+[0.573727] (mujoco_ros2_control_demos) StdoutLine: {'line': b'[ 66%] Built target example_tricycle_drive\n'}
+[0.577108] (fr3_control_publish) StdoutLine: {'line': b'[ 62%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c\n'}
+[0.600756] (mujoco_ros2_control_demos) StdoutLine: {'line': b'[ 83%] Built target example_velocity\n'}
+[0.609499] (mujoco_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_gripper\n'}
+[0.613609] (-) TimerEvent: {}
+[0.619729] (fr3_control_publish) StdoutLine: {'line': b'[ 68%] Built target fr3_control_publish__rosidl_typesupport_introspection_c\n'}
+[0.637145] (mujoco_ros2_control) StdoutLine: {'line': b'[100%] Built target mujoco_system_plugins\n'}
+[0.713884] (mujoco_ros2_control_demos) CommandEnded: {'returncode': 0}
+[0.721885] (-) TimerEvent: {}
+[0.727663] (mujoco_ros2_control_demos) JobProgress: {'identifier': 'mujoco_ros2_control_demos', 'progress': 'install'}
+[0.727780] (fr3_control_publish) StdoutLine: {'line': b'[ 73%] Built target jacobian_publisher\n'}
+[0.753582] (fr3_control_publish) StdoutLine: {'line': b'[ 77%] Built target force_position_controller\n'}
+[0.755050] (fr3_control_publish) StdoutLine: {'line': b'[ 77%] Built target fr3_control_publish\n'}
+[0.770997] (mujoco_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos'], 'cwd': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_GB:en'), ('USER', 'mscrobotics2425laptop16'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mscrobotics2425laptop16/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/lib:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/openrobots/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/opt/openrobots/lib:'), ('HOME', '/home/mscrobotics2425laptop16'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.101.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/198/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/mscrobotics2425laptop16/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/198/usr/share/code/code'), ('ROS_IP', '10.134.190.8'), ('MANAGERPID', '1885'), ('SYSTEMD_EXEC_PID', '2126'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4646'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install:/home/mscrobotics2425laptop16/apriltag_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'mscrobotics2425laptop16'), ('JOURNAL_STREAM', '8:11839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mscrobotics2425laptop16'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/anaconda3/condabin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/.local/bin'), ('SESSION_MANAGER', 'local/e-10lux4295w27:@/tmp/.ICE-unix/2079,unix/e-10lux4295w27:/tmp/.ICE-unix/2079'), ('GTK_EXE_PREFIX', '/snap/code/198/usr'), ('INVOCATION_ID', '05af377d67b34502bc9bfe851b8059e7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('MUJOCO_DIR', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/198/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/mscrobotics2425laptop16/snap/code/198/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.SQJS92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-add2e010e2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mscrobotics2425laptop16/snap/code/198/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/mscrobotics2425laptop16/snap/code/198/.local/share:/home/mscrobotics2425laptop16/snap/code/198:/snap/code/198/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/openrobots/lib/python3.10/site-packages:/opt/openrobots/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/openrobots:/opt/openrobots::/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble')]), 'shell': False}
+[0.797549] (mujoco_ros2_control) CommandEnded: {'returncode': 0}
+[0.809298] (mujoco_ros2_control) JobProgress: {'identifier': 'mujoco_ros2_control', 'progress': 'install'}
+[0.809481] (mujoco_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control'], 'cwd': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_GB:en'), ('USER', 'mscrobotics2425laptop16'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mscrobotics2425laptop16/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/lib:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/openrobots/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/opt/openrobots/lib:'), ('HOME', '/home/mscrobotics2425laptop16'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.101.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/198/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/mscrobotics2425laptop16/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/198/usr/share/code/code'), ('ROS_IP', '10.134.190.8'), ('MANAGERPID', '1885'), ('SYSTEMD_EXEC_PID', '2126'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4646'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install:/home/mscrobotics2425laptop16/apriltag_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'mscrobotics2425laptop16'), ('JOURNAL_STREAM', '8:11839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mscrobotics2425laptop16'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/anaconda3/condabin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/.local/bin'), ('SESSION_MANAGER', 'local/e-10lux4295w27:@/tmp/.ICE-unix/2079,unix/e-10lux4295w27:/tmp/.ICE-unix/2079'), ('GTK_EXE_PREFIX', '/snap/code/198/usr'), ('INVOCATION_ID', '05af377d67b34502bc9bfe851b8059e7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('MUJOCO_DIR', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/198/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/mscrobotics2425laptop16/snap/code/198/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.SQJS92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-add2e010e2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mscrobotics2425laptop16/snap/code/198/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/mscrobotics2425laptop16/snap/code/198/.local/share:/home/mscrobotics2425laptop16/snap/code/198:/snap/code/198/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/openrobots/lib/python3.10/site-packages:/opt/openrobots/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/openrobots:/opt/openrobots::/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble')]), 'shell': False}
+[0.816123] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.816604] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch\n'}
+[0.816912] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/vertical_cart_example_velocity.launch.py\n'}
+[0.820730] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/cart_example_velocity.launch.py\n'}
+[0.822553] (-) TimerEvent: {}
+[0.823862] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/cart_example_effort.launch.py\n'}
+[0.827219] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/fr3_admittance_hzx.launch.py\n'}
+[0.827553] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/fr3_hzx.launch copy.py\n'}
+[0.827716] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/tricycle_drive.launch.py\n'}
+[0.827849] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/diff_drive.launch.py\n'}
+[0.827962] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/vertical_cart_example_position_pid.launch.py\n'}
+[0.828084] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/ft_sensor_example.launch.py\n'}
+[0.828217] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py\n'}
+[0.829305] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/cart_example_position.launch.py\n'}
+[0.830026] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//launch/fr3_hzx.launch.py\n'}
+[0.830384] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config\n'}
+[0.830547] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/tricycle_drive_controller.yaml\n'}
+[0.830687] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/fr3_admittance_control.yaml\n'}
+[0.831216] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/diff_drive_controller.yaml\n'}
+[0.831523] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/gripper_controller.yaml\n'}
+[0.831675] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/fr3_controllers copy.yaml\n'}
+[0.831763] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/fr3_controllers.yaml\n'}
+[0.831855] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/cartpole_controller_effort.yaml\n'}
+[0.831951] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/cartpole_controller_velocity.yaml\n'}
+[0.832748] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/ft_broadcaster.yaml\n'}
+[0.833138] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//config/cartpole_controller_position.yaml\n'}
+[0.837043] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf\n'}
+[0.843472] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_cart_effort.xacro.urdf\n'}
+[0.856765] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf\n'}
+[0.857095] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_vertical_cart_position_pid.xacro.urdf\n'}
+[0.857411] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf\n'}
+[0.857675] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/fr3_nohand.urdf\n'}
+[0.857912] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_ft_sensor.xacro.urdf\n'}
+[0.858145] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf\n'}
+[0.858415] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_cart_position.xacro.urdf\n'}
+[0.858651] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/fr3_nohand copy.urdf\n'}
+[0.858879] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_vertical_cart_velocity_pid.xacro.urdf\n'}
+[0.859103] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//urdf/test_diff_drive.xacro.urdf\n'}
+[0.874109] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models\n'}
+[0.874555] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_gripper_mimic_joint.xml\n'}
+[0.874725] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/scene.xml\n'}
+[0.874881] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/fr3_copy.xml\n'}
+[0.878235] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets\n'}
+[0.878526] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_4.obj\n'}
+[0.878681] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_2.obj\n'}
+[0.878811] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0.obj\n'}
+[0.878933] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_2.obj\n'}
+[0.879053] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link1.obj\n'}
+[0.879171] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5_0.obj\n'}
+[0.879316] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_6.obj\n'}
+[0.879445] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3_1.obj\n'}
+[0.879599] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_0.obj\n'}
+[0.879760] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/Hapic_Exploration.stl\n'}
+[0.879934] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_4.obj\n'}
+[0.880067] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link2.stl\n'}
+[0.880197] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6.stl\n'}
+[0.880331] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7.obj\n'}
+[0.880456] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4_1.obj\n'}
+[0.880587] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_3.obj\n'}
+[0.880716] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5_2.obj\n'}
+[0.880837] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_1.obj\n'}
+[0.880971] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5_1.obj\n'}
+[0.881109] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5.obj\n'}
+[0.885767] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_5.obj\n'}
+[0.886290] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4_0.obj\n'}
+[0.886516] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7.stl\n'}
+[0.886674] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_5.obj\n'}
+[0.886826] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link5.stl\n'}
+[0.886963] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4.obj\n'}
+[0.887107] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link4.stl\n'}
+[0.887303] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3.obj\n'}
+[0.887498] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_7.obj\n'}
+[0.887662] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6.obj\n'}
+[0.887817] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_3.obj\n'}
+[0.890431] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_1.obj\n'}
+[0.891915] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_0.obj\n'}
+[0.892097] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3_0.obj\n'}
+[0.895492] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_0.obj\n'}
+[0.895691] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link3.stl\n'}
+[0.895823] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/Cylinder.stl\n'}
+[0.895949] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link1.stl\n'}
+[0.896076] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link7_3.obj\n'}
+[0.896218] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_2.obj\n'}
+[0.896359] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0.stl\n'}
+[0.896489] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/tantou_Meshed.stl\n'}
+[0.896615] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link0_1.obj\n'}
+[0.896754] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link6_6.obj\n'}
+[0.896889] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/assets/link2.obj\n'}
+[0.897026] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_ft_sensor.xml\n'}
+[0.897149] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_vertical_cart.xml\n'}
+[0.897307] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_tricycle_drive.xml\n'}
+[0.897440] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_cart.xml\n'}
+[0.897564] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/fr3.xml\n'}
+[0.897682] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos//mujoco_models/test_diff_drive.xml\n'}
+[0.897802] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_position\n'}
+[0.897925] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_velocity\n'}
+[0.898043] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_effort\n'}
+[0.898167] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_diff_drive\n'}
+[0.903164] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_tricycle_drive\n'}
+[0.903538] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/mujoco_ros2_control_demos/example_gripper\n'}
+[0.903710] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/mujoco_ros2_control_demos\n'}
+[0.903875] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/mujoco_ros2_control_demos\n'}
+[0.904042] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/ament_prefix_path.sh\n'}
+[0.904238] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/ament_prefix_path.dsv\n'}
+[0.904409] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/path.sh\n'}
+[0.904966] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/environment/path.dsv\n'}
+[0.905642] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.bash\n'}
+[0.905822] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.sh\n'}
+[0.908308] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.zsh\n'}
+[0.908726] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/local_setup.dsv\n'}
+[0.909204] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.dsv\n'}
+[0.909543] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/ament_index/resource_index/packages/mujoco_ros2_control_demos\n'}
+[0.909710] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/cmake/mujoco_ros2_control_demosConfig.cmake\n'}
+[0.909860] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/cmake/mujoco_ros2_control_demosConfig-version.cmake\n'}
+[0.914343] (mujoco_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.xml\n'}
+[0.914787] (mujoco_ros2_control_demos) CommandEnded: {'returncode': 0}
+[0.916432] (mujoco_ros2_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.916851] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/libmujoco_system_plugins.so\n'}
+[0.917164] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/mujoco_ros2_control/mujoco_ros2_control\n'}
+[0.922365] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/mujoco_system_plugins.xml\n'}
+[0.922893] (-) TimerEvent: {}
+[0.927660] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/package_run_dependencies/mujoco_ros2_control\n'}
+[0.928128] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/parent_prefix_path/mujoco_ros2_control\n'}
+[0.928451] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/ament_prefix_path.sh\n'}
+[0.928726] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/ament_prefix_path.dsv\n'}
+[0.928976] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/path.sh\n'}
+[0.929240] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/environment/path.dsv\n'}
+[0.929521] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.bash\n'}
+[0.929763] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.sh\n'}
+[0.930002] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.zsh\n'}
+[0.930274] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/local_setup.dsv\n'}
+[0.930519] (mujoco_ros2_control) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.dsv\n'}
+[0.930751] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/packages/mujoco_ros2_control\n'}
+[0.930990] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/ament_index/resource_index/mujoco_ros2_control__pluginlib__plugin/mujoco_ros2_control\n'}
+[0.931272] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/cmake/mujoco_ros2_controlConfig.cmake\n'}
+[0.931777] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/cmake/mujoco_ros2_controlConfig-version.cmake\n'}
+[0.936939] (mujoco_ros2_control) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.xml\n'}
+[0.937326] (fr3_control_publish) StdoutLine: {'line': b'[ 80%] Built target fr3_control_publish__py\n'}
+[0.980782] (mujoco_ros2_control_demos) JobEnded: {'identifier': 'mujoco_ros2_control_demos', 'rc': 0}
+[0.992693] (fr3_control_publish) StdoutLine: {'line': b'[ 84%] Built target fr3_control_publish__rosidl_generator_py\n'}
+[0.993039] (mujoco_ros2_control) CommandEnded: {'returncode': 0}
+[1.025097] (-) TimerEvent: {}
+[1.062243] (fr3_control_publish) StdoutLine: {'line': b'[ 88%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.089540] (fr3_control_publish) StdoutLine: {'line': b'[ 93%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext\n'}
+[1.090100] (fr3_control_publish) StdoutLine: {'line': b'[ 97%] Built target fr3_control_publish__rosidl_typesupport_c__pyext\n'}
+[1.102152] (mujoco_ros2_control) JobEnded: {'identifier': 'mujoco_ros2_control', 'rc': 0}
+[1.125339] (-) TimerEvent: {}
+[1.229454] (-) TimerEvent: {}
+[1.330277] (-) TimerEvent: {}
+[1.431406] (-) TimerEvent: {}
+[1.531965] (-) TimerEvent: {}
+[1.636410] (-) TimerEvent: {}
+[1.740153] (-) TimerEvent: {}
+[1.838228] (fr3_control_publish) StdoutLine: {'line': b'running egg_info\n'}
+[1.840482] (-) TimerEvent: {}
+[1.941526] (-) TimerEvent: {}
+[1.956773] (fr3_control_publish) StdoutLine: {'line': b'writing fr3_control_publish.egg-info/PKG-INFO\n'}
+[1.963372] (fr3_control_publish) StdoutLine: {'line': b'writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt\n'}
+[1.964648] (fr3_control_publish) StdoutLine: {'line': b'writing top-level names to fr3_control_publish.egg-info/top_level.txt\n'}
+[2.041719] (-) TimerEvent: {}
+[2.142407] (-) TimerEvent: {}
+[2.243145] (-) TimerEvent: {}
+[2.312524] (fr3_control_publish) StdoutLine: {'line': b"reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'\n"}
+[2.316740] (fr3_control_publish) StdoutLine: {'line': b"writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'\n"}
+[2.343576] (-) TimerEvent: {}
+[2.445096] (-) TimerEvent: {}
+[2.504733] (fr3_control_publish) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg\n'}
+[2.545272] (-) TimerEvent: {}
+[2.646083] (-) TimerEvent: {}
+[2.747051] (-) TimerEvent: {}
+[2.847963] (-) TimerEvent: {}
+[2.948563] (-) TimerEvent: {}
+[3.049130] (-) TimerEvent: {}
+[3.149829] (-) TimerEvent: {}
+[3.250728] (-) TimerEvent: {}
+[3.351435] (-) TimerEvent: {}
+[3.452229] (-) TimerEvent: {}
+[3.553261] (-) TimerEvent: {}
+[3.654360] (-) TimerEvent: {}
+[3.755422] (-) TimerEvent: {}
+[3.856541] (-) TimerEvent: {}
+[3.957470] (-) TimerEvent: {}
+[4.058280] (-) TimerEvent: {}
+[4.159302] (-) TimerEvent: {}
+[4.260365] (-) TimerEvent: {}
+[4.361619] (-) TimerEvent: {}
+[4.462841] (-) TimerEvent: {}
+[4.563411] (-) TimerEvent: {}
+[4.663906] (-) TimerEvent: {}
+[4.764452] (-) TimerEvent: {}
+[4.865031] (-) TimerEvent: {}
+[4.965528] (-) TimerEvent: {}
+[5.066069] (-) TimerEvent: {}
+[5.166582] (-) TimerEvent: {}
+[5.267096] (-) TimerEvent: {}
+[5.367810] (-) TimerEvent: {}
+[5.468440] (-) TimerEvent: {}
+[5.569012] (-) TimerEvent: {}
+[5.669731] (-) TimerEvent: {}
+[5.770267] (-) TimerEvent: {}
+[5.871362] (-) TimerEvent: {}
+[5.972430] (-) TimerEvent: {}
+[6.077484] (-) TimerEvent: {}
+[6.178875] (-) TimerEvent: {}
+[6.280112] (-) TimerEvent: {}
+[6.380686] (-) TimerEvent: {}
+[6.481511] (-) TimerEvent: {}
+[6.582282] (-) TimerEvent: {}
+[6.683138] (-) TimerEvent: {}
+[6.783997] (-) TimerEvent: {}
+[6.884830] (-) TimerEvent: {}
+[6.985428] (-) TimerEvent: {}
+[7.086419] (-) TimerEvent: {}
+[7.187376] (-) TimerEvent: {}
+[7.288399] (-) TimerEvent: {}
+[7.389635] (-) TimerEvent: {}
+[7.490721] (-) TimerEvent: {}
+[7.591803] (-) TimerEvent: {}
+[7.692498] (-) TimerEvent: {}
+[7.792976] (-) TimerEvent: {}
+[7.893438] (-) TimerEvent: {}
+[7.993863] (-) TimerEvent: {}
+[8.094278] (-) TimerEvent: {}
+[8.194758] (-) TimerEvent: {}
+[8.295247] (-) TimerEvent: {}
+[8.395687] (-) TimerEvent: {}
+[8.496107] (-) TimerEvent: {}
+[8.596564] (-) TimerEvent: {}
+[8.697084] (-) TimerEvent: {}
+[8.797520] (-) TimerEvent: {}
+[8.898012] (-) TimerEvent: {}
+[8.998492] (-) TimerEvent: {}
+[9.099060] (-) TimerEvent: {}
+[9.199836] (-) TimerEvent: {}
+[9.300439] (-) TimerEvent: {}
+[9.401047] (-) TimerEvent: {}
+[9.501575] (-) TimerEvent: {}
+[9.602048] (-) TimerEvent: {}
+[9.702885] (-) TimerEvent: {}
+[9.803728] (-) TimerEvent: {}
+[9.904276] (-) TimerEvent: {}
+[10.005080] (-) TimerEvent: {}
+[10.105868] (-) TimerEvent: {}
+[10.206610] (-) TimerEvent: {}
+[10.307363] (-) TimerEvent: {}
+[10.408126] (-) TimerEvent: {}
+[10.508788] (-) TimerEvent: {}
+[10.609923] (-) TimerEvent: {}
+[10.710786] (-) TimerEvent: {}
+[10.811434] (-) TimerEvent: {}
+[10.912228] (-) TimerEvent: {}
+[11.012804] (-) TimerEvent: {}
+[11.113518] (-) TimerEvent: {}
+[11.214398] (-) TimerEvent: {}
+[11.315078] (-) TimerEvent: {}
+[11.416076] (-) TimerEvent: {}
+[11.517128] (-) TimerEvent: {}
+[11.618398] (-) TimerEvent: {}
+[11.719593] (-) TimerEvent: {}
+[11.820461] (-) TimerEvent: {}
+[11.920953] (-) TimerEvent: {}
+[12.021447] (-) TimerEvent: {}
+[12.122121] (-) TimerEvent: {}
+[12.223027] (-) TimerEvent: {}
+[12.323673] (-) TimerEvent: {}
+[12.424283] (-) TimerEvent: {}
+[12.524807] (-) TimerEvent: {}
+[12.625309] (-) TimerEvent: {}
+[12.725945] (-) TimerEvent: {}
+[12.831657] (-) TimerEvent: {}
+[12.932904] (-) TimerEvent: {}
+[13.036376] (-) TimerEvent: {}
+[13.137539] (-) TimerEvent: {}
+[13.239983] (-) TimerEvent: {}
+[13.340472] (-) TimerEvent: {}
+[13.441056] (-) TimerEvent: {}
+[13.542399] (-) TimerEvent: {}
+[13.643168] (-) TimerEvent: {}
+[13.743853] (-) TimerEvent: {}
+[13.845245] (-) TimerEvent: {}
+[13.946505] (-) TimerEvent: {}
+[14.047430] (-) TimerEvent: {}
+[14.147937] (-) TimerEvent: {}
+[14.248443] (-) TimerEvent: {}
+[14.348924] (-) TimerEvent: {}
+[14.449420] (-) TimerEvent: {}
+[14.550033] (-) TimerEvent: {}
+[14.651092] (-) TimerEvent: {}
+[14.751663] (-) TimerEvent: {}
+[14.852374] (-) TimerEvent: {}
+[14.953333] (-) TimerEvent: {}
+[15.053823] (-) TimerEvent: {}
+[15.154394] (-) TimerEvent: {}
+[15.254822] (-) TimerEvent: {}
+[15.355384] (-) TimerEvent: {}
+[15.455825] (-) TimerEvent: {}
+[15.556272] (-) TimerEvent: {}
+[15.656735] (-) TimerEvent: {}
+[15.757283] (-) TimerEvent: {}
+[15.857697] (-) TimerEvent: {}
+[15.958196] (-) TimerEvent: {}
+[16.058638] (-) TimerEvent: {}
+[16.159124] (-) TimerEvent: {}
+[16.259806] (-) TimerEvent: {}
+[16.360781] (-) TimerEvent: {}
+[16.461469] (-) TimerEvent: {}
+[16.562275] (-) TimerEvent: {}
+[16.663094] (-) TimerEvent: {}
+[16.764094] (-) TimerEvent: {}
+[16.865053] (-) TimerEvent: {}
+[16.965964] (-) TimerEvent: {}
+[17.067142] (-) TimerEvent: {}
+[17.167912] (-) TimerEvent: {}
+[17.269110] (-) TimerEvent: {}
+[17.369866] (-) TimerEvent: {}
+[17.470274] (-) TimerEvent: {}
+[17.570702] (-) TimerEvent: {}
+[17.671158] (-) TimerEvent: {}
+[17.771614] (-) TimerEvent: {}
+[17.872050] (-) TimerEvent: {}
+[17.972463] (-) TimerEvent: {}
+[18.072853] (-) TimerEvent: {}
+[18.173315] (-) TimerEvent: {}
+[18.273689] (-) TimerEvent: {}
+[18.374203] (-) TimerEvent: {}
+[18.474780] (-) TimerEvent: {}
+[18.575518] (-) TimerEvent: {}
+[18.676230] (-) TimerEvent: {}
+[18.776866] (-) TimerEvent: {}
+[18.877574] (-) TimerEvent: {}
+[18.978576] (-) TimerEvent: {}
+[19.079509] (-) TimerEvent: {}
+[19.180428] (-) TimerEvent: {}
+[19.281368] (-) TimerEvent: {}
+[19.382301] (-) TimerEvent: {}
+[19.482784] (-) TimerEvent: {}
+[19.583606] (-) TimerEvent: {}
+[19.684444] (-) TimerEvent: {}
+[19.785241] (-) TimerEvent: {}
+[19.886124] (-) TimerEvent: {}
+[19.986874] (-) TimerEvent: {}
+[20.087379] (-) TimerEvent: {}
+[20.188259] (-) TimerEvent: {}
+[20.288795] (-) TimerEvent: {}
+[20.389674] (-) TimerEvent: {}
+[20.490459] (-) TimerEvent: {}
+[20.591059] (-) TimerEvent: {}
+[20.691856] (-) TimerEvent: {}
+[20.792648] (-) TimerEvent: {}
+[20.893135] (-) TimerEvent: {}
+[20.993520] (-) TimerEvent: {}
+[21.094145] (-) TimerEvent: {}
+[21.195501] (-) TimerEvent: {}
+[21.296304] (-) TimerEvent: {}
+[21.396853] (-) TimerEvent: {}
+[21.497324] (-) TimerEvent: {}
+[21.597745] (-) TimerEvent: {}
+[21.698532] (-) TimerEvent: {}
+[21.799878] (-) TimerEvent: {}
+[21.900384] (-) TimerEvent: {}
+[22.000974] (-) TimerEvent: {}
+[22.101486] (-) TimerEvent: {}
+[22.201985] (-) TimerEvent: {}
+[22.302536] (-) TimerEvent: {}
+[22.403115] (-) TimerEvent: {}
+[22.503598] (-) TimerEvent: {}
+[22.604168] (-) TimerEvent: {}
+[22.704805] (-) TimerEvent: {}
+[22.805843] (-) TimerEvent: {}
+[22.906832] (-) TimerEvent: {}
+[23.007821] (-) TimerEvent: {}
+[23.108696] (-) TimerEvent: {}
+[23.209717] (-) TimerEvent: {}
+[23.310638] (-) TimerEvent: {}
+[23.411473] (-) TimerEvent: {}
+[23.512789] (-) TimerEvent: {}
+[23.613677] (-) TimerEvent: {}
+[23.714281] (-) TimerEvent: {}
+[23.814776] (-) TimerEvent: {}
+[23.915296] (-) TimerEvent: {}
+[24.015798] (-) TimerEvent: {}
+[24.116261] (-) TimerEvent: {}
+[24.216680] (-) TimerEvent: {}
+[24.317133] (-) TimerEvent: {}
+[24.417624] (-) TimerEvent: {}
+[24.518087] (-) TimerEvent: {}
+[24.618569] (-) TimerEvent: {}
+[24.719262] (-) TimerEvent: {}
+[24.819822] (-) TimerEvent: {}
+[24.920778] (-) TimerEvent: {}
+[25.021595] (-) TimerEvent: {}
+[25.122457] (-) TimerEvent: {}
+[25.223087] (-) TimerEvent: {}
+[25.323825] (-) TimerEvent: {}
+[25.424690] (-) TimerEvent: {}
+[25.525447] (-) TimerEvent: {}
+[25.626468] (-) TimerEvent: {}
+[25.727066] (-) TimerEvent: {}
+[25.827786] (-) TimerEvent: {}
+[25.928558] (-) TimerEvent: {}
+[26.029699] (-) TimerEvent: {}
+[26.130137] (-) TimerEvent: {}
+[26.230502] (-) TimerEvent: {}
+[26.330846] (-) TimerEvent: {}
+[26.431319] (-) TimerEvent: {}
+[26.531734] (-) TimerEvent: {}
+[26.632217] (-) TimerEvent: {}
+[26.732679] (-) TimerEvent: {}
+[26.833128] (-) TimerEvent: {}
+[26.933577] (-) TimerEvent: {}
+[27.034098] (-) TimerEvent: {}
+[27.134693] (-) TimerEvent: {}
+[27.235284] (-) TimerEvent: {}
+[27.336049] (-) TimerEvent: {}
+[27.436827] (-) TimerEvent: {}
+[27.537549] (-) TimerEvent: {}
+[27.638526] (-) TimerEvent: {}
+[27.739465] (-) TimerEvent: {}
+[27.840211] (-) TimerEvent: {}
+[27.941522] (-) TimerEvent: {}
+[28.042224] (-) TimerEvent: {}
+[28.142638] (-) TimerEvent: {}
+[28.243051] (-) TimerEvent: {}
+[28.343433] (-) TimerEvent: {}
+[28.443848] (-) TimerEvent: {}
+[28.544534] (-) TimerEvent: {}
+[28.645489] (-) TimerEvent: {}
+[28.745996] (-) TimerEvent: {}
+[28.846443] (-) TimerEvent: {}
+[28.947624] (-) TimerEvent: {}
+[29.049389] (-) TimerEvent: {}
+[29.150052] (-) TimerEvent: {}
+[29.250713] (-) TimerEvent: {}
+[29.351513] (-) TimerEvent: {}
+[29.452145] (-) TimerEvent: {}
+[29.552618] (-) TimerEvent: {}
+[29.653116] (-) TimerEvent: {}
+[29.753572] (-) TimerEvent: {}
+[29.853990] (-) TimerEvent: {}
+[29.954844] (-) TimerEvent: {}
+[30.059265] (-) TimerEvent: {}
+[30.159660] (-) TimerEvent: {}
+[30.260178] (-) TimerEvent: {}
+[30.360619] (-) TimerEvent: {}
+[30.461077] (-) TimerEvent: {}
+[30.561584] (-) TimerEvent: {}
+[30.662036] (-) TimerEvent: {}
+[30.762479] (-) TimerEvent: {}
+[30.862906] (-) TimerEvent: {}
+[30.963368] (-) TimerEvent: {}
+[31.063774] (-) TimerEvent: {}
+[31.164283] (-) TimerEvent: {}
+[31.267047] (-) TimerEvent: {}
+[31.368236] (-) TimerEvent: {}
+[31.469119] (-) TimerEvent: {}
+[31.570240] (-) TimerEvent: {}
+[31.671330] (-) TimerEvent: {}
+[31.772044] (-) TimerEvent: {}
+[31.872630] (-) TimerEvent: {}
+[31.973302] (-) TimerEvent: {}
+[32.074347] (-) TimerEvent: {}
+[32.174795] (-) TimerEvent: {}
+[32.275267] (-) TimerEvent: {}
+[32.375781] (-) TimerEvent: {}
+[32.476332] (-) TimerEvent: {}
+[32.577052] (-) TimerEvent: {}
+[32.677880] (-) TimerEvent: {}
+[32.778356] (-) TimerEvent: {}
+[32.878856] (-) TimerEvent: {}
+[32.979574] (-) TimerEvent: {}
+[33.080628] (-) TimerEvent: {}
+[33.181220] (-) TimerEvent: {}
+[33.282031] (-) TimerEvent: {}
+[33.382916] (-) TimerEvent: {}
+[33.483952] (-) TimerEvent: {}
+[33.585021] (-) TimerEvent: {}
+[33.687593] (-) TimerEvent: {}
+[33.788835] (-) TimerEvent: {}
+[33.890128] (-) TimerEvent: {}
+[33.991073] (-) TimerEvent: {}
+[34.092278] (-) TimerEvent: {}
+[34.192801] (-) TimerEvent: {}
+[34.293740] (-) TimerEvent: {}
+[34.394573] (-) TimerEvent: {}
+[34.495249] (-) TimerEvent: {}
+[34.595970] (-) TimerEvent: {}
+[34.698260] (-) TimerEvent: {}
+[34.801265] (-) TimerEvent: {}
+[34.901939] (-) TimerEvent: {}
+[35.004563] (-) TimerEvent: {}
+[35.105745] (-) TimerEvent: {}
+[35.207138] (-) TimerEvent: {}
+[35.309083] (-) TimerEvent: {}
+[35.409694] (-) TimerEvent: {}
+[35.510336] (-) TimerEvent: {}
+[35.611413] (-) TimerEvent: {}
+[35.712159] (-) TimerEvent: {}
+[35.813074] (-) TimerEvent: {}
+[35.913914] (-) TimerEvent: {}
+[36.015020] (-) TimerEvent: {}
+[36.116077] (-) TimerEvent: {}
+[36.217251] (-) TimerEvent: {}
+[36.318457] (-) TimerEvent: {}
+[36.419491] (-) TimerEvent: {}
+[36.520218] (-) TimerEvent: {}
+[36.621229] (-) TimerEvent: {}
+[36.722068] (-) TimerEvent: {}
+[36.822613] (-) TimerEvent: {}
+[36.923135] (-) TimerEvent: {}
+[37.023642] (-) TimerEvent: {}
+[37.124149] (-) TimerEvent: {}
+[37.224666] (-) TimerEvent: {}
+[37.325124] (-) TimerEvent: {}
+[37.425608] (-) TimerEvent: {}
+[37.526481] (-) TimerEvent: {}
+[37.627892] (-) TimerEvent: {}
+[37.729303] (-) TimerEvent: {}
+[37.830043] (-) TimerEvent: {}
+[37.932649] (-) TimerEvent: {}
+[38.034461] (-) TimerEvent: {}
+[38.135472] (-) TimerEvent: {}
+[38.236332] (-) TimerEvent: {}
+[38.336949] (-) TimerEvent: {}
+[38.437396] (-) TimerEvent: {}
+[38.537908] (-) TimerEvent: {}
+[38.638412] (-) TimerEvent: {}
+[38.738905] (-) TimerEvent: {}
+[38.839452] (-) TimerEvent: {}
+[38.939916] (-) TimerEvent: {}
+[39.040450] (-) TimerEvent: {}
+[39.141216] (-) TimerEvent: {}
+[39.241992] (-) TimerEvent: {}
+[39.343070] (-) TimerEvent: {}
+[39.444394] (-) TimerEvent: {}
+[39.545479] (-) TimerEvent: {}
+[39.646067] (-) TimerEvent: {}
+[39.746813] (-) TimerEvent: {}
+[39.848146] (-) TimerEvent: {}
+[39.949223] (-) TimerEvent: {}
+[40.050393] (-) TimerEvent: {}
+[40.151138] (-) TimerEvent: {}
+[40.251760] (-) TimerEvent: {}
+[40.354380] (-) TimerEvent: {}
+[40.455301] (-) TimerEvent: {}
+[40.555811] (-) TimerEvent: {}
+[40.657808] (-) TimerEvent: {}
+[40.759283] (-) TimerEvent: {}
+[40.860359] (-) TimerEvent: {}
+[40.961460] (-) TimerEvent: {}
+[41.062456] (-) TimerEvent: {}
+[41.163473] (-) TimerEvent: {}
+[41.264415] (-) TimerEvent: {}
+[41.365727] (-) TimerEvent: {}
+[41.466520] (-) TimerEvent: {}
+[41.567074] (-) TimerEvent: {}
+[41.667561] (-) TimerEvent: {}
+[41.768073] (-) TimerEvent: {}
+[41.868747] (-) TimerEvent: {}
+[41.969265] (-) TimerEvent: {}
+[42.069911] (-) TimerEvent: {}
+[42.170450] (-) TimerEvent: {}
+[42.270986] (-) TimerEvent: {}
+[42.371890] (-) TimerEvent: {}
+[42.477325] (-) TimerEvent: {}
+[42.578265] (-) TimerEvent: {}
+[42.679338] (-) TimerEvent: {}
+[42.780091] (-) TimerEvent: {}
+[42.881009] (-) TimerEvent: {}
+[42.981618] (-) TimerEvent: {}
+[43.082345] (-) TimerEvent: {}
+[43.183140] (-) TimerEvent: {}
+[43.283752] (-) TimerEvent: {}
+[43.384719] (-) TimerEvent: {}
+[43.485592] (-) TimerEvent: {}
+[43.586617] (-) TimerEvent: {}
+[43.687406] (-) TimerEvent: {}
+[43.788293] (-) TimerEvent: {}
+[43.889084] (-) TimerEvent: {}
+[43.989987] (-) TimerEvent: {}
+[44.091099] (-) TimerEvent: {}
+[44.192211] (-) TimerEvent: {}
+[44.293532] (-) TimerEvent: {}
+[44.394775] (-) TimerEvent: {}
+[44.495418] (-) TimerEvent: {}
+[44.596065] (-) TimerEvent: {}
+[44.696553] (-) TimerEvent: {}
+[44.797007] (-) TimerEvent: {}
+[44.897893] (-) TimerEvent: {}
+[44.999216] (-) TimerEvent: {}
+[45.100225] (-) TimerEvent: {}
+[45.200732] (-) TimerEvent: {}
+[45.301243] (-) TimerEvent: {}
+[45.401969] (-) TimerEvent: {}
+[45.502730] (-) TimerEvent: {}
+[45.603386] (-) TimerEvent: {}
+[45.708492] (-) TimerEvent: {}
+[45.809780] (-) TimerEvent: {}
+[45.912050] (-) TimerEvent: {}
+[46.013139] (-) TimerEvent: {}
+[46.114673] (-) TimerEvent: {}
+[46.215309] (-) TimerEvent: {}
+[46.315981] (-) TimerEvent: {}
+[46.416898] (-) TimerEvent: {}
+[46.517889] (-) TimerEvent: {}
+[46.618652] (-) TimerEvent: {}
+[46.719849] (-) TimerEvent: {}
+[46.820464] (-) TimerEvent: {}
+[46.921318] (-) TimerEvent: {}
+[47.022314] (-) TimerEvent: {}
+[47.123576] (-) TimerEvent: {}
+[47.224853] (-) TimerEvent: {}
+[47.329756] (-) TimerEvent: {}
+[47.430363] (-) TimerEvent: {}
+[47.531158] (-) TimerEvent: {}
+[47.631922] (-) TimerEvent: {}
+[47.733432] (-) TimerEvent: {}
+[47.834224] (-) TimerEvent: {}
+[47.935381] (-) TimerEvent: {}
+[48.036491] (-) TimerEvent: {}
+[48.137652] (-) TimerEvent: {}
+[48.238710] (-) TimerEvent: {}
+[48.339780] (-) TimerEvent: {}
+[48.440769] (-) TimerEvent: {}
+[48.541873] (-) TimerEvent: {}
+[48.643053] (-) TimerEvent: {}
+[48.744325] (-) TimerEvent: {}
+[48.845496] (-) TimerEvent: {}
+[48.946812] (-) TimerEvent: {}
+[49.047748] (-) TimerEvent: {}
+[49.148525] (-) TimerEvent: {}
+[49.249344] (-) TimerEvent: {}
+[49.350533] (-) TimerEvent: {}
+[49.453127] (-) TimerEvent: {}
+[49.555876] (-) TimerEvent: {}
+[49.656533] (-) TimerEvent: {}
+[49.757220] (-) TimerEvent: {}
+[49.857885] (-) TimerEvent: {}
+[49.961943] (-) TimerEvent: {}
+[50.062727] (-) TimerEvent: {}
+[50.163944] (-) TimerEvent: {}
+[50.264874] (-) TimerEvent: {}
+[50.365841] (-) TimerEvent: {}
+[50.466823] (-) TimerEvent: {}
+[50.567848] (-) TimerEvent: {}
+[50.668969] (-) TimerEvent: {}
+[50.770419] (-) TimerEvent: {}
+[50.871303] (-) TimerEvent: {}
+[50.971973] (-) TimerEvent: {}
+[51.073309] (-) TimerEvent: {}
+[51.174594] (-) TimerEvent: {}
+[51.275856] (-) TimerEvent: {}
+[51.377107] (-) TimerEvent: {}
+[51.477680] (-) TimerEvent: {}
+[51.578278] (-) TimerEvent: {}
+[51.679103] (-) TimerEvent: {}
+[51.780073] (-) TimerEvent: {}
+[51.880969] (-) TimerEvent: {}
+[51.981655] (-) TimerEvent: {}
+[52.082353] (-) TimerEvent: {}
+[52.183239] (-) TimerEvent: {}
+[52.283876] (-) TimerEvent: {}
+[52.384858] (-) TimerEvent: {}
+[52.485774] (-) TimerEvent: {}
+[52.586703] (-) TimerEvent: {}
+[52.687831] (-) TimerEvent: {}
+[52.788933] (-) TimerEvent: {}
+[52.890272] (-) TimerEvent: {}
+[52.991197] (-) TimerEvent: {}
+[53.091675] (-) TimerEvent: {}
+[53.192207] (-) TimerEvent: {}
+[53.292715] (-) TimerEvent: {}
+[53.393229] (-) TimerEvent: {}
+[53.493869] (-) TimerEvent: {}
+[53.594395] (-) TimerEvent: {}
+[53.694872] (-) TimerEvent: {}
+[53.795430] (-) TimerEvent: {}
+[53.896001] (-) TimerEvent: {}
+[53.996588] (-) TimerEvent: {}
+[54.097323] (-) TimerEvent: {}
+[54.198334] (-) TimerEvent: {}
+[54.299298] (-) TimerEvent: {}
+[54.400243] (-) TimerEvent: {}
+[54.500966] (-) TimerEvent: {}
+[54.601792] (-) TimerEvent: {}
+[54.702764] (-) TimerEvent: {}
+[54.805073] (-) TimerEvent: {}
+[54.905693] (-) TimerEvent: {}
+[55.006436] (-) TimerEvent: {}
+[55.107612] (-) TimerEvent: {}
+[55.208857] (-) TimerEvent: {}
+[55.309489] (-) TimerEvent: {}
+[55.410558] (-) TimerEvent: {}
+[55.511572] (-) TimerEvent: {}
+[55.612646] (-) TimerEvent: {}
+[55.713461] (-) TimerEvent: {}
+[55.814767] (-) TimerEvent: {}
+[55.916261] (-) TimerEvent: {}
+[56.017700] (-) TimerEvent: {}
+[56.118615] (-) TimerEvent: {}
+[56.219314] (-) TimerEvent: {}
+[56.320388] (-) TimerEvent: {}
+[56.421522] (-) TimerEvent: {}
+[56.522668] (-) TimerEvent: {}
+[56.623657] (-) TimerEvent: {}
+[56.724303] (-) TimerEvent: {}
+[56.825466] (-) TimerEvent: {}
+[56.926274] (-) TimerEvent: {}
+[57.027105] (-) TimerEvent: {}
+[57.128494] (-) TimerEvent: {}
+[57.229581] (-) TimerEvent: {}
+[57.330484] (-) TimerEvent: {}
+[57.431412] (-) TimerEvent: {}
+[57.532450] (-) TimerEvent: {}
+[57.633303] (-) TimerEvent: {}
+[57.672157] (fr3_control_publish) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hybridforcetangentialcontroller\x1b[0m\n'}
+[57.733484] (-) TimerEvent: {}
+[57.835537] (-) TimerEvent: {}
+[57.938343] (-) TimerEvent: {}
+[58.039053] (-) TimerEvent: {}
+[58.140026] (-) TimerEvent: {}
+[58.241304] (-) TimerEvent: {}
+[58.342737] (-) TimerEvent: {}
+[58.444356] (-) TimerEvent: {}
+[58.546000] (-) TimerEvent: {}
+[58.647465] (-) TimerEvent: {}
+[58.748685] (-) TimerEvent: {}
+[58.849913] (-) TimerEvent: {}
+[58.951309] (-) TimerEvent: {}
+[59.052690] (-) TimerEvent: {}
+[59.154279] (-) TimerEvent: {}
+[59.255469] (-) TimerEvent: {}
+[59.356542] (-) TimerEvent: {}
+[59.457628] (-) TimerEvent: {}
+[59.558827] (-) TimerEvent: {}
+[59.660924] (-) TimerEvent: {}
+[59.761790] (-) TimerEvent: {}
+[59.863309] (-) TimerEvent: {}
+[59.964495] (-) TimerEvent: {}
+[60.065289] (-) TimerEvent: {}
+[60.165928] (-) TimerEvent: {}
+[60.267700] (-) TimerEvent: {}
+[60.369574] (-) TimerEvent: {}
+[60.470596] (-) TimerEvent: {}
+[60.571687] (-) TimerEvent: {}
+[60.672530] (-) TimerEvent: {}
+[60.773381] (-) TimerEvent: {}
+[60.874274] (-) TimerEvent: {}
+[60.975778] (-) TimerEvent: {}
+[61.077035] (-) TimerEvent: {}
+[61.178304] (-) TimerEvent: {}
+[61.279384] (-) TimerEvent: {}
+[61.380721] (-) TimerEvent: {}
+[61.481955] (-) TimerEvent: {}
+[61.582964] (-) TimerEvent: {}
+[61.684290] (-) TimerEvent: {}
+[61.768327] (fr3_control_publish) StdoutLine: {'line': b'[100%] Built target hybridforcetangentialcontroller\n'}
+[61.784330] (-) TimerEvent: {}
+[61.827032] (fr3_control_publish) CommandEnded: {'returncode': 0}
+[61.841428] (fr3_control_publish) JobProgress: {'identifier': 'fr3_control_publish', 'progress': 'install'}
+[61.841692] (fr3_control_publish) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish'], 'cwd': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_GB:en'), ('USER', 'mscrobotics2425laptop16'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mscrobotics2425laptop16/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox/lib:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/openrobots/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/mujoco/mujoco-install/lib:/home/mscrobotics2425laptop16/libfoo/lib:/home/mscrobotics2425laptop16/libbar/lib:/opt/openrobots/lib:'), ('HOME', '/home/mscrobotics2425laptop16'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.101.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/198/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/mscrobotics2425laptop16/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/198/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/198/usr/share/code/code'), ('ROS_IP', '10.134.190.8'), ('MANAGERPID', '1885'), ('SYSTEMD_EXEC_PID', '2126'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4646'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install:/home/mscrobotics2425laptop16/apriltag_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'mscrobotics2425laptop16'), ('JOURNAL_STREAM', '8:11839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mscrobotics2425laptop16'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/anaconda3/condabin:/opt/openrobots/bin:/home/mscrobotics2425laptop16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mscrobotics2425laptop16/.local/bin:/home/mscrobotics2425laptop16/.local/bin'), ('SESSION_MANAGER', 'local/e-10lux4295w27:@/tmp/.ICE-unix/2079,unix/e-10lux4295w27:/tmp/.ICE-unix/2079'), ('GTK_EXE_PREFIX', '/snap/code/198/usr'), ('INVOCATION_ID', '05af377d67b34502bc9bfe851b8059e7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('MUJOCO_DIR', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/home/mscrobotics2425laptop16/mujoco/mujoco-install'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/198/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/mscrobotics2425laptop16/snap/code/198/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.SQJS92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-add2e010e2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mscrobotics2425laptop16/snap/code/198/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/mscrobotics2425laptop16/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/mscrobotics2425laptop16/snap/code/198/.local/share:/home/mscrobotics2425laptop16/snap/code/198:/snap/code/198/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg/lib/python3.10/site-packages:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/openrobots/lib/python3.10/site-packages:/opt/openrobots/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface:/home/mscrobotics2425laptop16/interbotix_ws/install/moveit_visual_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xsarms:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_moveit:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_puppet:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_perception:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_joy:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_dual:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xsarm_descriptions:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_rviz:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_ros_xseries:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_sdk:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_ros_control:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_toolbox:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_gravity_compensation:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_driver:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_tf_tools:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_pipelines:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_sim:/home/mscrobotics2425laptop16/interbotix_ws/install/dynamixel_workbench_toolbox:/home/mscrobotics2425laptop16/apriltag_ws/install/apriltag_ros:/opt/openrobots:/opt/openrobots::/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble')]), 'shell': False}
+[61.876407] (fr3_control_publish) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[61.877526] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/rosidl_interfaces/fr3_control_publish\n'}
+[61.878394] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish\n'}
+[61.879387] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg\n'}
+[61.880162] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/touch_tip_wrench.h\n'}
+[61.880592] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail\n'}
+[61.881587] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.h\n'}
+[61.881877] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__functions.h\n'}
+[61.882125] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__functions.c\n'}
+[61.882352] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__struct.h\n'}
+[61.882519] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_generator_c__visibility_control.h\n'}
+[61.882667] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/library_path.sh\n'}
+[61.883108] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/library_path.dsv\n'}
+[61.883456] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_generator_c.so\n'}
+[61.884206] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish\n'}
+[61.884645] (-) TimerEvent: {}
+[61.885172] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg\n'}
+[61.885882] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail\n'}
+[61.886601] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_fastrtps_c.h\n'}
+[61.886809] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[61.886970] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_fastrtps_c.so\n'}
+[61.887142] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish\n'}
+[61.887428] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg\n'}
+[61.887682] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[61.887922] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail\n'}
+[61.888173] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.c\n'}
+[61.888882] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_introspection_c.h\n'}
+[61.889436] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_introspection_c.so\n'}
+[61.893722] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_c.so\n'}
+[61.895389] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish\n'}
+[61.896877] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg\n'}
+[61.897365] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail\n'}
+[61.897697] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__traits.hpp\n'}
+[61.898319] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.hpp\n'}
+[61.898843] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__builder.hpp\n'}
+[61.899025] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__struct.hpp\n'}
+[61.899178] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/touch_tip_wrench.hpp\n'}
+[61.899539] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[61.899750] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish\n'}
+[61.899877] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg\n'}
+[61.899965] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail\n'}
+[61.900056] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/dds_fastrtps\n'}
+[61.900837] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[61.901252] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[61.901667] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_fastrtps_cpp.so\n'}
+[61.902030] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish\n'}
+[61.902479] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg\n'}
+[61.902830] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail\n'}
+[61.903128] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__type_support.cpp\n'}
+[61.903470] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/include/fr3_control_publish/fr3_control_publish/msg/detail/touch_tip_wrench__rosidl_typesupport_introspection_cpp.hpp\n'}
+[61.903758] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_introspection_cpp.so\n'}
+[61.904044] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_typesupport_cpp.so\n'}
+[61.904347] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/pythonpath.sh\n'}
+[61.904624] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/pythonpath.dsv\n'}
+[61.904872] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info\n'}
+[61.905133] (fr3_control_publish) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[61.905426] (fr3_control_publish) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[61.905668] (fr3_control_publish) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[61.905897] (fr3_control_publish) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[61.906130] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish\n'}
+[61.906428] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/_fr3_control_publish_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[61.906675] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/libfr3_control_publish__rosidl_generator_py.so\n'}
+[61.906912] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/__init__.py\n'}
+[61.907143] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[61.907403] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/_fr3_control_publish_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[61.907645] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg\n'}
+[61.907899] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg/__init__.py\n'}
+[61.908123] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg/_touch_tip_wrench.py\n'}
+[61.908395] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg/_touch_tip_wrench_s.c\n'}
+[61.908628] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/_fr3_control_publish_s.ep.rosidl_typesupport_c.c\n'}
+[61.908855] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[61.909089] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[61.984941] (-) TimerEvent: {}
+[62.036792] (fr3_control_publish) StdoutLine: {'line': b"Listing '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish'...\n"}
+[62.037211] (fr3_control_publish) StdoutLine: {'line': b"Listing '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/msg'...\n"}
+[62.050195] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[62.051789] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[62.053845] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/local/lib/python3.10/dist-packages/fr3_control_publish/fr3_control_publish_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[62.054645] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/libfr3_control_publish__rosidl_generator_py.so\n'}
+[62.055398] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/msg/TouchTipWrench.idl\n'}
+[62.055954] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/msg/TouchTipWrench.msg\n'}
+[62.056159] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/ee_pose_bridge\n'}
+[62.056946] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/fr3_monitor\n'}
+[62.058907] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/jacobian_publisher\n'}
+[62.059685] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/force_position_controller\n'}
+[62.060581] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/tangential_velocity_controller\n'}
+[62.061856] (fr3_control_publish) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/hybridforcetangentialcontroller\n'}
+[62.085161] (-) TimerEvent: {}
+[62.114460] (fr3_control_publish) StdoutLine: {'line': b'-- Set runtime path of "/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/hybridforcetangentialcontroller" to ""\n'}
+[62.115524] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/fr3_control_publish/mujoco_sim_node\n'}
+[62.115831] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/package_run_dependencies/fr3_control_publish\n'}
+[62.116280] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/parent_prefix_path/fr3_control_publish\n'}
+[62.116697] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/ament_prefix_path.sh\n'}
+[62.116924] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/ament_prefix_path.dsv\n'}
+[62.117038] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/path.sh\n'}
+[62.117166] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/environment/path.dsv\n'}
+[62.117423] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.bash\n'}
+[62.117573] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.sh\n'}
+[62.117760] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.zsh\n'}
+[62.117886] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/local_setup.dsv\n'}
+[62.118074] (fr3_control_publish) StdoutLine: {'line': b'-- Installing: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.dsv\n'}
+[62.120123] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/ament_index/resource_index/packages/fr3_control_publish\n'}
+[62.120836] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_cExport.cmake\n'}
+[62.121533] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_cExport-noconfig.cmake\n'}
+[62.121914] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[62.122331] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[62.122723] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cExport.cmake\n'}
+[62.123131] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[62.123488] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cExport.cmake\n'}
+[62.124079] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[62.124659] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_cppExport.cmake\n'}
+[62.124858] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[62.124989] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[62.125113] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[62.125238] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[62.125360] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cppExport.cmake\n'}
+[62.125557] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publish__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[62.125681] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_pyExport.cmake\n'}
+[62.125810] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/export_fr3_control_publish__rosidl_generator_pyExport-noconfig.cmake\n'}
+[62.125920] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/rosidl_cmake-extras.cmake\n'}
+[62.126025] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[62.126132] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[62.126257] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[62.126482] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[62.126633] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[62.126767] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[62.126906] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publishConfig.cmake\n'}
+[62.127033] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/cmake/fr3_control_publishConfig-version.cmake\n'}
+[62.127165] (fr3_control_publish) StdoutLine: {'line': b'-- Up-to-date: /home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.xml\n'}
+[62.142771] (fr3_control_publish) CommandEnded: {'returncode': 0}
+[62.185381] (-) TimerEvent: {}
+[62.248100] (fr3_control_publish) JobEnded: {'identifier': 'fr3_control_publish', 'rc': 0}
+[62.255278] (-) EventReactorShutdown: {}

@@ -23,10 +23,10 @@ public:
     max_joint_vel_ = 0.5;
 
     f_des_.setZero();
-    f_des_(0) = -10.0;
+    f_des_(0) = -100.0;
 
     Eigen::Vector<double,6> diag;
-    diag << 1.0/50, 1.0/50, 1.0/50, 1.0/5, 1.0/5, 1.0/5;
+    diag << 1.0/500, 1.0/500, 1.0/500, 1.0/50, 1.0/50, 1.0/50;
     B_inv_ = diag.asDiagonal();
 
     joint_names_ = {
@@ -111,7 +111,7 @@ private:
   /* ---------- 外力回调 ---------- */
   void on_wrench(const geometry_msgs::msg::WrenchStamped::SharedPtr msg)
   {
-    if (msg->header.frame_id != "touch_tip") return;
+    if (msg->header.frame_id != "world") return;
     f_ext_sensor_ << msg->wrench.force.x,  msg->wrench.force.y,  msg->wrench.force.z,
                      msg->wrench.torque.x, msg->wrench.torque.y, msg->wrench.torque.z;
     have_wrench_ = true;
@@ -122,7 +122,7 @@ private:
   {
     if(f_ext_sensor_.norm() > 20.0) {
       RCLCPP_WARN(get_logger(), "外力过大，停止控制");
-      return;
+      B_inv_.setZero();    // 将所有元素（对角和非对角）都设为 0
     }
     
     if (!initialized_ || !have_jacobian_ || !have_wrench_) return;

@@ -1,0 +1,343 @@
+[0.265s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.266s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7009d01e4430>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7009d01a7f10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7009d01a7f10>>, mixin_verb=('build',))
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.352s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mscrobotics2425laptop16/mujoco_ros_ws'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/fr3_control_publish) by extension 'ros'
+[0.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fr3_control_publish' with type 'ros.ament_cmake' and name 'fr3_control_publish'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'ignore_ament_install'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extensions ['colcon_pkg']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'colcon_pkg'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extensions ['colcon_meta']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'colcon_meta'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extensions ['ros']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'ros'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extensions ['cmake', 'python']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'cmake'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'python'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extensions ['python_setup_py']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control) by extension 'python_setup_py'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'ignore_ament_install'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extensions ['colcon_pkg']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'colcon_pkg'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extensions ['colcon_meta']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'colcon_meta'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extensions ['ros']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'ros'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extensions ['cmake', 'python']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'cmake'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'python'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extensions ['python_setup_py']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc) by extension 'python_setup_py'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'ignore_ament_install'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extensions ['colcon_pkg']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'colcon_pkg'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extensions ['colcon_meta']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'ros'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extensions ['cmake', 'python']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'cmake'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'python'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extensions ['python_setup_py']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/doc/images) by extension 'python_setup_py'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'colcon_meta'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extensions ['ros']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'ros'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extensions ['cmake', 'python']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'cmake'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'python'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extensions ['python_setup_py']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/docker) by extension 'python_setup_py'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extension 'ignore'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extension 'ignore_ament_install'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extensions ['colcon_pkg']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extension 'colcon_pkg'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extension 'colcon_meta'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extensions ['ros']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control) by extension 'ros'
+[0.393s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mujoco_ros2_control/mujoco_ros2_control' with type 'ros.ament_cmake' and name 'mujoco_ros2_control'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/mujoco_ros2_control/mujoco_ros2_control_demos) by extension 'ros'
+[0.396s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mujoco_ros2_control/mujoco_ros2_control_demos' with type 'ros.ament_cmake' and name 'mujoco_ros2_control_demos'
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/opt/openrobots' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.446s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 35 installed packages in /home/mscrobotics2425laptop16/interbotix_ws/install
+[0.448s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mscrobotics2425laptop16/apriltag_ws/install
+[0.450s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 442 installed packages in /opt/ros/humble
+[0.453s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'cmake_args' from command line to 'None'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'cmake_target' from command line to 'None'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'cmake_clean_cache' from command line to 'False'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'cmake_clean_first' from command line to 'False'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'cmake_force_configure' from command line to 'False'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'ament_cmake_args' from command line to 'None'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'catkin_cmake_args' from command line to 'None'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'fr3_control_publish' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.603s] DEBUG:colcon.colcon_core.verb:Building package 'fr3_control_publish' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish', 'merge_install': False, 'path': '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish', 'symlink_install': False, 'test_result_base': None}
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.604s] DEBUG:colcon.colcon_core.verb:Building package 'mujoco_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control', 'merge_install': False, 'path': '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'cmake_args' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'cmake_target' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'cmake_clean_first' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'cmake_force_configure' from command line to 'False'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'ament_cmake_args' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[0.604s] Level 5:colcon.colcon_core.verb:set package 'mujoco_ros2_control_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.605s] DEBUG:colcon.colcon_core.verb:Building package 'mujoco_ros2_control_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos', 'merge_install': False, 'path': '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control_demos', 'symlink_install': False, 'test_result_base': None}
+[0.605s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.607s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.607s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish' with build type 'ament_cmake'
+[0.608s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish'
+[0.613s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.613s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.614s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.632s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control' with build type 'ament_cmake'
+[0.633s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control'
+[0.635s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.635s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.656s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control_demos' with build type 'ament_cmake'
+[0.657s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mscrobotics2425laptop16/mujoco_ros_ws/src/mujoco_ros2_control/mujoco_ros2_control_demos'
+[0.658s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.658s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[0.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[0.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos -- -j12 -l12
+[1.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos -- -j12 -l12
+[1.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos
+[1.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control -- -j12 -l12
+[1.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control
+[1.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mujoco_ros2_control_demos)
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos' for CMake module files
+[1.479s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos' for CMake config files
+[1.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('mujoco_ros2_control_demos', 'cmake_prefix_path')
+[1.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/hook/cmake_prefix_path.ps1'
+[1.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/hook/cmake_prefix_path.dsv'
+[1.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/hook/cmake_prefix_path.sh'
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib'
+[1.507s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/bin'
+[1.507s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/pkgconfig/mujoco_ros2_control_demos.pc'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/python3.10/site-packages'
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/bin'
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.ps1'
+[1.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control_demos
+[1.524s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.dsv'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.sh'
+[1.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.bash'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.zsh'
+[1.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/colcon-core/packages/mujoco_ros2_control_demos)
+[1.554s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mujoco_ros2_control_demos)
+[1.555s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos' for CMake module files
+[1.557s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos' for CMake config files
+[1.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('mujoco_ros2_control_demos', 'cmake_prefix_path')
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/hook/cmake_prefix_path.ps1'
+[1.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/hook/cmake_prefix_path.dsv'
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/hook/cmake_prefix_path.sh'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/bin'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/pkgconfig/mujoco_ros2_control_demos.pc'
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/lib/python3.10/site-packages'
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/bin'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.ps1'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.dsv'
+[1.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.sh'
+[1.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.bash'
+[1.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/mujoco_ros2_control_demos/package.zsh'
+[1.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control_demos/share/colcon-core/packages/mujoco_ros2_control_demos)
+[1.588s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mujoco_ros2_control)
+[1.592s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control' for CMake module files
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control' for CMake config files
+[1.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('mujoco_ros2_control', 'cmake_prefix_path')
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/cmake_prefix_path.ps1'
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/cmake_prefix_path.dsv'
+[1.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/mujoco_ros2_control
+[1.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/cmake_prefix_path.sh'
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib'
+[1.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('mujoco_ros2_control', 'ld_library_path_lib')
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/ld_library_path_lib.ps1'
+[1.613s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/ld_library_path_lib.dsv'
+[1.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/ld_library_path_lib.sh'
+[1.617s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/bin'
+[1.617s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/pkgconfig/mujoco_ros2_control.pc'
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/python3.10/site-packages'
+[1.619s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/bin'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.ps1'
+[1.628s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.dsv'
+[1.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.sh'
+[1.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.bash'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.zsh'
+[1.643s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/colcon-core/packages/mujoco_ros2_control)
+[1.646s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mujoco_ros2_control)
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control' for CMake module files
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control' for CMake config files
+[1.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('mujoco_ros2_control', 'cmake_prefix_path')
+[1.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/cmake_prefix_path.ps1'
+[1.656s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/cmake_prefix_path.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/cmake_prefix_path.sh'
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib'
+[1.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('mujoco_ros2_control', 'ld_library_path_lib')
+[1.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/ld_library_path_lib.ps1'
+[1.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/ld_library_path_lib.dsv'
+[1.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/hook/ld_library_path_lib.sh'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/bin'
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/pkgconfig/mujoco_ros2_control.pc'
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/lib/python3.10/site-packages'
+[1.672s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/bin'
+[1.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.ps1'
+[1.680s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.dsv'
+[1.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.sh'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.bash'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/mujoco_ros2_control/package.zsh'
+[1.707s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mscrobotics2425laptop16/mujoco_ros_ws/install/mujoco_ros2_control/share/colcon-core/packages/mujoco_ros2_control)
+[62.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish -- -j12 -l12
+[62.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish
+[62.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fr3_control_publish)
+[62.748s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish' for CMake module files
+[62.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_xs_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_perception_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/interbotix_common_modules:/home/mscrobotics2425laptop16/interbotix_ws/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mscrobotics2425laptop16/mujoco_ros_ws/build/fr3_control_publish
+[62.753s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish' for CMake config files
+[62.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('fr3_control_publish', 'cmake_prefix_path')
+[62.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/cmake_prefix_path.ps1'
+[62.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/cmake_prefix_path.dsv'
+[62.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/cmake_prefix_path.sh'
+[62.767s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib'
+[62.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('fr3_control_publish', 'ld_library_path_lib')
+[62.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/ld_library_path_lib.ps1'
+[62.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/ld_library_path_lib.dsv'
+[62.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/ld_library_path_lib.sh'
+[62.774s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/bin'
+[62.775s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/pkgconfig/fr3_control_publish.pc'
+[62.777s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/python3.10/site-packages'
+[62.778s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/bin'
+[62.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.ps1'
+[62.784s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.dsv'
+[62.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.sh'
+[62.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.bash'
+[62.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.zsh'
+[62.795s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/colcon-core/packages/fr3_control_publish)
+[62.801s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fr3_control_publish)
+[62.802s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish' for CMake module files
+[62.805s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish' for CMake config files
+[62.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('fr3_control_publish', 'cmake_prefix_path')
+[62.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/cmake_prefix_path.ps1'
+[62.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/cmake_prefix_path.dsv'
+[62.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/cmake_prefix_path.sh'
+[62.818s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib'
+[62.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('fr3_control_publish', 'ld_library_path_lib')
+[62.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/ld_library_path_lib.ps1'
+[62.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/ld_library_path_lib.dsv'
+[62.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/hook/ld_library_path_lib.sh'
+[62.830s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/bin'
+[62.831s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/pkgconfig/fr3_control_publish.pc'
+[62.831s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/lib/python3.10/site-packages'
+[62.832s] Level 1:colcon.colcon_core.environment:checking '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/bin'
+[62.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.ps1'
+[62.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.dsv'
+[62.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.sh'
+[62.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.bash'
+[62.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/fr3_control_publish/package.zsh'
+[62.850s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mscrobotics2425laptop16/mujoco_ros_ws/install/fr3_control_publish/share/colcon-core/packages/fr3_control_publish)
+[62.853s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[62.856s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[62.858s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[62.860s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[62.895s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[62.896s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[62.896s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[62.951s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[62.953s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/local_setup.ps1'
+[62.956s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/_local_setup_util_ps1.py'
+[62.961s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/setup.ps1'
+[62.968s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/local_setup.sh'
+[62.970s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/_local_setup_util_sh.py'
+[62.973s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/setup.sh'
+[62.983s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/local_setup.bash'
+[62.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/setup.bash'
+[62.990s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/local_setup.zsh'
+[62.991s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mscrobotics2425laptop16/mujoco_ros_ws/install/setup.zsh'

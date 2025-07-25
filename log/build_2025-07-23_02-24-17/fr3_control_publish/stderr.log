@@ -1,0 +1,7 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::clampJointVel(Eigen::Matrix<double, 7, 1>&)[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:128:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kqdot_max_[m[K’ was not declared in this scope
+  128 |         if (qdot(i) > [01;31m[Kqdot_max_[m[K(i))      qdot(i) = qdot_max_(i);
+      |                       [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

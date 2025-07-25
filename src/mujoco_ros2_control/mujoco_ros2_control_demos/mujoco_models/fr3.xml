@@ -190,8 +190,7 @@
 
       <geom name="exploration_object_collision" type="mesh" mesh="exploration_object"
             class="collision" contype="1" conaffinity="1"/>
-    </body>
-    
+    </body>  
   </worldbody>
   
   <sensor>
