@@ -173,3 +173,6 @@ ERROR: Load model error: XML Error: invalid keyword: 'arrow'
 Element 'geom', line 0
 
 
+Sat Jul 26 13:21:15 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 5.2540.
+

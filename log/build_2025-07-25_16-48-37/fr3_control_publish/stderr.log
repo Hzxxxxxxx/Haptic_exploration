@@ -1,0 +1,11 @@
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::control_loop()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:405:25:[m[K [01;31m[Kerror: [m[Koperands to ‘[01m[K?:[m[K’ have different types ‘[01m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 3, 1> >, const Eigen::Matrix<double, 3, 1> >[m[K’ and ‘[01m[Kconst ConstantReturnType[m[K’ {aka ‘[01m[Kconst Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 3, 1> >[m[K’}
+  404 |       Eigen::Vector3d v_n = - ([01;31m[KBn_inv > 1e-6[m[K
+      |                                [01;31m[K~~~~~~~~~~~~~[m[K
+  405 | [01;31m[K                        ? (f_diff / Bn_inv) * n_hat_[m[K
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  406 | [01;31m[K                        : Eigen::Vector3d::Zero()[m[K);
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

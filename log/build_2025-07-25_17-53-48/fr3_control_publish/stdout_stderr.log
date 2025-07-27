@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target hybridforcetangentialcontroller[0m
+[  2%] Built target fr3_control_publish__cpp
+[  8%] Built target fr3_control_publish__rosidl_generator_c
+[ 13%] Built target fr3_monitor
+[ 17%] Built target tangential_velocity_controller
+[ 22%] Built target mujoco_sim_node
+[ 26%] Built target ee_pose_bridge
+[ 28%] Built target ament_cmake_python_copy_fr3_control_publish
+[ 33%] [32mBuilding CXX object CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o[0m
+[ 35%] Built target fr3_control_publish__rosidl_typesupport_cpp
+[ 42%] Built target fr3_control_publish__rosidl_typesupport_introspection_c
+[ 48%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_cpp
+[ 55%] Built target fr3_control_publish__rosidl_typesupport_introspection_cpp
+[ 62%] Built target fr3_control_publish__rosidl_typesupport_c
+[ 68%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c
+[ 73%] Built target jacobian_publisher
+[ 77%] Built target force_position_controller
+[ 77%] Built target fr3_control_publish
+[ 80%] Built target fr3_control_publish__py
+[ 84%] Built target fr3_control_publish__rosidl_generator_py
+[ 88%] Built target fr3_control_publish__rosidl_typesupport_introspection_c__pyext
+[ 93%] Built target fr3_control_publish__rosidl_typesupport_c__pyext
+[ 97%] Built target fr3_control_publish__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing fr3_control_publish.egg-info/PKG-INFO
+writing dependency_links to fr3_control_publish.egg-info/dependency_links.txt
+writing top-level names to fr3_control_publish.egg-info/top_level.txt
+reading manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+writing manifest file 'fr3_control_publish.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_fr3_control_publish_egg
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:[m[K In member function ‘[01m[Kvoid HybridForceTangentialController::control_loop()[m[K’:
+[01m[K/home/mscrobotics2425laptop16/mujoco_ros_ws/src/fr3_control_publish/src/HybridForceTangentialController.cpp:408:37:[m[K [01;31m[Kerror: [m[K‘[01m[Klat_start_[m[K’ was not declared in this scope; did you mean ‘[01m[Kva_start[m[K’?
+  408 |       double delta_lat = curr_lat - [01;31m[Klat_start_[m[K;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+      |                                     [32m[Kva_start[m[K
+gmake[2]: *** [CMakeFiles/hybridforcetangentialcontroller.dir/build.make:76：CMakeFiles/hybridforcetangentialcontroller.dir/src/HybridForceTangentialController.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:736：CMakeFiles/hybridforcetangentialcontroller.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

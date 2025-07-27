@@ -36,7 +36,7 @@ public:
     declare_parameter<double>("step_length", 0.02); // 主轴离散步长 (单位: m)
     declare_parameter<double>("lateral_step", 0.01);// 横向离散步长 (单位: m)
     declare_parameter<double>("axis_speed", 0.01);  // 主轴导纳限速 (单位: m/s)
-    declare_parameter<double>("lateral_speed", 0.01);// 横向导纳限速 (单位: m/s)
+    declare_parameter<double>("lateral_speed", 0.2);// 横向导纳限速 (单位: m/s)
     declare_parameter<double>("T_pause", 0.15);    // 静态测力窗口时长 (单位: s)
     declare_parameter<int>("N_min", 10);           // 窗口内最少采样帧数
     declare_parameter<double>("f_eps", 0.2);       // 力波动阈值, max-min<f_eps 认为稳定
@@ -127,6 +127,21 @@ private:
   // 限制各关节最大速度
   Eigen::Matrix<double,7,1> qdot_max_;
 
+  // 新成员，用来记录每次横向扫描的起始位置
+  double lat_start_{0.0};
+
+  // 测力后要去的下一个状态（区别 INIT_SCAN、横向、推进三种场景）
+  ScanState next_after_measure_;
+
+  // 每条线左右边界点云
+  std::vector<Eigen::Vector3d> left_bounds3_, right_bounds3_;
+
+  bool bounds_found_[2] = {false, false};
+  // bounds_found_[0] 对应 dir_lat_>0（右侧）
+  // bounds_found_[1] 对应 dir_lat_<0（左侧）
+
+  bool horiz_first_iter_{false};    // 横向扫描第一帧
+
   void clampJointVel(Eigen::Matrix<double,7,1> &qdot) {
       for (int i = 0; i < 7; ++i) {
         if (qdot(i) > qdot_max_(i))      qdot(i) = qdot_max_(i);
@@ -196,75 +211,101 @@ private:
 
     case ScanState::INIT_SCAN: {
       // 1 MOVE: 法向力导纳向目标中心拉动
-      // 只在第一次进入 INIT_SCAN 时算一次
       if (!init_scan_dir_computed_) {
-        Eigen::Vector3d dir2d(object_center_.x() - ee_pos_.x(),
-                          object_center_.y() - ee_pos_.y(), 0);
+        Eigen::Vector3d dir2d(
+          object_center_.x() - ee_pos_.x(),
+          object_center_.y() - ee_pos_.y(),
+          0
+        );
         dir2d.normalize();
         init_scan_dir_ = dir2d;
         init_scan_dir_computed_ = true;
       }
       f_des_.head<3>() = init_scan_dir_ * (-500);
       compute_admittance();
-      RCLCPP_DEBUG(get_logger(), "INIT_SCAN: f_des=[%.3f,%.3f,%.3f]", 
-                   f_des_.x(), f_des_.y(), f_des_.z());
+      RCLCPP_DEBUG(get_logger(), "INIT_SCAN: f_des=[%.3f,%.3f,%.3f]",
+                  f_des_.x(), f_des_.y(), f_des_.z());
+
       if (f_norm >= f_high_) {
         contact_pt_ = ee_pos_;
-        RCLCPP_INFO(get_logger(), "首次接触, contact_pt=(%.3f,%.3f,%.3f)", 
-                     contact_pt_.x(), contact_pt_.y(), contact_pt_.z());
-        state_ = ScanState::PAUSE_MEASURE;
-        pause_start_ = now();
+        RCLCPP_INFO(get_logger(),
+          "首次接触, contact_pt=(%.3f,%.3f,%.3f)",
+          contact_pt_.x(), contact_pt_.y(), contact_pt_.z());
+
+        // —— 新增：告诉 PAUSE_MEASURE 测完后要去 ALIGN_ORIENT —— 
+        next_after_measure_ = ScanState::ALIGN_ORIENT;
+
+        // 进入测力窗口
+        state_        = ScanState::PAUSE_MEASURE;
+        pause_start_  = now();
         f_window_.clear();
       }
       break;
     }
 
-    case ScanState::PAUSE_MEASURE:
+
+    // case ScanState::PAUSE_MEASURE:
+    //   // 2 PAUSE_MEASURE: 冻结导纳 & 收集静态力
+    //   if (!admittance_frozen_) {
+    //     B_inv_saved_ = B_inv_;
+    //     f_des_saved_ = f_des_;
+    //     B_inv_.setZero();
+    //     admittance_frozen_ = true;
+    //     RCLCPP_INFO(get_logger(), "冻结导纳, 进入静态测力窗口");
+    //   }
+    //   f_window_.push_back(f_ext6_);
+    //   if ((now() - pause_start_).seconds() >= T_pause_ && f_window_.size() >= (size_t)N_min_) {
+    //     auto f_est = median6(f_window_);
+    //     n_hat_   = -f_est.head<3>().normalized();
+    //     RCLCPP_INFO(get_logger(), "测力完成: f_est=[%.3f,%.3f,%.3f], n_hat=[%.3f,%.3f,%.3f]",
+    //                  f_est.x(), f_est.y(), f_est.z(), n_hat_.x(), n_hat_.y(), n_hat_.z());
+    //     state_ = ScanState::ALIGN_ORIENT;
+    //   }
+    //   break;
+
+    case ScanState::PAUSE_MEASURE: {
       // 2 PAUSE_MEASURE: 冻结导纳 & 收集静态力
       if (!admittance_frozen_) {
+        // 保存原导纳设定，冻结导纳
         B_inv_saved_ = B_inv_;
         f_des_saved_ = f_des_;
         B_inv_.setZero();
         admittance_frozen_ = true;
         RCLCPP_INFO(get_logger(), "冻结导纳, 进入静态测力窗口");
       }
+
+      // 收集当前外力数据
       f_window_.push_back(f_ext6_);
-      if ((now() - pause_start_).seconds() >= T_pause_ && f_window_.size() >= (size_t)N_min_) {
+
+      // 如果达到停顿时长且数据足够，就完成测力
+      if ((now() - pause_start_).seconds() >= T_pause_
+          && f_window_.size() >= static_cast<size_t>(N_min_))
+      {
+        // 计算 6D 力的中值，得到估计力
         auto f_est = median6(f_window_);
-        n_hat_   = -f_est.head<3>().normalized();
-        RCLCPP_INFO(get_logger(), "测力完成: f_est=[%.3f,%.3f,%.3f], n_hat=[%.3f,%.3f,%.3f]",
-                     f_est.x(), f_est.y(), f_est.z(), n_hat_.x(), n_hat_.y(), n_hat_.z());
-        state_ = ScanState::ALIGN_ORIENT;
+        // 法向朝向为估计力的反方向单位向量
+        // 只有在 ALIGN_ORIENT 之前测力，才更新表面法向 n_hat_
+        if (next_after_measure_ == ScanState::ALIGN_ORIENT) {
+          n_hat_ = -f_est.head<3>().normalized();
+          RCLCPP_INFO(get_logger(),
+            "测力(ALIGN): f_est=[%.3f,%.3f,%.3f], n_hat=[%.3f,%.3f,%.3f]",
+            f_est.x(), f_est.y(), f_est.z(),
+            n_hat_.x(), n_hat_.y(), n_hat_.z()
+          );
+        } else {
+          // 纯横向测力，不改 n_hat_
+          RCLCPP_INFO(get_logger(),
+            "测力(HORIZ): f_est=[%.3f,%.3f,%.3f], 保持 n_hat=[%.3f,%.3f,%.3f]",
+            f_est.x(), f_est.y(), f_est.z(),
+            n_hat_.x(), n_hat_.y(), n_hat_.z()
+          );
+        }
+
+        // 跳转到测力前设置的下一个状态
+        state_ = next_after_measure_;
       }
       break;
-
-    // case ScanState::ALIGN_ORIENT: {
-    //   // 3 ALIGN_ORIENT: 围绕contact_pt_纯旋对齐工具Z轴与n_hat_
-    //   Eigen::Vector3d z_tcp = R_t_.col(2);
-    //   Eigen::Vector3d r = ee_pos_ - contact_pt_;
-    //   double theta = std::acos(z_tcp.dot(n_hat_));
-    //   RCLCPP_DEBUG(get_logger(), "ALIGN_ORIENT: theta=%.3f deg", theta * 180.0/M_PI);
-    //   if (theta <= theta_tol_) {
-    //     RCLCPP_INFO(get_logger(), "姿态对齐完成, theta=%.3f deg", theta * 180.0/M_PI);
-    //     state_ = ScanState::UNFREEZE;
-    //     break;
-    //   }
-    //   Eigen::Vector3d omega_hat = z_tcp.cross(n_hat_).normalized();
-    //   double delta = k_theta_ * theta;
-    //   double w_mag = delta / dt_;
-    //   Eigen::Vector3d omega = omega_hat * w_mag;
-    //   Eigen::Vector3d v     = -omega.cross(r);
-    //   Eigen::Matrix<double,6,1> xd;
-    //   xd.head<3>() = v;
-    //   xd.tail<3>() = omega;
-    //   // 计算并发布关节命令
-    //   Eigen::Matrix<double,7,1> qdot = J_.transpose() 
-    //     * (J_*J_.transpose() + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity()).inverse()
-    //     * xd;
-    //   q_des_ += qdot * dt_;
-    //   publish_cmd();
-    //   break;
-    // }
+    }
 
     case ScanState::ALIGN_ORIENT: {
     // --- 进入本阶段前须已执行：
@@ -290,7 +331,7 @@ private:
       RCLCPP_INFO(get_logger(),
         "ALIGN_ORIENT 完成：lat=%.3f N, θ=%.3f°",
         lat_norm, theta * 180.0/M_PI);
-      std::this_thread::sleep_for(std::chrono::seconds(5));
+      // std::this_thread::sleep_for(std::chrono::seconds(2));
       state_ = ScanState::UNFREEZE;
       break;
     }
@@ -329,59 +370,222 @@ private:
 
 
 
-    case ScanState::UNFREEZE:
-      // 4 UNFREEZE: 恢复导纳, 设定下一步期望力
-      f_des_.head<3>() = f_ext6_.head<3>();
-      //n_hat_ * (200);
-      B_inv_ = B_inv_saved_;
-      admittance_frozen_ = false;
-      RCLCPP_INFO(get_logger(), "解冻导纳, f_des更新=[%.3f,%.3f,%.3f]", 
-                   f_des_.x(), f_des_.y(), f_des_.z());
-      // 初始化横向扫描
-      state_ = ScanState::HORIZONTAL_SCAN;
-      bounds_found_[0] = bounds_found_[1] = false;
-      dir_lat_ = +1;
-      break;
+    // case ScanState::UNFREEZE:
+    //   // 4 UNFREEZE: 恢复导纳, 设定下一步期望力
+    //   f_des_.head<3>() = f_ext6_.head<3>();
+    //   //n_hat_ * (200);
+    //   B_inv_ = B_inv_saved_;
+    //   admittance_frozen_ = false;
+    //   RCLCPP_INFO(get_logger(), "解冻导纳, f_des更新=[%.3f,%.3f,%.3f]", 
+    //                f_des_.x(), f_des_.y(), f_des_.z());
+    //   // 初始化横向扫描
+    //   state_ = ScanState::HORIZONTAL_SCAN;
+    //   bounds_found_[0] = bounds_found_[1] = false;
+    //   dir_lat_ = +1;
+    //   break;
+
+    case ScanState::UNFREEZE: {
+    // 恢复导纳, 并以当前外力作为新期望力
+    f_des_.head<3>() = f_ext6_.head<3>();
+    B_inv_ = B_inv_saved_;
+    admittance_frozen_ = false;
+    RCLCPP_INFO(get_logger(),
+      "解冻导纳, f_des更新=[%.3f, %.3f, %.3f]",
+      f_des_.x(), f_des_.y(), f_des_.z());
+
+    // 初始化横向扫描状态
+    bounds_found_[0] = bounds_found_[1] = false;  // 左右边界都未找到
+    dir_lat_ = +1;                               // 先向“正”方向扫
+
+    // 记录本条扫线的起始横向投影值，用于后面位移判断
+    lat_start_ = ee_pos_.head<2>().dot(lateral_axis_);
+    RCLCPP_INFO(get_logger(),
+      "横向扫描起始投影 lat_start=%.3f",
+      lat_start_);
+    
+    horiz_first_iter_       = true;                // 标记下一帧是第一帧横向扫描
+    // 测力窗口结束后要继续 HORIZONTAL_SCAN
+    next_after_measure_ = ScanState::HORIZONTAL_SCAN;
+    state_ = ScanState::HORIZONTAL_SCAN;
+    break;
+  }
+
+    // case ScanState::HORIZONTAL_SCAN: {
+    //   // 1) 构造切向 + 法向导纳混合速度
+    //   Eigen::Vector3d d_lat(
+    //     lateral_axis_.x() * dir_lat_,
+    //     lateral_axis_.y() * dir_lat_,
+    //     0.0
+    //   );
+    //   d_lat.normalize();
+
+    //   // 切向匀速分量
+    //   Eigen::Matrix<double,6,1> x_dot_t = Eigen::Matrix<double,6,1>::Zero();
+    //   x_dot_t.head<3>() = lateral_speed_ * d_lat;
+
+    //   // 法向导纳分量（reuse f_des_saved_ from last UNFREEZE）
+    //   Eigen::Matrix<double,6,1> offset; offset << 0,0,0.5,0,0,0;
+    //   Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_saved_ - offset;
+    //   Eigen::Matrix<double,6,1> x_dot_n = B_inv_ * delta;
+
+    //   // 合并速度
+    //   Eigen::Matrix<double,6,1> x_dot = x_dot_t + x_dot_n;
+
+    //   // 雅可比伪逆映射到关节速度并限幅
+    //   Eigen::Matrix<double,6,6> W = J_ * J_.transpose()
+    //                               + lambda_ * lambda_ * Eigen::Matrix<double,6,6>::Identity();
+    //   Eigen::Matrix<double,7,1> qdot = J_.transpose() * (W.inverse() * x_dot);
+    //   clampJointVel(qdot);
+
+    //   // 更新并发布
+    //   q_des_ += qdot * dt_;
+    //   publish_cmd();
+
+    //   // 2) 持续监控：边界触发条件（f≈0）
+    //   double f_norm = f_ext6_.head<3>().norm();
+    //   if (f_norm < 1e-3) {
+    //     // 触边：立即记录并进入主轴推进
+    //     bool is_right = dir_lat_ > 0;
+    //     int  idx      = is_right ? 0 : 1;
+    //     Eigen::Vector3d bound_pt3 = ee_pos_;
+    //     if (!bounds_found_[idx]) {
+    //       if (is_right)   right_bounds3_.push_back(bound_pt3);
+    //       else            left_bounds3_.push_back(bound_pt3);
+    //       bounds_found_[idx] = true;
+    //       RCLCPP_INFO(get_logger(),
+    //         "即时边界检测: dir=%d, pt=(%.3f,%.3f,%.3f)",
+    //         dir_lat_, bound_pt3.x(), bound_pt3.y(), bound_pt3.z());
+    //     }
+    //     state_ = ScanState::ADVANCE_ON_AXIS;
+    //     break;
+    //   }
+
+    //   // 3) 如果切向走满一个步长且未触边，则进入测力→对齐→解冻
+    //   double curr_lat  = ee_pos_.head<2>().dot(lateral_axis_);
+    //   double delta_lat = curr_lat - lat_start_;
+    //   if (std::abs(delta_lat) >= lateral_step_) {
+    //     // 标记下一个阶段为 HORIZONTAL_SCAN 后测力对齐
+    //     next_after_measure_ = ScanState::ALIGN_ORIENT;
+    //     state_              = ScanState::PAUSE_MEASURE;
+    //     pause_start_        = now();
+    //     f_window_.clear();
+    //     RCLCPP_INFO(get_logger(),
+    //       "完整步长完成，进入测力对齐: Δlat=%.3f", delta_lat);
+    //   }
+
+    //   break;
+    // }
 
     case ScanState::HORIZONTAL_SCAN: {
-      // 5 HORIZONTAL_SCAN: 力导纳沿 lateral_axis_
-      Eigen::Vector3d d(lateral_axis_.x()*dir_lat_, lateral_axis_.y()*dir_lat_, 0.0);
-      d.normalize();
-      f_des_.head<3>() = d * (f_high_ - 0.5);
-      compute_admittance();
-      RCLCPP_DEBUG(get_logger(), "HORIZONTAL_SCAN dir=%d, f_des=[%.3f,%.3f,%.3f]",
-                   dir_lat_, f_des_.x(), f_des_.y(), f_des_.z());
-      if (f_norm <= f_low_ || reached_lateral_limit(dir_lat_)) {
-        bounds_found_[dir_lat_>0?0:1] = true;
-        RCLCPP_INFO(get_logger(), "记录横向边界 dir=%d", dir_lat_);
-        if (bounds_found_[0] && bounds_found_[1]) {
-          state_ = ScanState::ADVANCE_ON_AXIS;
-        } else {
-          dir_lat_ *= -1;
-          RCLCPP_INFO(get_logger(), "翻转横向方向 dir=%d", dir_lat_);
-          state_ = ScanState::PAUSE_MEASURE;
-          pause_start_ = now();
-          f_window_.clear();
-        }
+      // —— 子帧 A：首帧只做混合运动，不检测零力 —— 
+      if (horiz_first_iter_) {
+        // 构造切向 + 法向导纳混合速度
+        Eigen::Vector3d d_lat(lateral_axis_.x()*dir_lat_,
+                              lateral_axis_.y()*dir_lat_, 0.0);
+        d_lat.normalize();
+
+        Eigen::Matrix<double,6,1> x_dot_t = Eigen::Matrix<double,6,1>::Zero();
+        x_dot_t.head<3>() = lateral_speed_ * d_lat;
+
+        Eigen::Matrix<double,6,1> offset; offset << 0,0,0.5,0,0,0;
+        Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_saved_;
+        Eigen::Matrix<double,6,1> x_dot_n = B_inv_ * delta;
+
+        Eigen::Matrix<double,6,1> x_dot = x_dot_t + x_dot_n;
+        Eigen::Matrix<double,6,6> W    = J_*J_.transpose()
+                                    + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity();
+        Eigen::Matrix<double,7,1> qdot = J_.transpose() * (W.inverse() * x_dot);
+        clampJointVel(qdot);
+
+        q_des_ += qdot * dt_;
+        publish_cmd();
+
+        // 标记已过首帧，下一帧才开启零力检测
+        horiz_first_iter_ = false;
+        RCLCPP_DEBUG(get_logger(), "首帧混合运动完成，临时跳过边界检测");
+        break;
       }
+
+      // —— 子帧 B：常规混合运动 + 零力边界检测 —— 
+      {
+        // 1) 一样的切向+导纳合成
+        Eigen::Vector3d d_lat(lateral_axis_.x()*dir_lat_,
+                              lateral_axis_.y()*dir_lat_, 0.0);
+        d_lat.normalize();
+
+        Eigen::Matrix<double,6,1> x_dot_t = Eigen::Matrix<double,6,1>::Zero();
+        x_dot_t.head<3>() = lateral_speed_ * d_lat;
+
+        Eigen::Matrix<double,6,1> offset; offset << 0,0,0.5,0,0,0;
+        Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_saved_ - offset;
+        Eigen::Matrix<double,6,1> x_dot_n = B_inv_ * delta;
+
+        Eigen::Matrix<double,6,1> x_dot = x_dot_t + x_dot_n;
+        Eigen::Matrix<double,6,6> W    = J_*J_.transpose()
+                                    + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity();
+        Eigen::Matrix<double,7,1> qdot = J_.transpose() * (W.inverse() * x_dot);
+        clampJointVel(qdot);
+
+        q_des_ += qdot * dt_;
+        publish_cmd();
+      }
+
+      // 2) 零力检测：如果检测到 f_norm≈0，再记录边界
+      double f_norm_n = std::abs(f_ext6_.head<3>().dot(n_hat_));
+      if (f_norm_n < 1e-3) {
+        bool is_right = dir_lat_ > 0;
+        int  idx      = is_right ? 0 : 1;
+        Eigen::Vector3d bound_pt3 = ee_pos_;
+        if (!bounds_found_[idx]) {
+          if (is_right)   right_bounds3_.push_back(bound_pt3);
+          else            left_bounds3_.push_back(bound_pt3);
+          bounds_found_[idx] = true;
+          RCLCPP_INFO(get_logger(),
+            "即时边界检测: dir=%d, pt=(%.3f,%.3f,%.3f)",
+            dir_lat_, bound_pt3.x(), bound_pt3.y(), bound_pt3.z());
+        }
+        state_ = ScanState::ADVANCE_ON_AXIS;
+        return;  // 直接退出，切换到主轴推进
+      }
+
+      // 3) 正常走完一步后进入测力→对齐→解冻
+      next_after_measure_ = ScanState::ALIGN_ORIENT;
+      state_              = ScanState::PAUSE_MEASURE;
+      pause_start_        = now();
+      f_window_.clear();
+      RCLCPP_INFO(get_logger(), "一步切向完成，进入测力对齐");
+
       break;
     }
 
+
+
+
+
     case ScanState::ADVANCE_ON_AXIS: {
-      // 6 ADVANCE_ON_AXIS: 力导纳沿 main_axis_
+      // 6 ADVANCE_ON_AXIS: 力导纳沿 main_axis_ 推进
       Eigen::Vector3d d3d(main_axis_.x(), main_axis_.y(), 0.0);
       f_des_.head<3>() = d3d * (f_high_ - 0.5);
       compute_admittance();
-      if ((ee_pos_.head<2>() - contact_pt_.head<2>()).dot(main_axis_) >= step_length_) {
+
+      // 6a) 判断是否推进足够一个步长
+      double advance_proj = (ee_pos_.head<2>() - contact_pt_.head<2>()).dot(main_axis_);
+      if (advance_proj >= step_length_) {
+        // 更新接触点到下一线
         contact_pt_.head<2>() += main_axis_ * step_length_;
-        RCLCPP_INFO(get_logger(), "主轴推进到下一点=(%.3f,%.3f)", 
-                     contact_pt_.x(), contact_pt_.y());
-        state_ = ScanState::PAUSE_MEASURE;
-        pause_start_ = now();
+        RCLCPP_INFO(get_logger(),
+          "主轴推进到下一线 contact_pt=(%.3f,%.3f)",
+          contact_pt_.x(), contact_pt_.y());
+
+        // 6b) 推进完成后，进入测力→对齐→解冻流程
+        next_after_measure_ = ScanState::ALIGN_ORIENT;
+        state_              = ScanState::PAUSE_MEASURE;
+        pause_start_        = now();
         f_window_.clear();
       }
       break;
     }
+
 
     case ScanState::DONE:
       // 7 DONE: 扫描完成
@@ -397,7 +601,7 @@ private:
     // 方法一：先定义一个 offset 向量
     Eigen::Matrix<double,6,1> offset;
     offset << 0.0, 0.0, 0.5, 0.0, 0.0, 0.0;
-    Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_ - offset;
+    Eigen::Matrix<double,6,1> delta = f_ext6_ - f_des_;
     Eigen::Matrix<double,6,1> xdn   = B_inv_ * delta;
     Eigen::Matrix<double,6,6> W     = J_*J_.transpose() + lambda_*lambda_*Eigen::Matrix<double,6,6>::Identity();
     Eigen::Matrix<double,6,1> xdot  = xdn;
@@ -459,7 +663,7 @@ private:
   std::string ee_pose_topic_;
   std::deque<Eigen::Matrix<double,6,1>> f_window_;
   rclcpp::Time pause_start_;
-  bool bounds_found_[2];
+  //bool bounds_found_[2];
   int dir_lat_;
   size_t loop_count_;
   std::vector<std::string> joint_names_{"fr3_joint1","fr3_joint2","fr3_joint3","fr3_joint4","fr3_joint5","fr3_joint6","fr3_joint7"};
